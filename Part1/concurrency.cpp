@@ -18,7 +18,8 @@
 volatile sig_atomic_t g_keep_running = 1;
 static int g_listen_fd = -1;
 
-// Weak hook for Member 3's stream_topic_to_client (Wave 2)
+// Weak hook for Member 3's stream_topic_to_client & init_thread_rng (Wave 2)
+extern void init_thread_rng(uint32_t optional_seed) __attribute__((weak));
 extern int stream_topic_to_client(int client_fd, const TopicEntry& entry,
                                   uint32_t start_file_idx, uint64_t start_offset,
                                   double pf, ServerSession* session_ptr,
@@ -152,7 +153,9 @@ int create_listening_socket(uint16_t port) {
 
 int process_client(int client_fd, const std::unordered_map<std::string, TopicEntry>& topic_map,
                    double pf, int case_mode, uint32_t seed) {
-    (void)seed;
+    if (init_thread_rng) {
+        init_thread_rng(seed);
+    }
     uint64_t wire_counter = 0;
     FrameHeader hdr;
     std::vector<uint8_t> payload;
