@@ -22,6 +22,7 @@ test/test_protocol
 test/test_mapper
 test/test_fault
 test/test_session_ckpt
+test/test_enhanced
 test/test_asan
 
 # OS generated files

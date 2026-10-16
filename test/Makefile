@@ -1,4 +1,4 @@
-# Makefile - Unit test harness for Member 1, 2, 3 & 4 modules
+# Makefile - Unit test harness for Member 1, 2, 3, 4 & 5 modules
 #
 #   make        - build test binaries
 #   make test   - run all unit test suites
