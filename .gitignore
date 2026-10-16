@@ -20,6 +20,8 @@ Part2_Case2_Enhanced/server
 Part2_Case2_Enhanced/client
 test/test_protocol
 test/test_mapper
+test/test_fault
+test/test_session_ckpt
 test/test_asan
 
 # OS generated files

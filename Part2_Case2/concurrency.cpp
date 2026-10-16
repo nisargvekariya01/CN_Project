@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <cstring>
 #include <unistd.h>
 #include <errno.h>
 #include <sys/types.h>
@@ -24,6 +25,18 @@ extern int stream_topic_to_client(int client_fd, const TopicEntry& entry,
                                   uint32_t start_file_idx, uint64_t start_offset,
                                   double pf, ServerSession* session_ptr,
                                   pthread_mutex_t* session_mutex) __attribute__((weak));
+
+// Weak hooks for Member 4's stateful session management and validation (Wave 3)
+extern int create_session(const char* topic, uint8_t out_session_id[16],
+                          ServerSession** out_session_ptr) __attribute__((weak));
+extern int validate_checkpoint(const CheckpointRecord* client_ckpt,
+                               const std::unordered_map<std::string, TopicEntry>& topic_map,
+                               uint16_t* out_err_code,
+                               std::string* out_reason,
+                               uint32_t* out_rem_files,
+                               uint64_t* out_rem_bytes,
+                               ServerSession** out_session_ptr) __attribute__((weak));
+extern pthread_mutex_t* get_session_table_mutex() __attribute__((weak));
 
 int parse_server_cli(int argc, char* argv[], int part_num, uint16_t* out_port,
                      std::string* out_root_dir, double* out_pf, int* out_threaded_mode,
@@ -187,14 +200,23 @@ int process_client(int client_fd, const std::unordered_map<std::string, TopicEnt
         }
 
         uint8_t sess_id[16];
-        zero_session_id(sess_id);
+        ServerSession* session_ptr = nullptr;
+        pthread_mutex_t* session_mutex = nullptr;
+
+        if (case_mode >= 2 && create_session && get_session_table_mutex) {
+            create_session(entry->topic_name.c_str(), sess_id, &session_ptr);
+            session_mutex = get_session_table_mutex();
+        } else {
+            zero_session_id(sess_id);
+        }
+
         send_get_ok(client_fd, sess_id, static_cast<uint32_t>(entry->files.size()), entry->total_bytes, &wire_counter);
         log_event("INFO", "Sent OP_GET_OK for topic '%s' (%zu files, %llu bytes)",
                   entry->topic_name.c_str(), entry->files.size(),
                   static_cast<unsigned long long>(entry->total_bytes));
 
         if (stream_topic_to_client) {
-            return stream_topic_to_client(client_fd, *entry, 0, 0, pf, nullptr, nullptr);
+            return stream_topic_to_client(client_fd, *entry, 0, 0, pf, session_ptr, session_mutex);
         } else {
             // Standalone Member 1 loop test stub
             send_transfer_end(client_fd, static_cast<uint32_t>(entry->files.size()), entry->total_bytes, &wire_counter);
@@ -205,8 +227,77 @@ int process_client(int client_fd, const std::unordered_map<std::string, TopicEnt
             send_error(client_fd, ERR_BAD_REQUEST, "OP_RESUME not supported in this mode", &wire_counter);
             return -1;
         }
-        // Case 2 resume dispatcher (integrated in Wave 3 with Member 4)
-        send_restart(client_fd, ERR_SESSION_EXPIRED, "Session validation pending Wave 3 integration", &wire_counter);
+
+        MsgResume req;
+        if (!parse_resume(payload.data(), static_cast<uint32_t>(payload.size()), &req)) {
+            log_event("ERROR", "Malformed OP_RESUME received on fd=%d", client_fd);
+            send_restart(client_fd, ERR_BAD_REQUEST, "Malformed OP_RESUME payload", &wire_counter);
+            return -1;
+        }
+
+        if (!validate_checkpoint) {
+            send_restart(client_fd, ERR_SESSION_EXPIRED, "Session validation unavailable", &wire_counter);
+            return 0;
+        }
+
+        CheckpointRecord client_ckpt;
+        memset(&client_ckpt, 0, sizeof(client_ckpt));
+        memcpy(client_ckpt.session_id, req.session_id, 16);
+        session_id_to_hex(client_ckpt.session_id, client_ckpt.session_id_hex);
+        strncpy(client_ckpt.topic, req.topic.c_str(), sizeof(client_ckpt.topic) - 1);
+        client_ckpt.topic[sizeof(client_ckpt.topic) - 1] = '\0';
+        client_ckpt.file_index = req.file_index;
+        client_ckpt.byte_offset = req.byte_offset;
+        client_ckpt.files_done = req.file_index;
+        strncpy(client_ckpt.file_name, req.filename.c_str(), sizeof(client_ckpt.file_name) - 1);
+        client_ckpt.file_name[sizeof(client_ckpt.file_name) - 1] = '\0';
+
+        uint16_t err_code = 0;
+        std::string reason;
+        uint32_t rem_files = 0;
+        uint64_t rem_bytes = 0;
+        ServerSession* session_ptr = nullptr;
+
+        int vrc = validate_checkpoint(&client_ckpt, topic_map, &err_code, &reason,
+                                      &rem_files, &rem_bytes, &session_ptr);
+        if (vrc != 0) {
+            log_event("INFO", "Resume rejected (code=%u, reason='%s')", err_code, reason.c_str());
+            send_restart(client_fd, err_code, reason, &wire_counter);
+            return 0;
+        }
+
+        send_resume_ok(client_fd, client_ckpt.file_index, client_ckpt.byte_offset,
+                       rem_files, rem_bytes, &wire_counter);
+        log_event("INFO", "Resume accepted: file_index=%u, offset=%llu, rem_files=%u, rem_bytes=%llu",
+                  client_ckpt.file_index, static_cast<unsigned long long>(client_ckpt.byte_offset),
+                  rem_files, static_cast<unsigned long long>(rem_bytes));
+
+        const TopicEntry* entry = get_topic_path(topic_map, client_ckpt.topic);
+        if (!entry) {
+            send_error(client_fd, ERR_TOPIC_NOT_FOUND, "Topic not found", &wire_counter);
+            return -1;
+        }
+
+        if (rem_files == 0 && rem_bytes == 0) {
+            // Terminal EOF resume: topic already finished!
+            send_transfer_end(client_fd, static_cast<uint32_t>(entry->files.size()), entry->total_bytes, &wire_counter);
+            return 0;
+        }
+
+        pthread_mutex_t* session_mutex = get_session_table_mutex ? get_session_table_mutex() : nullptr;
+        if (stream_topic_to_client) {
+            return stream_topic_to_client(client_fd, *entry, client_ckpt.file_index,
+                                          client_ckpt.byte_offset, pf, session_ptr, session_mutex);
+        } else {
+            send_transfer_end(client_fd, static_cast<uint32_t>(entry->files.size()), entry->total_bytes, &wire_counter);
+            return 0;
+        }
+    } else if (hdr.type == OP_CHECKPOINT_ACK) {
+        MsgCkptAck ack;
+        if (parse_ckpt_ack(payload.data(), static_cast<uint32_t>(payload.size()), &ack)) {
+            log_event("INFO", "Received OP_CHECKPOINT_ACK for file_index %u offset %llu",
+                      ack.file_index, static_cast<unsigned long long>(ack.ack_offset));
+        }
         return 0;
     } else {
         log_event("ERROR", "Unexpected opcode %u received on fd=%d", hdr.type, client_fd);
