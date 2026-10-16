@@ -6,12 +6,20 @@ trap 'kill $(jobs -p) 2>/dev/null' EXIT INT TERM
 
 SERVER_IP="127.0.0.1"
 PORT=8080
-TOPIC_DIR="../Dataset"
-TOPIC="Cane"
+
+# Auto-detect whether dataset topics are in ../Dataset/raw-img or ../Dataset
+if [ -d "../Dataset/raw-img" ]; then
+    TOPIC_DIR="../Dataset/raw-img"
+else
+    TOPIC_DIR="../Dataset"
+fi
+
+# Topic name
+TOPIC="cane"
 OUT_DIR="../ClientOutput"
 
 mkdir -p "$OUT_DIR"
-echo "Starting Automated Benchmarks..."
+echo "Starting Automated Benchmarks with TOPIC_DIR=$TOPIC_DIR and TOPIC=$TOPIC..."
 
 # ==============================================================================
 # Part 1: Concurrency Scaling (N = 1, 2, 4, 8, 16, 32)

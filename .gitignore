@@ -1,0 +1,27 @@
+# Dataset and test outputs
+Dataset/
+ClientOutput/
+it305_runtime.log
+.it305_*.ckpt*
+CN_Project-member6/
+
+# Compiled objects and dependency files
+*.o
+*.d
+
+# Binaries
+Part1/server
+Part1/client
+Part2_Case1/server
+Part2_Case1/client
+Part2_Case2/server
+Part2_Case2/client
+Part2_Case2_Enhanced/server
+Part2_Case2_Enhanced/client
+test/test_protocol
+test/test_mapper
+test/test_asan
+
+# OS generated files
+.DS_Store
+Thumbs.db
