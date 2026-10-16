@@ -37,6 +37,10 @@ extern int validate_checkpoint(const CheckpointRecord* client_ckpt,
                                uint64_t* out_rem_bytes,
                                ServerSession** out_session_ptr) __attribute__((weak));
 extern pthread_mutex_t* get_session_table_mutex() __attribute__((weak));
+extern int process_enhanced_opcodes(int client_fd, const FrameHeader& hdr,
+                                    const std::vector<uint8_t>& payload,
+                                    const std::unordered_map<std::string, TopicEntry>& topic_map,
+                                    double pf, uint64_t* wire_counter) __attribute__((weak));
 
 int parse_server_cli(int argc, char* argv[], int part_num, uint16_t* out_port,
                      std::string* out_root_dir, double* out_pf, int* out_threaded_mode,
@@ -299,6 +303,13 @@ int process_client(int client_fd, const std::unordered_map<std::string, TopicEnt
                       ack.file_index, static_cast<unsigned long long>(ack.ack_offset));
         }
         return 0;
+    } else if (hdr.type == OP_GET_ENHANCED || hdr.type == OP_JOIN_SESSION) {
+        if (process_enhanced_opcodes) {
+            return process_enhanced_opcodes(client_fd, hdr, payload, topic_map, pf, &wire_counter);
+        } else {
+            send_error(client_fd, ERR_BAD_REQUEST, "Enhanced opcodes not supported", &wire_counter);
+            return -1;
+        }
     } else {
         log_event("ERROR", "Unexpected opcode %u received on fd=%d", hdr.type, client_fd);
         send_error(client_fd, ERR_BAD_REQUEST, "Unexpected opcode", &wire_counter);

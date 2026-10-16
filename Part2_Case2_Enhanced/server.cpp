@@ -2,6 +2,9 @@
 #include "directory_mapper.h"
 #include "concurrency.h"
 #include "metrics_logger.h"
+#if CASE_MODE == 3
+#include "enhanced_epoll_server.h"
+#endif
 
 #include <stdio.h>
 #include <unistd.h>
@@ -47,7 +50,11 @@ int main(int argc, char* argv[]) {
     if (threaded_mode == 0) {
         run_sequential_loop(listen_fd, topic_map, pf, CASE_MODE, seed);
     } else {
+#if CASE_MODE == 3
+        run_enhanced_epoll_server_loop(listen_fd, topic_map, pf, seed);
+#else
         run_concurrent_loop(listen_fd, topic_map, pf, CASE_MODE, seed);
+#endif
     }
 
     log_event("INFO", "Server shutdown complete");
