@@ -4,19 +4,19 @@
 # Trap to kill all background subprocesses if benchmark is aborted
 trap 'kill $(jobs -p) 2>/dev/null' EXIT INT TERM
 
-SERVER_IP="127.0.0.1"
-PORT=8080
+SERVER_IP="${SERVER_IP:-127.0.0.1}"
+PORT="${PORT:-8080}"
 
 # Auto-detect whether dataset topics are in ../Dataset/raw-img or ../Dataset
 if [ -d "../Dataset/raw-img" ]; then
-    TOPIC_DIR="../Dataset/raw-img"
+    TOPIC_DIR="${TOPIC_DIR:-../Dataset/raw-img}"
 else
-    TOPIC_DIR="../Dataset"
+    TOPIC_DIR="${TOPIC_DIR:-../Dataset}"
 fi
 
 # Topic name
-TOPIC="cane"
-OUT_DIR="../ClientOutput"
+TOPIC="${TOPIC:-cane}"
+OUT_DIR="${OUT_DIR:-../ClientOutput}"
 
 mkdir -p "$OUT_DIR"
 echo "Starting Automated Benchmarks with TOPIC_DIR=$TOPIC_DIR and TOPIC=$TOPIC..."
