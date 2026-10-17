@@ -1,6 +1,7 @@
 #include "metrics_logger.h"
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdarg.h>
 #include <pthread.h>
 #include <sys/time.h>
@@ -54,6 +55,24 @@ void record_transfer_metrics(const char* csv_filepath, const char* case_name,
                              struct timespec t_start, struct timespec t_end, int retries) {
     if (!csv_filepath || !case_name) {
         return;
+    }
+
+    // Check environment overrides (for automated benchmark runner)
+    const char* env_csv = getenv("CSV_FILE");
+    if (env_csv && env_csv[0] != '\0') {
+        csv_filepath = env_csv;
+    }
+    const char* env_case = getenv("CASE_NAME");
+    if (env_case && env_case[0] != '\0') {
+        case_name = env_case;
+    }
+    const char* env_num = getenv("NUM_CLIENTS");
+    if (env_num && env_num[0] != '\0') {
+        num_clients = atoi(env_num);
+    }
+    const char* env_pf = getenv("FAULT_PROB");
+    if (env_pf && env_pf[0] != '\0') {
+        pf = atof(env_pf);
     }
 
     pthread_mutex_lock(&log_mutex);
