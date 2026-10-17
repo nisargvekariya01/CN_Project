@@ -251,29 +251,27 @@ void apply_client_bitmap(EnhancedSessionState* sess, const uint8_t* bitmap, uint
 static int serve_substream_session(int client_fd, const TopicEntry& entry,
                                    EnhancedSessionState* sess, uint32_t conn_id,
                                    double pf, uint64_t* wire_counter) {
-    // Open read-only file descriptors for all files in entry
-    std::vector<int> file_fds(entry.files.size(), -1);
-    for (size_t i = 0; i < entry.files.size(); ++i) {
-        int fd = open(entry.files[i].full_path.c_str(), O_RDONLY);
-        if (fd < 0) {
-            log_event("ERROR", "Failed to open file '%s': %s",
-                      entry.files[i].full_path.c_str(), strerror(errno));
-            for (int ofd : file_fds) { if (ofd >= 0) close(ofd); }
-            return -1;
-        }
-        file_fds[i] = fd;
-    }
-
     ChunkWorkUnit unit;
     while (g_keep_running) {
         if (pop_next_chunk_unit(sess, conn_id, &unit)) {
-            int ffd = file_fds[unit.file_index];
+            if (unit.file_index >= entry.files.size()) {
+                continue;
+            }
+
+            int ffd = open(entry.files[unit.file_index].full_path.c_str(), O_RDONLY);
+            if (ffd < 0) {
+                log_event("ERROR", "Failed to open file '%s': %s",
+                          entry.files[unit.file_index].full_path.c_str(), strerror(errno));
+                requeue_stream_chunks(sess, static_cast<int32_t>(conn_id));
+                return -1;
+            }
 
             ssize_t sent = send_chunk_zerocopy(client_fd, ffd, unit, wire_counter);
+            close(ffd);
+
             if (sent < 0) {
                 log_event("INFO", "Sub-stream %u socket error during zerocopy send", conn_id);
                 requeue_stream_chunks(sess, static_cast<int32_t>(conn_id));
-                for (int ofd : file_fds) { if (ofd >= 0) close(ofd); }
                 return -1;
             }
 
@@ -283,7 +281,6 @@ static int serve_substream_session(int client_fd, const TopicEntry& entry,
                 log_event("FAULT", "Sub-stream %u dropped by fault injector after unit %u (pf=%.3f)",
                           conn_id, unit.unit_id, pf);
                 requeue_stream_chunks(sess, static_cast<int32_t>(conn_id));
-                for (int ofd : file_fds) { if (ofd >= 0) close(ofd); }
                 return -1;
             }
 
@@ -310,10 +307,6 @@ static int serve_substream_session(int client_fd, const TopicEntry& entry,
             }
             break; // All units are committed!
         }
-    }
-
-    for (int ofd : file_fds) {
-        if (ofd >= 0) close(ofd);
     }
 
     // Check if all units are committed
