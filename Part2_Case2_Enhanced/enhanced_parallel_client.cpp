@@ -431,9 +431,19 @@ int run_enhanced_client(const char* server_ip, uint16_t port,
                             shared_state.redundant_bytes,
                             t_start, t_end, shared_state.retries);
 
+    double duration_sec = (double)(t_end.tv_sec - t_start.tv_sec) + 
+                          (double)(t_end.tv_nsec - t_start.tv_nsec) * 1e-9;
+    if (duration_sec < 0.0) duration_sec = 0.0;
+    double goodput_mbps = (duration_sec > 0.0) ? (shared_state.useful_bytes / (duration_sec * 1000000.0)) : 0.0;
+    double throughput_mbps = (duration_sec > 0.0) ? (shared_state.total_wire_bytes / (duration_sec * 1000000.0)) : 0.0;
+    double overhead_pct = (shared_state.useful_bytes > 0) ? 
+        (((double)shared_state.total_wire_bytes - (double)shared_state.useful_bytes) / (double)shared_state.useful_bytes) * 100.0 : 0.0;
+
     log_event("INFO", "Enhanced parallel transfer SUCCESS: %zu files (%llu bytes) written to '%s' in %d retries",
               files.size(), static_cast<unsigned long long>(shared_state.useful_bytes),
               topic_dir.c_str(), shared_state.retries);
+    log_event("INFO", "Performance: Duration = %.2fs | Goodput = %.2f MB/s | Wire Throughput = %.2f MB/s | Overhead = %.2f%%",
+              duration_sec, goodput_mbps, throughput_mbps, overhead_pct);
 
     pthread_mutex_destroy(&shared_state.bmap_mutex);
     return 0;

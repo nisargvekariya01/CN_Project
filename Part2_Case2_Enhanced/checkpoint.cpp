@@ -493,10 +493,20 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
                             useful_bytes, total_wire_bytes, redundant_bytes,
                             t_start, t_end, retries_count);
 
+    double duration_sec = (double)(t_end.tv_sec - t_start.tv_sec) + 
+                          (double)(t_end.tv_nsec - t_start.tv_nsec) * 1e-9;
+    if (duration_sec < 0.0) duration_sec = 0.0;
+    double goodput_mbps = (duration_sec > 0.0) ? (useful_bytes / (duration_sec * 1000000.0)) : 0.0;
+    double throughput_mbps = (duration_sec > 0.0) ? (total_wire_bytes / (duration_sec * 1000000.0)) : 0.0;
+    double overhead_pct = (useful_bytes > 0) ? 
+        (((double)total_wire_bytes - (double)useful_bytes) / (double)useful_bytes) * 100.0 : 0.0;
+
     log_event("INFO", "Transfer SUCCESS: %u files (%llu bytes) written to '%s/%s' in %d retries (wire: %llu, redundant: %llu)",
               files_received_count, static_cast<unsigned long long>(useful_bytes),
               output_dir, topic, retries_count,
               static_cast<unsigned long long>(total_wire_bytes),
               static_cast<unsigned long long>(redundant_bytes));
+    log_event("INFO", "Performance: Duration = %.2fs | Goodput = %.2f MB/s | Wire Throughput = %.2f MB/s | Overhead = %.2f%%",
+              duration_sec, goodput_mbps, throughput_mbps, overhead_pct);
     return 0;
 }

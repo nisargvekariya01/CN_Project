@@ -150,6 +150,9 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
     int retries_count = 0;
     bool transfer_completed = false;
     uint32_t files_received_count = 0;
+    uint32_t expected_file_count = 0;
+
+    log_event("INFO", "Connecting to %s:%u...", server_ip, port);
 
     for (int attempt = 0; attempt < max_retries; ++attempt) {
         if (attempt > 0) {
@@ -180,6 +183,8 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
             close(sockfd);
             continue;
         }
+
+        log_event("INFO", "Connected to server. Requesting topic '%s'...", topic);
 
         if (send_get(sockfd, topic, &total_wire_bytes) < 0) {
             log_event("ERROR", "Failed to send OP_GET request for topic '%s'", topic);
@@ -215,8 +220,10 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
             if (hdr.type == OP_GET_OK) {
                 MsgGetOk get_ok;
                 if (parse_get_ok(payload.data(), static_cast<uint32_t>(payload.size()), &get_ok)) {
-                    log_event("INFO", "Received OP_GET_OK: %u files, %llu total bytes",
-                              get_ok.file_count, static_cast<unsigned long long>(get_ok.total_bytes));
+                    expected_file_count = get_ok.file_count;
+                    double total_mb = static_cast<double>(get_ok.total_bytes) / (1024.0 * 1024.0);
+                    log_event("INFO", "Received OP_GET_OK: %u files, %llu total bytes (%.2f MB)",
+                              get_ok.file_count, static_cast<unsigned long long>(get_ok.total_bytes), total_mb);
                 }
             } else if (hdr.type == OP_ERROR) {
                 MsgStatus st;
@@ -242,6 +249,11 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
                     }
                     current_filename = fb.filename;
                     current_file_bytes_written = 0;
+                    if (fb.file_index == 0) {
+                        log_event("INFO", "Receiving file [1/%u]: '%s' (%llu bytes)",
+                                  expected_file_count, fb.filename.c_str(),
+                                  static_cast<unsigned long long>(fb.bytes_following));
+                    }
                     std::string dest_path = std::string(output_dir) + "/" + topic + "/" + fb.filename;
                     // In Part 1 & Case 1: Open with O_WRONLY | O_CREAT | O_TRUNC (overwriting from Byte 0)
                     current_file_fd = open(dest_path.c_str(), O_WRONLY | O_CREAT | O_TRUNC, 0644);
@@ -277,6 +289,13 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
                         current_file_fd = -1;
                     }
                     files_received_count++;
+                    if (expected_file_count > 0 && 
+                        (files_received_count % 500 == 0 || files_received_count == expected_file_count)) {
+                        double pct = (files_received_count * 100.0) / expected_file_count;
+                        double written_mb = static_cast<double>(attempt_file_bytes) / (1024.0 * 1024.0);
+                        log_event("INFO", "Progress: %u/%u files received (%.1f%%) - %.2f MB written",
+                                  files_received_count, expected_file_count, pct, written_mb);
+                    }
                 }
             } else if (hdr.type == OP_TRANSFER_END) {
                 MsgTransferEnd te;
@@ -303,6 +322,7 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
 
                     useful_bytes = attempt_file_bytes;
                     transfer_completed = true;
+                    log_event("INFO", "Received OP_TRANSFER_END from server");
                     break;
                 }
             }
@@ -334,9 +354,19 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
                             useful_bytes, total_wire_bytes, redundant_bytes,
                             t_start, t_end, retries_count);
 
+    double duration_sec = (double)(t_end.tv_sec - t_start.tv_sec) + 
+                          (double)(t_end.tv_nsec - t_start.tv_nsec) * 1e-9;
+    if (duration_sec < 0.0) duration_sec = 0.0;
+    double goodput_mbps = (duration_sec > 0.0) ? (useful_bytes / (duration_sec * 1000000.0)) : 0.0;
+    double throughput_mbps = (duration_sec > 0.0) ? (total_wire_bytes / (duration_sec * 1000000.0)) : 0.0;
+    double overhead_pct = (useful_bytes > 0) ? 
+        (((double)total_wire_bytes - (double)useful_bytes) / (double)useful_bytes) * 100.0 : 0.0;
+
     log_event("INFO", "Transfer SUCCESS: %u files (%llu bytes) written to '%s/%s' in %d retries",
               files_received_count, static_cast<unsigned long long>(useful_bytes),
               output_dir, topic, retries_count);
+    log_event("INFO", "Performance: Duration = %.2fs | Goodput = %.2f MB/s | Wire Throughput = %.2f MB/s | Overhead = %.2f%%",
+              duration_sec, goodput_mbps, throughput_mbps, overhead_pct);
     return 0;
 }
 
