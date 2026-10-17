@@ -17,12 +17,22 @@ fi
 # Isolated benchmark dataset directory: symlink ONLY the target topic
 # This avoids scanning 25,000 files across 10 unused topics on every single server restart!
 BENCH_DATA_DIR="/tmp/cn_bench_dataset_$$"
-cleanup() {
+handle_abort() {
+    trap - EXIT INT TERM
+    echo -e "\n[BENCHMARK ABORTED BY USER] Terminating all background processes..."
+    kill $(jobs -p) 2>/dev/null
+    rm -rf "$BENCH_DATA_DIR" "$OUT_DIR"
+    wait 2>/dev/null
+    exit 130
+}
+trap handle_abort INT TERM
+
+cleanup_exit() {
     kill $(jobs -p) 2>/dev/null
     rm -rf "$BENCH_DATA_DIR" "$OUT_DIR"
     wait 2>/dev/null
 }
-trap cleanup EXIT INT TERM
+trap cleanup_exit EXIT
 
 mkdir -p "$BENCH_DATA_DIR"
 if [ -d "$TOPIC_DIR/$TOPIC" ]; then
