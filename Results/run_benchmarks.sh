@@ -7,15 +7,40 @@ PORT="${PORT:-8080}"
 TOPIC="${TOPIC:-cane}"
 OUT_DIR="${OUT_DIR:-/tmp/client_bench_output}"
 
-# Auto-detect whether dataset topics are in ../Dataset/raw-img or ../Dataset
-if [ -d "../Dataset/raw-img" ]; then
-    TOPIC_DIR="${TOPIC_DIR:-../Dataset/raw-img}"
-else
-    TOPIC_DIR="${TOPIC_DIR:-../Dataset}"
+# 1. Dataset Directory Validation & Fallback
+if [ -n "$TOPIC_DIR" ] && [ ! -d "$TOPIC_DIR" ]; then
+    echo "[WARNING] Specified TOPIC_DIR='$TOPIC_DIR' does not exist. Falling back to default dataset."
+    unset TOPIC_DIR
 fi
 
-# Isolated benchmark dataset directory: symlink ONLY the target topic
-# This avoids scanning 25,000 files across 10 unused topics on every single server restart!
+if [ -z "$TOPIC_DIR" ]; then
+    if [ -d "../Dataset/raw-img" ]; then
+        TOPIC_DIR="../Dataset/raw-img"
+    elif [ -d "../Dataset" ]; then
+        TOPIC_DIR="../Dataset"
+    else
+        echo "[ERROR] Cannot find dataset directory in ../Dataset/raw-img or ../Dataset!"
+        exit 1
+    fi
+fi
+
+# Fallback topic if requested TOPIC does not exist in TOPIC_DIR
+if [ ! -d "$TOPIC_DIR/$TOPIC" ]; then
+    FALLBACK_TOPIC=$(ls -1 "$TOPIC_DIR" 2>/dev/null | head -n 1)
+    if [ -n "$FALLBACK_TOPIC" ] && [ -d "$TOPIC_DIR/$FALLBACK_TOPIC" ]; then
+        echo "[WARNING] Topic '$TOPIC' not found in $TOPIC_DIR. Using '$FALLBACK_TOPIC' instead."
+        TOPIC="$FALLBACK_TOPIC"
+    fi
+fi
+
+# 2. Fast Benchmark Mode Support (FAST=1 or SAMPLE=N)
+# When FAST=1 or SAMPLE is set, sample N files (default 200) instead of transferring all 4,863 files.
+# This completes the ENTIRE benchmark suite in under 2 minutes!
+SAMPLE_FILES="${SAMPLE:-0}"
+if [ "$FAST" = "1" ] && [ "$SAMPLE_FILES" -eq 0 ]; then
+    SAMPLE_FILES=200
+fi
+
 BENCH_DATA_DIR="/tmp/cn_bench_dataset_$$"
 handle_abort() {
     trap - EXIT INT TERM
@@ -34,12 +59,28 @@ cleanup_exit() {
 }
 trap cleanup_exit EXIT
 
-mkdir -p "$BENCH_DATA_DIR"
-if [ -d "$TOPIC_DIR/$TOPIC" ]; then
-    ln -sfn "$(realpath "$TOPIC_DIR/$TOPIC")" "$BENCH_DATA_DIR/$TOPIC"
+mkdir -p "$BENCH_DATA_DIR/$TOPIC"
+SRC_TOPIC_PATH="$(realpath "$TOPIC_DIR/$TOPIC")"
+
+if [ "$SAMPLE_FILES" -gt 0 ]; then
+    echo "Configuring FAST mode: sampling $SAMPLE_FILES files from '$TOPIC'..."
+    python3 -c "
+import os, sys
+src = '$SRC_TOPIC_PATH'
+dst = '$BENCH_DATA_DIR/$TOPIC'
+files = sorted([f for f in os.listdir(src) if os.path.isfile(os.path.join(src, f))])[:$SAMPLE_FILES]
+for f in files:
+    try:
+        os.symlink(os.path.join(src, f), os.path.join(dst, f))
+    except FileExistsError:
+        pass
+"
     ACTIVE_TOPIC_DIR="$BENCH_DATA_DIR"
 else
-    ACTIVE_TOPIC_DIR="$TOPIC_DIR"
+    # Link all files of the target topic
+    rm -rf "$BENCH_DATA_DIR/$TOPIC"
+    ln -sfn "$SRC_TOPIC_PATH" "$BENCH_DATA_DIR/$TOPIC"
+    ACTIVE_TOPIC_DIR="$BENCH_DATA_DIR"
 fi
 
 # Function to poll kernel socket table until server socket is actually in LISTEN state
