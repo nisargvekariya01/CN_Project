@@ -15,6 +15,7 @@
 #include <arpa/inet.h>
 #include <algorithm>
 #include <ctime>
+#include <sys/ioctl.h>
 
 /*
  * checkpoint.cpp - Member 4 (PR #5, Wave 3)
@@ -202,6 +203,150 @@ int open_and_seek_resume_file(const char* filepath, uint64_t accepted_offset) {
     return fd;
 }
 
+static void render_case2_progress_bar(int trial_num, int max_trials, bool has_ckpt,
+                                     uint32_t current_files, uint32_t total_files,
+                                     uint64_t current_bytes, uint64_t total_bytes,
+                                     uint64_t redundant_bytes,
+                                     const struct timespec& trial_start_time,
+                                     uint64_t trial_wire_bytes,
+                                     bool force_complete = false) {
+    static const char spinner_chars[] = "|/-\\";
+    static int spinner_idx = 0;
+    static struct timespec last_update{0, 0};
+
+    struct timespec now;
+    clock_gettime(CLOCK_MONOTONIC, &now);
+
+    // Throttle updates to ~25 FPS (40ms) unless force_complete
+    if (!force_complete && last_update.tv_sec != 0) {
+        long elapsed_ms = (now.tv_sec - last_update.tv_sec) * 1000 +
+                          (now.tv_nsec - last_update.tv_nsec) / 1000000;
+        if (elapsed_ms < 40) {
+            return;
+        }
+    }
+    last_update = now;
+
+    bool is_terminal = (isatty(STDOUT_FILENO) != 0);
+    if (!is_terminal) {
+        if (force_complete || (total_files > 0 && current_files > 0 && (current_files % 100 == 0 || current_files == total_files))) {
+            double pct = total_bytes > 0 ? (static_cast<double>(current_bytes) * 100.0) / static_cast<double>(total_bytes)
+                                         : (total_files > 0 ? (static_cast<double>(current_files) * 100.0) / static_cast<double>(total_files) : 0.0);
+            double mb = static_cast<double>(current_bytes) / (1024.0 * 1024.0);
+            log_event("INFO", "[Trial %d/%d%s] Progress: %u/%u files (%.1f%%) - %.2f MB",
+                      trial_num, max_trials, has_ckpt ? " (CKPT)" : "",
+                      current_files, total_files, pct, mb);
+        }
+        return;
+    }
+
+    int cols = 80;
+    struct winsize ws;
+    if (ioctl(STDOUT_FILENO, TIOCGWINSZ, &ws) == 0 && ws.ws_col > 20) {
+        cols = ws.ws_col;
+    }
+
+    double pct = 0.0;
+    if (total_bytes > 0) {
+        pct = (static_cast<double>(current_bytes) / static_cast<double>(total_bytes)) * 100.0;
+    } else if (total_files > 0) {
+        pct = (static_cast<double>(current_files) / static_cast<double>(total_files)) * 100.0;
+    }
+    if (pct > 100.0) pct = 100.0;
+    if (force_complete) pct = 100.0;
+
+    double elapsed_sec = (double)(now.tv_sec - trial_start_time.tv_sec) +
+                         (double)(now.tv_nsec - trial_start_time.tv_nsec) * 1e-9;
+    double speed_mbps = (elapsed_sec > 0.05) ? (static_cast<double>(trial_wire_bytes) / (elapsed_sec * 1024.0 * 1024.0)) : 0.0;
+
+    char spinner = spinner_chars[spinner_idx % 4];
+    spinner_idx++;
+
+    double cur_mb = static_cast<double>(current_bytes) / (1024.0 * 1024.0);
+    double tot_mb = static_cast<double>(total_bytes) / (1024.0 * 1024.0);
+    double waste_mb = static_cast<double>(redundant_bytes) / (1024.0 * 1024.0);
+
+    char trial_buf[40];
+    if (has_ckpt) {
+        if (cols >= 86) {
+            snprintf(trial_buf, sizeof(trial_buf), "[Trial %d/%d] [CKPT]", trial_num, max_trials);
+        } else {
+            snprintf(trial_buf, sizeof(trial_buf), "[T%d/%d-CKPT]", trial_num, max_trials);
+        }
+    } else {
+        snprintf(trial_buf, sizeof(trial_buf), "[Trial %d/%d]", trial_num, max_trials);
+    }
+    int trial_len = static_cast<int>(strlen(trial_buf));
+
+    char files_buf[32];
+    snprintf(files_buf, sizeof(files_buf), "%u/%u", current_files, total_files);
+    int files_len = static_cast<int>(strlen(files_buf));
+
+    char mb_buf[40];
+    if (cols >= 95) {
+        snprintf(mb_buf, sizeof(mb_buf), "%.1f/%.1f MB", cur_mb, tot_mb);
+    } else {
+        snprintf(mb_buf, sizeof(mb_buf), "%.1f/%.1fM", cur_mb, tot_mb);
+    }
+    int mb_len = static_cast<int>(strlen(mb_buf));
+
+    char speed_buf[32];
+    if (cols >= 90) {
+        snprintf(speed_buf, sizeof(speed_buf), "%.2f MB/s", speed_mbps);
+    } else {
+        snprintf(speed_buf, sizeof(speed_buf), "%.1fMB/s", speed_mbps);
+    }
+    int speed_len = static_cast<int>(strlen(speed_buf));
+
+    char waste_display[48] = "";
+    int waste_vis_len = 0;
+    if (redundant_bytes > 0) {
+        if (cols >= 100) {
+            snprintf(waste_display, sizeof(waste_display), " | \033[1;31mWasted: %.1fMB\033[0m", waste_mb);
+            char tmp[32];
+            snprintf(tmp, sizeof(tmp), " | Wasted: %.1fMB", waste_mb);
+            waste_vis_len = static_cast<int>(strlen(tmp));
+        } else if (cols >= 86) {
+            snprintf(waste_display, sizeof(waste_display), " | \033[1;31mW:%.1fM\033[0m", waste_mb);
+            char tmp[32];
+            snprintf(tmp, sizeof(tmp), " | W:%.1fM", waste_mb);
+            waste_vis_len = static_cast<int>(strlen(tmp));
+        }
+    }
+
+    int tail_len = force_complete ? 13 : 4;
+    int non_bar_len = trial_len + 1 + 2 + 1 + 7 + 3 + files_len + 3 + mb_len + waste_vis_len + 3 + speed_len + tail_len;
+
+    int max_vis = cols - 2;
+    int bar_width = max_vis - non_bar_len;
+    if (bar_width < 5) bar_width = 5;
+    if (bar_width > 22) bar_width = 22;
+
+    int filled = static_cast<int>((pct / 100.0) * bar_width);
+    if (filled > bar_width) filled = bar_width;
+
+    char bar_str[bar_width + 1];
+    for (int i = 0; i < bar_width; ++i) {
+        if (i < filled) {
+            bar_str[i] = '=';
+        } else if (i == filled && filled < bar_width) {
+            bar_str[i] = '>';
+        } else {
+            bar_str[i] = ' ';
+        }
+    }
+    bar_str[bar_width] = '\0';
+
+    if (force_complete) {
+        printf("\r\033[2K\033[1;35m%s\033[0m \033[1;32m[%s]\033[0m \033[1;32m100.0%%\033[0m | \033[1;36m%s\033[0m | \033[1;36m%s\033[0m%s | \033[1;33m%s\033[0m | \033[1;32mDone! [OK]\033[0m\n",
+               trial_buf, bar_str, files_buf, mb_buf, waste_display, speed_buf);
+    } else {
+        printf("\r\033[2K\033[1;35m%s\033[0m \033[1;32m[%s]\033[0m \033[1;32m%5.1f%%\033[0m | \033[1;36m%s\033[0m | \033[1;36m%s\033[0m%s | \033[1;33m%s\033[0m [%c]",
+               trial_buf, bar_str, pct, files_buf, mb_buf, waste_display, speed_buf, spinner);
+    }
+    fflush(stdout);
+}
+
 int run_client_case2_loop(const char* server_ip, uint16_t port,
                           const char* topic, const char* output_dir,
                           int max_retries, uint32_t ckpt_window) {
@@ -226,8 +371,16 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
     bool transfer_completed = false;
     uint32_t files_received_count = 0;
     uint32_t total_files_in_topic = 0;
+    uint64_t expected_total_bytes = 0;
+    uint64_t cumulative_useful_bytes = 0;
+
+    log_event("INFO", "Connecting to %s:%u...", server_ip, port);
 
     for (int attempt = 0; attempt < max_retries; ++attempt) {
+        struct timespec t_trial_start;
+        clock_gettime(CLOCK_MONOTONIC, &t_trial_start);
+        uint64_t trial_wire_bytes = 0;
+
         if (attempt > 0) {
             retries_count++;
             int shift = (attempt < 20) ? attempt : 20;
@@ -265,6 +418,8 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
             log_event("INFO", "Loaded checkpoint for '%s': session='%s' file_index=%u offset=%llu filename='%s'",
                       topic, ckpt.session_id_hex, ckpt.file_index,
                       static_cast<unsigned long long>(ckpt.byte_offset), ckpt.file_name);
+            log_event("INFO", "Connected to server. Resuming topic '%s' with checkpoint (Trial %d/%d)...",
+                      topic, attempt + 1, max_retries);
 
             if (send_resume(sockfd, ckpt.session_id, ckpt.file_index, ckpt.byte_offset,
                             topic, ckpt.file_name, &total_wire_bytes) < 0) {
@@ -290,6 +445,8 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
                 }
                 remove_checkpoint(output_dir, topic);
                 has_ckpt = false;
+                cumulative_useful_bytes = 0;
+                files_received_count = 0;
                 if (send_get(sockfd, topic, &total_wire_bytes) < 0) {
                     close(sockfd);
                     continue;
@@ -297,9 +454,26 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
             } else if (resp_hdr.type == OP_RESUME_OK) {
                 MsgResumeOk rok;
                 if (parse_resume_ok(resp_payload.data(), static_cast<uint32_t>(resp_payload.size()), &rok)) {
+                    if (expected_total_bytes == 0) {
+                        expected_total_bytes = ckpt.byte_offset + rok.rem_bytes;
+                        total_files_in_topic = ckpt.files_done + rok.rem_files;
+                    }
+                    cumulative_useful_bytes = (expected_total_bytes > rok.rem_bytes) ? (expected_total_bytes - rok.rem_bytes) : 0;
+                    files_received_count = (total_files_in_topic > rok.rem_files) ? (total_files_in_topic - rok.rem_files) : 0;
+
                     log_event("INFO", "Server accepted RESUME: file_index=%u accepted_offset=%llu rem_files=%u rem_bytes=%llu",
                               rok.file_index, static_cast<unsigned long long>(rok.accepted_offset),
                               rok.rem_files, static_cast<unsigned long long>(rok.rem_bytes));
+
+                    double preserved_mb = static_cast<double>(cumulative_useful_bytes) / (1024.0 * 1024.0);
+                    double tot_mb = static_cast<double>(expected_total_bytes) / (1024.0 * 1024.0);
+                    double resume_pct = expected_total_bytes > 0 ? (static_cast<double>(cumulative_useful_bytes) * 100.0) / static_cast<double>(expected_total_bytes) : 0.0;
+                    if (isatty(STDOUT_FILENO)) {
+                        printf("\033[1;36m[STATEFUL RESUMPTION]\033[0m Resuming at File %u/%u (offset %llu B) | Progress: %.1f%% (%.2f/%.2f MB preserved)\n",
+                               rok.file_index, total_files_in_topic, static_cast<unsigned long long>(rok.accepted_offset),
+                               resume_pct, preserved_mb, tot_mb);
+                        fflush(stdout);
+                    }
                 }
             } else if (resp_hdr.type == OP_ERROR) {
                 MsgStatus st;
@@ -314,6 +488,8 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
                 continue;
             }
         } else {
+            log_event("INFO", "Connected to server. Requesting topic '%s' (Trial %d/%d)...",
+                      topic, attempt + 1, max_retries);
             if (send_get(sockfd, topic, &total_wire_bytes) < 0) {
                 log_event("ERROR", "Failed to send OP_GET");
                 close(sockfd);
@@ -332,7 +508,9 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
             int rc = recv_frame(sockfd, &hdr, payload, &total_wire_bytes);
 
             if (rc <= 0) {
-                log_event("INFO", "Connection dropped mid-transfer at attempt %d (rc=%d)", attempt, rc);
+                const char* fault_desc = (rc == FRAME_PROTO_ERR) ? "Corrupted frame header / protocol error" :
+                                         (rc == 0) ? "Connection closed prematurely by server" :
+                                                     "Connection dropped / fault injected";
                 if (current_file_fd >= 0) {
                     if (current_file_bytes_written > ckpt.byte_offset) {
                         ckpt.byte_offset = current_file_bytes_written;
@@ -341,6 +519,15 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
                     close(current_file_fd);
                     current_file_fd = -1;
                 }
+                if (isatty(STDOUT_FILENO)) {
+                    double preserved_mb = static_cast<double>(cumulative_useful_bytes) / (1024.0 * 1024.0);
+                    printf("\n\033[1;33m[FAULT DETECTED / CHECKPOINT SAVED]\033[0m %s at File %u/%u (offset %llu B). Stateful recovery: saved checkpoint, resuming on Trial %d/%d (%.2f MB preserved)...\n",
+                           fault_desc, ckpt.file_index, total_files_in_topic,
+                           static_cast<unsigned long long>(ckpt.byte_offset),
+                           attempt + 2, max_retries, preserved_mb);
+                    fflush(stdout);
+                }
+                log_event("INFO", "Server dropped connection (%s, rc=%d) mid-transfer at attempt %d", fault_desc, rc, attempt);
                 close(sockfd);
                 sockfd = -1;
                 connection_failed = true;
@@ -359,9 +546,13 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
                     ckpt.files_done = 0;
                     ckpt.file_name[0] = '\0';
                     total_files_in_topic = get_ok.file_count;
-                    log_event("INFO", "Received OP_GET_OK: session='%s' %u files %llu bytes",
-                              ckpt.session_id_hex, get_ok.file_count,
-                              static_cast<unsigned long long>(get_ok.total_bytes));
+                    expected_total_bytes = get_ok.total_bytes;
+                    cumulative_useful_bytes = 0;
+                    files_received_count = 0;
+                    double total_mb = static_cast<double>(get_ok.total_bytes) / (1024.0 * 1024.0);
+                    log_event("INFO", "Received OP_GET_OK: %u files, %llu total bytes (%.2f MB)",
+                              get_ok.file_count,
+                              static_cast<unsigned long long>(get_ok.total_bytes), total_mb);
                 }
             } else if (hdr.type == OP_ERROR) {
                 MsgStatus st;
@@ -408,6 +599,11 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
                     ckpt.file_name[sizeof(ckpt.file_name) - 1] = '\0';
 
                     save_checkpoint(output_dir, &ckpt, current_file_fd, sockfd);
+
+                    render_case2_progress_bar(attempt + 1, max_retries, has_ckpt,
+                                              files_received_count, total_files_in_topic,
+                                              cumulative_useful_bytes, expected_total_bytes,
+                                              redundant_bytes, t_trial_start, trial_wire_bytes);
                 }
             } else if (hdr.type == OP_FILE_DATA) {
                 MsgFileData fd_msg;
@@ -422,6 +618,8 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
                             return -1;
                         }
                         current_file_bytes_written += fd_msg.data.size();
+                        cumulative_useful_bytes += fd_msg.data.size();
+                        trial_wire_bytes += fd_msg.data.size();
                         bytes_since_last_ckpt += fd_msg.data.size();
 
                         if (bytes_since_last_ckpt >= ckpt_window) {
@@ -429,6 +627,11 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
                             save_checkpoint(output_dir, &ckpt, current_file_fd, sockfd);
                             bytes_since_last_ckpt = 0;
                         }
+
+                        render_case2_progress_bar(attempt + 1, max_retries, has_ckpt,
+                                                  files_received_count, total_files_in_topic,
+                                                  cumulative_useful_bytes, expected_total_bytes,
+                                                  redundant_bytes, t_trial_start, trial_wire_bytes);
                     }
                 }
             } else if (hdr.type == OP_FILE_END) {
@@ -453,6 +656,11 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
                     }
 
                     save_checkpoint(output_dir, &ckpt, -1, sockfd);
+
+                    render_case2_progress_bar(attempt + 1, max_retries, has_ckpt,
+                                              files_received_count, total_files_in_topic,
+                                              cumulative_useful_bytes, expected_total_bytes,
+                                              redundant_bytes, t_trial_start, trial_wire_bytes);
                 }
             } else if (hdr.type == OP_TRANSFER_END) {
                 MsgTransferEnd te;
@@ -460,6 +668,11 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
                     useful_bytes = te.useful_bytes;
                     transfer_completed = true;
                     remove_checkpoint(output_dir, topic);
+                    render_case2_progress_bar(attempt + 1, max_retries, has_ckpt,
+                                              total_files_in_topic, total_files_in_topic,
+                                              useful_bytes, useful_bytes,
+                                              redundant_bytes, t_trial_start, trial_wire_bytes,
+                                              true /* force_complete */);
                     log_event("INFO", "Transfer completed successfully (%u files, %llu bytes)",
                               te.files_sent, static_cast<unsigned long long>(te.useful_bytes));
                     break;
