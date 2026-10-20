@@ -127,6 +127,93 @@ int parse_client_cli(int argc, char* argv[], std::string* out_ip, uint16_t* out_
     return 0;
 }
 
+static void render_case1_progress_bar(int trial_num, int max_trials,
+                                     uint32_t current_files, uint32_t total_files,
+                                     uint64_t current_bytes, uint64_t total_bytes,
+                                     uint64_t redundant_bytes,
+                                     const struct timespec& start_time,
+                                     bool force_complete = false) {
+    static const char spinner_chars[] = "|/-\\";
+    static int spinner_idx = 0;
+    static struct timespec last_update{0, 0};
+
+    struct timespec now;
+    clock_gettime(CLOCK_MONOTONIC, &now);
+
+    // Throttle updates to ~25 FPS (40ms) unless force_complete
+    if (!force_complete && last_update.tv_sec != 0) {
+        long elapsed_ms = (now.tv_sec - last_update.tv_sec) * 1000 +
+                          (now.tv_nsec - last_update.tv_nsec) / 1000000;
+        if (elapsed_ms < 40) {
+            return;
+        }
+    }
+    last_update = now;
+
+    bool is_terminal = (isatty(STDOUT_FILENO) != 0);
+    if (!is_terminal) {
+        if (force_complete || (total_files > 0 && current_files > 0 && (current_files % 500 == 0 || current_files == total_files))) {
+            double pct = total_bytes > 0 ? (static_cast<double>(current_bytes) * 100.0) / static_cast<double>(total_bytes)
+                                         : (total_files > 0 ? (static_cast<double>(current_files) * 100.0) / static_cast<double>(total_files) : 0.0);
+            double mb = static_cast<double>(current_bytes) / (1024.0 * 1024.0);
+            double waste_mb = static_cast<double>(redundant_bytes) / (1024.0 * 1024.0);
+            log_event("INFO", "[Trial %d/%d] Progress: %u/%u files (%.1f%%) - %.2f MB (Wasted: %.2f MB)",
+                      trial_num, max_trials, current_files, total_files, pct, mb, waste_mb);
+        }
+        return;
+    }
+
+    double pct = 0.0;
+    if (total_bytes > 0) {
+        pct = (static_cast<double>(current_bytes) / static_cast<double>(total_bytes)) * 100.0;
+    } else if (total_files > 0) {
+        pct = (static_cast<double>(current_files) / static_cast<double>(total_files)) * 100.0;
+    }
+    if (pct > 100.0) pct = 100.0;
+    if (force_complete) pct = 100.0;
+
+    double elapsed_sec = (double)(now.tv_sec - start_time.tv_sec) +
+                         (double)(now.tv_nsec - start_time.tv_nsec) * 1e-9;
+    double speed_mbps = (elapsed_sec > 0.05) ? (static_cast<double>(current_bytes) / (elapsed_sec * 1024.0 * 1024.0)) : 0.0;
+
+    const int bar_width = 18;
+    int filled = static_cast<int>((pct / 100.0) * bar_width);
+    if (filled > bar_width) filled = bar_width;
+
+    char bar_str[bar_width + 1];
+    for (int i = 0; i < bar_width; ++i) {
+        if (i < filled) {
+            bar_str[i] = '=';
+        } else if (i == filled && filled < bar_width) {
+            bar_str[i] = '>';
+        } else {
+            bar_str[i] = ' ';
+        }
+    }
+    bar_str[bar_width] = '\0';
+
+    char spinner = spinner_chars[spinner_idx % 4];
+    spinner_idx++;
+
+    double cur_mb = static_cast<double>(current_bytes) / (1024.0 * 1024.0);
+    double tot_mb = static_cast<double>(total_bytes) / (1024.0 * 1024.0);
+    double waste_mb = static_cast<double>(redundant_bytes) / (1024.0 * 1024.0);
+
+    char waste_buf[48] = "";
+    if (redundant_bytes > 0) {
+        snprintf(waste_buf, sizeof(waste_buf), " | \033[1;31mWasted: %.1fMB\033[0m", waste_mb);
+    }
+
+    if (force_complete) {
+        printf("\r\033[K\033[1;35m[Trial %d/%d]\033[0m \033[1;32m[%s]\033[0m \033[1;32m100.0%%\033[0m | \033[1;36m%u/%u files\033[0m | \033[1;36m%.1f/%.1f MB\033[0m%s | \033[1;33m%.2f MB/s\033[0m | \033[1;32mDone! [OK]\033[0m\n",
+               trial_num, max_trials, bar_str, total_files, total_files, tot_mb, tot_mb, waste_buf, speed_mbps);
+    } else {
+        printf("\r\033[K\033[1;35m[Trial %d/%d]\033[0m \033[1;32m[%s]\033[0m \033[1;32m%5.1f%%\033[0m | \033[1;36m%u/%u\033[0m | \033[1;36m%.1f/%.1f MB\033[0m%s | \033[1;33m%.2f MB/s\033[0m [%c]",
+               trial_num, max_trials, bar_str, pct, current_files, total_files, cur_mb, tot_mb, waste_buf, speed_mbps, spinner);
+    }
+    fflush(stdout);
+}
+
 int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
                                     const char* topic, const char* output_dir,
                                     int max_retries, bool is_part1) {
@@ -151,6 +238,7 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
     bool transfer_completed = false;
     uint32_t files_received_count = 0;
     uint32_t expected_file_count = 0;
+    uint64_t expected_total_bytes = 0;
 
     log_event("INFO", "Connecting to %s:%u...", server_ip, port);
 
@@ -184,7 +272,11 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
             continue;
         }
 
-        log_event("INFO", "Connected to server. Requesting topic '%s'...", topic);
+        struct timespec t_trial_start;
+        clock_gettime(CLOCK_MONOTONIC, &t_trial_start);
+
+        log_event("INFO", "Connected to server. Requesting topic '%s' (Trial %d/%d)...",
+                  topic, attempt + 1, max_retries);
 
         if (send_get(sockfd, topic, &total_wire_bytes) < 0) {
             log_event("ERROR", "Failed to send OP_GET request for topic '%s'", topic);
@@ -205,7 +297,16 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
             int rc = recv_frame(sockfd, &hdr, payload, &total_wire_bytes);
 
             if (rc <= 0) {
-                log_event("INFO", "Server dropped connection (rc=%d) mid-transfer at attempt %d", rc, attempt);
+                const char* fault_desc = (rc == FRAME_PROTO_ERR) ? "Corrupted frame header / protocol error" :
+                                         (rc == 0) ? "Connection closed prematurely by server" :
+                                                     "Connection dropped / fault injected";
+                if (isatty(STDOUT_FILENO)) {
+                    double wasted_attempt_mb = static_cast<double>(attempt_file_bytes) / (1024.0 * 1024.0);
+                    printf("\n\033[1;31m[FAULT / CORRUPTION DETECTED]\033[0m %s at %u/%u files (%.2f MB). Stateless reset: restarting from File 0 for Trial %d/%d...\n",
+                           fault_desc, files_received_count, expected_file_count, wasted_attempt_mb, attempt + 2, max_retries);
+                    fflush(stdout);
+                }
+                log_event("INFO", "Server dropped connection (%s, rc=%d) mid-transfer at attempt %d", fault_desc, rc, attempt);
                 if (current_file_fd >= 0) {
                     close(current_file_fd);
                     current_file_fd = -1;
@@ -221,6 +322,7 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
                 MsgGetOk get_ok;
                 if (parse_get_ok(payload.data(), static_cast<uint32_t>(payload.size()), &get_ok)) {
                     expected_file_count = get_ok.file_count;
+                    expected_total_bytes = get_ok.total_bytes;
                     double total_mb = static_cast<double>(get_ok.total_bytes) / (1024.0 * 1024.0);
                     log_event("INFO", "Received OP_GET_OK: %u files, %llu total bytes (%.2f MB)",
                               get_ok.file_count, static_cast<unsigned long long>(get_ok.total_bytes), total_mb);
@@ -233,70 +335,126 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
                         close(current_file_fd);
                         current_file_fd = -1;
                     }
+                    redundant_bytes += attempt_file_bytes;
                     close(sockfd);
                     if (st.code == ERR_TOPIC_NOT_FOUND || st.code == ERR_BAD_REQUEST) {
                         return -1;
+                    }
+                    if (isatty(STDOUT_FILENO)) {
+                        double wasted_attempt_mb = static_cast<double>(attempt_file_bytes) / (1024.0 * 1024.0);
+                        printf("\n\033[1;31m[SERVER ERROR DETECTED]\033[0m Error code %u (%s) at %u/%u files (%.2f MB). Stateless reset: restarting from File 0 for Trial %d/%d...\n",
+                               st.code, st.reason.c_str(), files_received_count, expected_file_count, wasted_attempt_mb, attempt + 2, max_retries);
+                        fflush(stdout);
                     }
                     connection_failed = true;
                     break;
                 }
             } else if (hdr.type == OP_FILE_BEGIN) {
                 MsgFileBegin fb;
-                if (parse_file_begin(payload.data(), static_cast<uint32_t>(payload.size()), &fb)) {
+                if (!parse_file_begin(payload.data(), static_cast<uint32_t>(payload.size()), &fb)) {
+                    if (isatty(STDOUT_FILENO)) {
+                        double wasted_attempt_mb = static_cast<double>(attempt_file_bytes) / (1024.0 * 1024.0);
+                        printf("\n\033[1;31m[CORRUPTED DATA DETECTED]\033[0m Malformed FILE_BEGIN payload at %u/%u files (%.2f MB). Stateless reset: restarting from File 0 for Trial %d/%d...\n",
+                               files_received_count, expected_file_count, wasted_attempt_mb, attempt + 2, max_retries);
+                        fflush(stdout);
+                    }
+                    log_event("ERROR", "Corrupted FILE_BEGIN payload received at attempt %d", attempt);
                     if (current_file_fd >= 0) {
                         close(current_file_fd);
                         current_file_fd = -1;
                     }
-                    current_filename = fb.filename;
-                    current_file_bytes_written = 0;
-                    if (fb.file_index == 0) {
-                        log_event("INFO", "Receiving file [1/%u]: '%s' (%llu bytes)",
-                                  expected_file_count, fb.filename.c_str(),
-                                  static_cast<unsigned long long>(fb.bytes_following));
-                    }
-                    std::string dest_path = std::string(output_dir) + "/" + topic + "/" + fb.filename;
-                    // In Part 1 & Case 1: Open with O_WRONLY | O_CREAT | O_TRUNC (overwriting from Byte 0)
-                    current_file_fd = open(dest_path.c_str(), O_WRONLY | O_CREAT | O_TRUNC, 0644);
-                    if (current_file_fd < 0) {
-                        log_event("ERROR", "Failed to open destination file '%s': %s", dest_path.c_str(), strerror(errno));
-                        close(sockfd);
-                        return -1;
-                    }
+                    redundant_bytes += attempt_file_bytes;
+                    close(sockfd);
+                    sockfd = -1;
+                    connection_failed = true;
+                    break;
+                }
+                if (current_file_fd >= 0) {
+                    close(current_file_fd);
+                    current_file_fd = -1;
+                }
+                current_filename = fb.filename;
+                current_file_bytes_written = 0;
+                if (fb.file_index == 0) {
+                    log_event("INFO", "Receiving file [1/%u]: '%s' (%llu bytes)",
+                              expected_file_count, fb.filename.c_str(),
+                              static_cast<unsigned long long>(fb.bytes_following));
+                }
+                std::string dest_path = std::string(output_dir) + "/" + topic + "/" + fb.filename;
+                // In Part 1 & Case 1: Open with O_WRONLY | O_CREAT | O_TRUNC (overwriting from Byte 0)
+                current_file_fd = open(dest_path.c_str(), O_WRONLY | O_CREAT | O_TRUNC, 0644);
+                if (current_file_fd < 0) {
+                    log_event("ERROR", "Failed to open destination file '%s': %s", dest_path.c_str(), strerror(errno));
+                    close(sockfd);
+                    return -1;
                 }
             } else if (hdr.type == OP_FILE_DATA) {
                 MsgFileData fd_msg;
-                if (parse_file_data(payload.data(), static_cast<uint32_t>(payload.size()), &fd_msg)) {
-                    if (current_file_fd >= 0) {
-                        ssize_t written = 0;
-                        size_t to_write = fd_msg.data.size();
-                        while (written < static_cast<ssize_t>(to_write)) {
-                            ssize_t w = write(current_file_fd, fd_msg.data.data() + written, to_write - written);
-                            if (w <= 0) {
-                                log_event("ERROR", "Write failed to '%s': %s", current_filename.c_str(), strerror(errno));
-                                break;
-                            }
-                            written += w;
-                        }
-                        current_file_bytes_written += written;
-                        attempt_file_bytes += written;
+                if (!parse_file_data(payload.data(), static_cast<uint32_t>(payload.size()), &fd_msg)) {
+                    if (isatty(STDOUT_FILENO)) {
+                        double wasted_attempt_mb = static_cast<double>(attempt_file_bytes) / (1024.0 * 1024.0);
+                        printf("\n\033[1;31m[CORRUPTED DATA DETECTED]\033[0m Malformed FILE_DATA payload at %u/%u files (%.2f MB). Stateless reset: restarting from File 0 for Trial %d/%d...\n",
+                               files_received_count, expected_file_count, wasted_attempt_mb, attempt + 2, max_retries);
+                        fflush(stdout);
                     }
-                }
-            } else if (hdr.type == OP_FILE_END) {
-                MsgFileEnd fe;
-                if (parse_file_end(payload.data(), static_cast<uint32_t>(payload.size()), &fe)) {
+                    log_event("ERROR", "Corrupted FILE_DATA payload received mid-transfer at attempt %d", attempt);
                     if (current_file_fd >= 0) {
                         close(current_file_fd);
                         current_file_fd = -1;
                     }
-                    files_received_count++;
-                    if (expected_file_count > 0 && 
-                        (files_received_count % 500 == 0 || files_received_count == expected_file_count)) {
-                        double pct = (files_received_count * 100.0) / expected_file_count;
-                        double written_mb = static_cast<double>(attempt_file_bytes) / (1024.0 * 1024.0);
-                        log_event("INFO", "Progress: %u/%u files received (%.1f%%) - %.2f MB written",
-                                  files_received_count, expected_file_count, pct, written_mb);
-                    }
+                    redundant_bytes += attempt_file_bytes;
+                    close(sockfd);
+                    sockfd = -1;
+                    connection_failed = true;
+                    break;
                 }
+                if (current_file_fd >= 0) {
+                    ssize_t written = 0;
+                    size_t to_write = fd_msg.data.size();
+                    while (written < static_cast<ssize_t>(to_write)) {
+                        ssize_t w = write(current_file_fd, fd_msg.data.data() + written, to_write - written);
+                        if (w <= 0) {
+                            log_event("ERROR", "Write failed to '%s': %s", current_filename.c_str(), strerror(errno));
+                            break;
+                        }
+                        written += w;
+                    }
+                    current_file_bytes_written += written;
+                    attempt_file_bytes += written;
+                    render_case1_progress_bar(attempt + 1, max_retries,
+                                             files_received_count, expected_file_count,
+                                             attempt_file_bytes, expected_total_bytes,
+                                             redundant_bytes, t_trial_start);
+                }
+            } else if (hdr.type == OP_FILE_END) {
+                MsgFileEnd fe;
+                if (!parse_file_end(payload.data(), static_cast<uint32_t>(payload.size()), &fe)) {
+                    if (isatty(STDOUT_FILENO)) {
+                        double wasted_attempt_mb = static_cast<double>(attempt_file_bytes) / (1024.0 * 1024.0);
+                        printf("\n\033[1;31m[CORRUPTED DATA DETECTED]\033[0m Malformed FILE_END payload at %u/%u files (%.2f MB). Stateless reset: restarting from File 0 for Trial %d/%d...\n",
+                               files_received_count, expected_file_count, wasted_attempt_mb, attempt + 2, max_retries);
+                        fflush(stdout);
+                    }
+                    log_event("ERROR", "Corrupted FILE_END payload received at attempt %d", attempt);
+                    if (current_file_fd >= 0) {
+                        close(current_file_fd);
+                        current_file_fd = -1;
+                    }
+                    redundant_bytes += attempt_file_bytes;
+                    close(sockfd);
+                    sockfd = -1;
+                    connection_failed = true;
+                    break;
+                }
+                if (current_file_fd >= 0) {
+                    close(current_file_fd);
+                    current_file_fd = -1;
+                }
+                files_received_count++;
+                render_case1_progress_bar(attempt + 1, max_retries,
+                                         files_received_count, expected_file_count,
+                                         attempt_file_bytes, expected_total_bytes,
+                                         redundant_bytes, t_trial_start);
             } else if (hdr.type == OP_TRANSFER_END) {
                 MsgTransferEnd te;
                 if (parse_transfer_end(payload.data(), static_cast<uint32_t>(payload.size()), &te)) {
@@ -322,6 +480,10 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
 
                     useful_bytes = attempt_file_bytes;
                     transfer_completed = true;
+                    render_case1_progress_bar(attempt + 1, max_retries,
+                                             files_received_count, expected_file_count,
+                                             attempt_file_bytes, expected_total_bytes,
+                                             redundant_bytes, t_trial_start, true);
                     log_event("INFO", "Received OP_TRANSFER_END from server");
                     break;
                 }
