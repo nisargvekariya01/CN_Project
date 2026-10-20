@@ -127,6 +127,89 @@ int parse_client_cli(int argc, char* argv[], std::string* out_ip, uint16_t* out_
     return 0;
 }
 
+static void render_progress_bar(uint32_t current_files, uint32_t total_files,
+                                uint64_t current_bytes, uint64_t total_bytes,
+                                const struct timespec& start_time,
+                                bool force_complete = false) {
+    static const char spinner_chars[] = "|/-\\";
+    static int spinner_idx = 0;
+    static struct timespec last_update{0, 0};
+
+    struct timespec now;
+    clock_gettime(CLOCK_MONOTONIC, &now);
+
+    // Throttle updates to ~25 FPS (40ms) unless force_complete
+    if (!force_complete && last_update.tv_sec != 0) {
+        long elapsed_ms = (now.tv_sec - last_update.tv_sec) * 1000 +
+                          (now.tv_nsec - last_update.tv_nsec) / 1000000;
+        if (elapsed_ms < 40) {
+            return;
+        }
+    }
+    last_update = now;
+
+    bool is_terminal = (isatty(STDOUT_FILENO) != 0);
+    if (!is_terminal) {
+        if (force_complete || (total_files > 0 && current_files > 0 && (current_files % 500 == 0 || current_files == total_files))) {
+            double pct = total_bytes > 0 ? (static_cast<double>(current_bytes) * 100.0) / static_cast<double>(total_bytes)
+                                         : (total_files > 0 ? (static_cast<double>(current_files) * 100.0) / static_cast<double>(total_files) : 0.0);
+            double mb = static_cast<double>(current_bytes) / (1024.0 * 1024.0);
+            log_event("INFO", "Progress: %u/%u files (%.1f%%) - %.2f MB",
+                      current_files, total_files, pct, mb);
+        }
+        return;
+    }
+
+    double pct = 0.0;
+    if (total_bytes > 0) {
+        pct = (static_cast<double>(current_bytes) / static_cast<double>(total_bytes)) * 100.0;
+    } else if (total_files > 0) {
+        pct = (static_cast<double>(current_files) / static_cast<double>(total_files)) * 100.0;
+    }
+    if (pct > 100.0) pct = 100.0;
+    if (force_complete) pct = 100.0;
+
+    double elapsed_sec = (double)(now.tv_sec - start_time.tv_sec) +
+                         (double)(now.tv_nsec - start_time.tv_nsec) * 1e-9;
+    double speed_mbps = (elapsed_sec > 0.05) ? (static_cast<double>(current_bytes) / (elapsed_sec * 1024.0 * 1024.0)) : 0.0;
+
+    double eta_sec = 0.0;
+    if (speed_mbps > 0.001 && total_bytes > current_bytes) {
+        eta_sec = (static_cast<double>(total_bytes - current_bytes) / (1024.0 * 1024.0)) / speed_mbps;
+    }
+
+    const int bar_width = 20;
+    int filled = static_cast<int>((pct / 100.0) * bar_width);
+    if (filled > bar_width) filled = bar_width;
+
+    char bar_str[bar_width + 1];
+    for (int i = 0; i < bar_width; ++i) {
+        if (i < filled) {
+            bar_str[i] = '=';
+        } else if (i == filled && filled < bar_width) {
+            bar_str[i] = '>';
+        } else {
+            bar_str[i] = ' ';
+        }
+    }
+    bar_str[bar_width] = '\0';
+
+    char spinner = spinner_chars[spinner_idx % 4];
+    spinner_idx++;
+
+    double cur_mb = static_cast<double>(current_bytes) / (1024.0 * 1024.0);
+    double tot_mb = static_cast<double>(total_bytes) / (1024.0 * 1024.0);
+
+    if (force_complete) {
+        printf("\r\033[K\033[1;32m[%s]\033[0m \033[1;32m100.0%%\033[0m | \033[1;36m%u/%u files\033[0m | \033[1;36m%.1f/%.1f MB\033[0m | \033[1;33m%.2f MB/s\033[0m | \033[1;32mDone! [OK]\033[0m\n",
+               bar_str, total_files, total_files, tot_mb, tot_mb, speed_mbps);
+    } else {
+        printf("\r\033[K\033[1;32m[%s]\033[0m \033[1;32m%5.1f%%\033[0m | \033[1;36m%u/%u\033[0m | \033[1;36m%.1f/%.1f MB\033[0m | \033[1;33m%.2f MB/s\033[0m | ETA \033[1;33m%.1fs\033[0m [%c]",
+               bar_str, pct, current_files, total_files, cur_mb, tot_mb, speed_mbps, eta_sec, spinner);
+    }
+    fflush(stdout);
+}
+
 int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
                                     const char* topic, const char* output_dir,
                                     int max_retries, bool is_part1) {
@@ -151,6 +234,7 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
     bool transfer_completed = false;
     uint32_t files_received_count = 0;
     uint32_t expected_file_count = 0;
+    uint64_t expected_total_bytes = 0;
 
     log_event("INFO", "Connecting to %s:%u...", server_ip, port);
 
@@ -221,6 +305,7 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
                 MsgGetOk get_ok;
                 if (parse_get_ok(payload.data(), static_cast<uint32_t>(payload.size()), &get_ok)) {
                     expected_file_count = get_ok.file_count;
+                    expected_total_bytes = get_ok.total_bytes;
                     double total_mb = static_cast<double>(get_ok.total_bytes) / (1024.0 * 1024.0);
                     log_event("INFO", "Received OP_GET_OK: %u files, %llu total bytes (%.2f MB)",
                               get_ok.file_count, static_cast<unsigned long long>(get_ok.total_bytes), total_mb);
@@ -279,6 +364,10 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
                         }
                         current_file_bytes_written += written;
                         attempt_file_bytes += written;
+                        if (is_part1) {
+                            render_progress_bar(files_received_count, expected_file_count,
+                                                attempt_file_bytes, expected_total_bytes, t_start);
+                        }
                     }
                 }
             } else if (hdr.type == OP_FILE_END) {
@@ -289,12 +378,17 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
                         current_file_fd = -1;
                     }
                     files_received_count++;
-                    if (expected_file_count > 0 && 
-                        (files_received_count % 500 == 0 || files_received_count == expected_file_count)) {
-                        double pct = (files_received_count * 100.0) / expected_file_count;
-                        double written_mb = static_cast<double>(attempt_file_bytes) / (1024.0 * 1024.0);
-                        log_event("INFO", "Progress: %u/%u files received (%.1f%%) - %.2f MB written",
-                                  files_received_count, expected_file_count, pct, written_mb);
+                    if (is_part1) {
+                        render_progress_bar(files_received_count, expected_file_count,
+                                            attempt_file_bytes, expected_total_bytes, t_start);
+                    } else {
+                        if (expected_file_count > 0 && 
+                            (files_received_count % 500 == 0 || files_received_count == expected_file_count)) {
+                            double pct = (files_received_count * 100.0) / expected_file_count;
+                            double written_mb = static_cast<double>(attempt_file_bytes) / (1024.0 * 1024.0);
+                            log_event("INFO", "Progress: %u/%u files received (%.1f%%) - %.2f MB written",
+                                      files_received_count, expected_file_count, pct, written_mb);
+                        }
                     }
                 }
             } else if (hdr.type == OP_TRANSFER_END) {
@@ -322,6 +416,10 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
 
                     useful_bytes = attempt_file_bytes;
                     transfer_completed = true;
+                    if (is_part1) {
+                        render_progress_bar(files_received_count, expected_file_count,
+                                            attempt_file_bytes, expected_total_bytes, t_start, true);
+                    }
                     log_event("INFO", "Received OP_TRANSFER_END from server");
                     break;
                 }
