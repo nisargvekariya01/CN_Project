@@ -19,6 +19,13 @@
 #include <arpa/inet.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <sys/ioctl.h>
+#include <atomic>
+
+static std::atomic<int> g_active_streams{0};
+static int g_configured_streams = 0;
+static uint64_t g_expected_total_bytes = 0;
+static struct timespec g_transfer_start{0, 0};
 
 /*
  * enhanced_parallel_client.cpp - Member 5 (PR #6, Wave 3)
@@ -75,6 +82,152 @@ int preallocate_target_file(const std::string& path, uint64_t file_size) {
     return fd;
 }
 
+static void render_enhanced_progress_bar(SharedBitmaskState* state,
+                                         int active_streams, int total_streams,
+                                         uint64_t total_bytes,
+                                         const struct timespec& start_time,
+                                         bool force_complete = false) {
+    static const char spinner_chars[] = "|/-\\";
+    static int spinner_idx = 0;
+    static struct timespec last_update{0, 0};
+
+    struct timespec now;
+    clock_gettime(CLOCK_MONOTONIC, &now);
+
+    // Throttle updates to ~25 FPS (40ms) unless force_complete
+    if (!force_complete && last_update.tv_sec != 0) {
+        long elapsed_ms = (now.tv_sec - last_update.tv_sec) * 1000 +
+                          (now.tv_nsec - last_update.tv_nsec) / 1000000;
+        if (elapsed_ms < 40) {
+            return;
+        }
+    }
+    last_update = now;
+
+    uint32_t committed_units = state ? state->committed_units : 0;
+    uint32_t total_units = state ? state->total_units : 0;
+    uint64_t useful_bytes = state ? state->useful_bytes : 0;
+    uint64_t redundant_bytes = state ? state->redundant_bytes : 0;
+
+    bool is_terminal = (isatty(STDOUT_FILENO) != 0);
+    if (!is_terminal) {
+        if (force_complete || (total_units > 0 && committed_units > 0 && (committed_units % 100 == 0 || committed_units == total_units))) {
+            double pct = total_bytes > 0 ? (static_cast<double>(useful_bytes) * 100.0) / static_cast<double>(total_bytes)
+                                         : (total_units > 0 ? (static_cast<double>(committed_units) * 100.0) / static_cast<double>(total_units) : 0.0);
+            double mb = static_cast<double>(useful_bytes) / (1024.0 * 1024.0);
+            log_event("INFO", "[Parallel %d/%d Streams] Progress: %u/%u units (%.1f%%) - %.2f MB",
+                      active_streams, total_streams, committed_units, total_units, pct, mb);
+        }
+        return;
+    }
+
+    int cols = 80;
+    struct winsize ws;
+    if (ioctl(STDOUT_FILENO, TIOCGWINSZ, &ws) == 0 && ws.ws_col > 20) {
+        cols = ws.ws_col;
+    }
+
+    double pct = 0.0;
+    if (total_bytes > 0) {
+        pct = (static_cast<double>(useful_bytes) / static_cast<double>(total_bytes)) * 100.0;
+    } else if (total_units > 0) {
+        pct = (static_cast<double>(committed_units) / static_cast<double>(total_units)) * 100.0;
+    }
+    if (pct > 100.0) pct = 100.0;
+    if (force_complete) pct = 100.0;
+
+    double elapsed_sec = (double)(now.tv_sec - start_time.tv_sec) +
+                         (double)(now.tv_nsec - start_time.tv_nsec) * 1e-9;
+    double speed_mbps = (elapsed_sec > 0.05) ? (static_cast<double>(useful_bytes) / (elapsed_sec * 1024.0 * 1024.0)) : 0.0;
+
+    char spinner = spinner_chars[spinner_idx % 4];
+    spinner_idx++;
+
+    double cur_mb = static_cast<double>(useful_bytes) / (1024.0 * 1024.0);
+    double tot_mb = static_cast<double>(total_bytes) / (1024.0 * 1024.0);
+    double waste_mb = static_cast<double>(redundant_bytes) / (1024.0 * 1024.0);
+
+    char streams_buf[40];
+    if (cols >= 86) {
+        snprintf(streams_buf, sizeof(streams_buf), "[Streams: %d/%d]", active_streams, total_streams);
+    } else {
+        snprintf(streams_buf, sizeof(streams_buf), "[%d/%d-STR]", active_streams, total_streams);
+    }
+    int streams_len = static_cast<int>(strlen(streams_buf));
+
+    char units_buf[32];
+    if (cols >= 95) {
+        snprintf(units_buf, sizeof(units_buf), "%u/%u Units", committed_units, total_units);
+    } else {
+        snprintf(units_buf, sizeof(units_buf), "%u/%uU", committed_units, total_units);
+    }
+    int units_len = static_cast<int>(strlen(units_buf));
+
+    char mb_buf[40];
+    if (cols >= 95) {
+        snprintf(mb_buf, sizeof(mb_buf), "%.1f/%.1f MB", cur_mb, tot_mb);
+    } else {
+        snprintf(mb_buf, sizeof(mb_buf), "%.1f/%.1fM", cur_mb, tot_mb);
+    }
+    int mb_len = static_cast<int>(strlen(mb_buf));
+
+    char speed_buf[32];
+    if (cols >= 90) {
+        snprintf(speed_buf, sizeof(speed_buf), "%.2f MB/s", speed_mbps);
+    } else {
+        snprintf(speed_buf, sizeof(speed_buf), "%.1fMB/s", speed_mbps);
+    }
+    int speed_len = static_cast<int>(strlen(speed_buf));
+
+    char waste_display[48] = "";
+    int waste_vis_len = 0;
+    if (redundant_bytes > 0) {
+        if (cols >= 100) {
+            snprintf(waste_display, sizeof(waste_display), " | \033[1;31mWasted: %.1fMB\033[0m", waste_mb);
+            char tmp[32];
+            snprintf(tmp, sizeof(tmp), " | Wasted: %.1fMB", waste_mb);
+            waste_vis_len = static_cast<int>(strlen(tmp));
+        } else if (cols >= 86) {
+            snprintf(waste_display, sizeof(waste_display), " | \033[1;31mW:%.1fM\033[0m", waste_mb);
+            char tmp[32];
+            snprintf(tmp, sizeof(tmp), " | W:%.1fM", waste_mb);
+            waste_vis_len = static_cast<int>(strlen(tmp));
+        }
+    }
+
+    int tail_len = force_complete ? 13 : 4;
+    int non_bar_len = streams_len + 1 + 2 + 1 + 7 + 3 + units_len + 3 + mb_len + waste_vis_len + 3 + speed_len + tail_len;
+
+    int max_vis = cols - 2;
+    int bar_width = max_vis - non_bar_len;
+    if (bar_width < 5) bar_width = 5;
+    if (bar_width > 22) bar_width = 22;
+
+    int filled = static_cast<int>((pct / 100.0) * bar_width);
+    if (filled > bar_width) filled = bar_width;
+
+    char bar_str[bar_width + 1];
+    for (int i = 0; i < bar_width; ++i) {
+        if (i < filled) {
+            bar_str[i] = '=';
+        } else if (i == filled && filled < bar_width) {
+            bar_str[i] = '>';
+        } else {
+            bar_str[i] = ' ';
+        }
+    }
+    bar_str[bar_width] = '\0';
+
+    if (force_complete) {
+        printf("\r\033[2K\033[1;35m%s\033[0m \033[1;32m[%s]\033[0m \033[1;32m100.0%%\033[0m | \033[1;36m%s\033[0m | \033[1;36m%s\033[0m%s | \033[1;33m%s\033[0m | \033[1;32mDone! [OK]\033[0m\n",
+               streams_buf, bar_str, units_buf, mb_buf, waste_display, speed_buf);
+    } else {
+        printf("\r\033[2K\033[1;35m%s\033[0m \033[1;32m[%s]\033[0m \033[1;32m%5.1f%%\033[0m | \033[1;36m%s\033[0m | \033[1;36m%s\033[0m%s | \033[1;33m%s\033[0m [%c]",
+               streams_buf, bar_str, pct, units_buf, mb_buf, waste_display, speed_buf, spinner);
+    }
+    fflush(stdout);
+}
+
 bool mark_chunk_committed(SharedBitmaskState* state, uint32_t unit_id, uint32_t chunk_len) {
     if (!state) return false;
     pthread_mutex_lock(&state->bmap_mutex);
@@ -91,6 +244,8 @@ bool mark_chunk_committed(SharedBitmaskState* state, uint32_t unit_id, uint32_t 
             state->redundant_bytes += chunk_len;
         }
     }
+    render_enhanced_progress_bar(state, g_active_streams.load(), g_configured_streams,
+                                 g_expected_total_bytes, g_transfer_start);
     pthread_mutex_unlock(&state->bmap_mutex);
     return is_new;
 }
@@ -160,6 +315,17 @@ void* client_parallel_worker(void* arg) {
             continue;
         }
 
+        g_active_streams++;
+        if (attempt > 0 && isatty(STDOUT_FILENO)) {
+            pthread_mutex_lock(&state->bmap_mutex);
+            uint32_t c_units = state->committed_units;
+            uint32_t t_units = state->total_units;
+            pthread_mutex_unlock(&state->bmap_mutex);
+            printf("\n\033[1;36m[SUB-STREAM RECONNECTED]\033[0m Sub-stream %u rejoined session (confirmed %u/%u units on disk)\n",
+                   conn_id, c_units, t_units);
+            fflush(stdout);
+        }
+
         bool stream_faulted = false;
         while (!is_transfer_complete(state)) {
             FrameHeader hdr;
@@ -167,9 +333,18 @@ void* client_parallel_worker(void* arg) {
             int rrc = recv_frame(sockfd, &hdr, payload, &stream_wire);
             if (rrc <= 0) {
                 // Connection dropped due to fault injection or network event
+                stream_faulted = true;
+                g_active_streams--;
+                int surviving = g_active_streams.load();
+                if (surviving < 0) surviving = 0;
+                if (isatty(STDOUT_FILENO)) {
+                    const char* fault_desc = (rrc == 0) ? "Connection closed by server" : "Connection dropped / fault injected";
+                    printf("\n\033[1;33m[FAULT DETECTED / SUB-STREAM DROP]\033[0m Sub-stream %u disconnected (%s). %d surviving stream(s) continue. Reconnecting with bitmask (Retry %d/%d)...\n",
+                           conn_id, fault_desc, surviving, attempt + 2, args->max_retries);
+                    fflush(stdout);
+                }
                 log_event("INFO", "Sub-stream %u disconnected (rc=%d). Surviving streams continue uninterrupted.",
                           conn_id, rrc);
-                stream_faulted = true;
                 break;
             }
 
@@ -208,9 +383,9 @@ void* client_parallel_worker(void* arg) {
                     }
                 }
             } else if (hdr.type == OP_TRANSFER_END) {
-                log_event("INFO", "Sub-stream %u received OP_TRANSFER_END", conn_id);
                 break;
             } else if (hdr.type == OP_ERROR || hdr.type == OP_RESTART) {
+                if (isatty(STDOUT_FILENO)) printf("\n");
                 log_event("INFO", "Sub-stream %u received opcode %u", conn_id, hdr.type);
                 break;
             }
@@ -222,6 +397,10 @@ void* client_parallel_worker(void* arg) {
         pthread_mutex_unlock(&state->bmap_mutex);
 
         close(sockfd);
+
+        if (!stream_faulted) {
+            g_active_streams--;
+        }
 
         if (!stream_faulted && is_transfer_complete(state)) {
             break;
@@ -376,8 +555,18 @@ int run_enhanced_client(const char* server_ip, uint16_t port,
         }
     }
 
-    log_event("INFO", "Initialized parallel client: %u streams, %u 64 KiB chunks across %zu files",
-              num_streams, total_units, files.size());
+    g_active_streams.store(0);
+    g_configured_streams = num_streams;
+    g_expected_total_bytes = get_ok.total_bytes;
+    g_transfer_start = t_start;
+
+    double total_mb = static_cast<double>(get_ok.total_bytes) / (1024.0 * 1024.0);
+    log_event("INFO", "Initialized parallel client: %u streams, %u 64 KiB chunks across %zu files (%.2f MB)",
+              num_streams, total_units, files.size(), total_mb);
+
+    pthread_mutex_lock(&shared_state.bmap_mutex);
+    render_enhanced_progress_bar(&shared_state, 0, num_streams, get_ok.total_bytes, t_start);
+    pthread_mutex_unlock(&shared_state.bmap_mutex);
 
     // Phase 4: Launch parallel sub-stream worker pool
     std::vector<pthread_t> threads(num_streams);
@@ -400,6 +589,12 @@ int run_enhanced_client(const char* server_ip, uint16_t port,
     for (int i = 0; i < num_streams; ++i) {
         pthread_join(threads[i], nullptr);
     }
+
+    pthread_mutex_lock(&shared_state.bmap_mutex);
+    render_enhanced_progress_bar(&shared_state, num_streams, num_streams,
+                                 shared_state.useful_bytes, t_start,
+                                 true /* force_complete */);
+    pthread_mutex_unlock(&shared_state.bmap_mutex);
 
     // Phase 5: Flush and close all pre-allocated files
     for (int ofd : open_fds) {
