@@ -19,6 +19,7 @@
 #include <arpa/inet.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <sys/ioctl.h>
 
 /*
  * client.cpp - Member 3 (PR #4, Wave 2)
@@ -160,6 +161,12 @@ static void render_progress_bar(uint32_t current_files, uint32_t total_files,
         return;
     }
 
+    int cols = 80;
+    struct winsize ws;
+    if (ioctl(STDOUT_FILENO, TIOCGWINSZ, &ws) == 0 && ws.ws_col > 20) {
+        cols = ws.ws_col;
+    }
+
     double pct = 0.0;
     if (total_bytes > 0) {
         pct = (static_cast<double>(current_bytes) / static_cast<double>(total_bytes)) * 100.0;
@@ -173,12 +180,40 @@ static void render_progress_bar(uint32_t current_files, uint32_t total_files,
                          (double)(now.tv_nsec - start_time.tv_nsec) * 1e-9;
     double speed_mbps = (elapsed_sec > 0.05) ? (static_cast<double>(current_bytes) / (elapsed_sec * 1024.0 * 1024.0)) : 0.0;
 
-    double eta_sec = 0.0;
-    if (speed_mbps > 0.001 && total_bytes > current_bytes) {
-        eta_sec = (static_cast<double>(total_bytes - current_bytes) / (1024.0 * 1024.0)) / speed_mbps;
-    }
+    char spinner = spinner_chars[spinner_idx % 4];
+    spinner_idx++;
 
-    const int bar_width = 20;
+    double cur_mb = static_cast<double>(current_bytes) / (1024.0 * 1024.0);
+    double tot_mb = static_cast<double>(total_bytes) / (1024.0 * 1024.0);
+
+    char files_buf[32];
+    snprintf(files_buf, sizeof(files_buf), "%u/%u", current_files, total_files);
+    int files_len = static_cast<int>(strlen(files_buf));
+
+    char mb_buf[40];
+    if (cols >= 90) {
+        snprintf(mb_buf, sizeof(mb_buf), "%.1f/%.1f MB", cur_mb, tot_mb);
+    } else {
+        snprintf(mb_buf, sizeof(mb_buf), "%.1f/%.1fM", cur_mb, tot_mb);
+    }
+    int mb_len = static_cast<int>(strlen(mb_buf));
+
+    char speed_buf[32];
+    if (cols >= 85) {
+        snprintf(speed_buf, sizeof(speed_buf), "%.2f MB/s", speed_mbps);
+    } else {
+        snprintf(speed_buf, sizeof(speed_buf), "%.1fMB/s", speed_mbps);
+    }
+    int speed_len = static_cast<int>(strlen(speed_buf));
+
+    int tail_len = force_complete ? 14 : 4; // " | Done! [OK]" vs " [%c]"
+    int non_bar_len = 2 + 2 + 7 + 3 + files_len + 3 + mb_len + 3 + speed_len + tail_len;
+
+    int max_vis = cols - 2;
+    int bar_width = max_vis - non_bar_len;
+    if (bar_width < 5) bar_width = 5;
+    if (bar_width > 20) bar_width = 20;
+
     int filled = static_cast<int>((pct / 100.0) * bar_width);
     if (filled > bar_width) filled = bar_width;
 
@@ -194,18 +229,12 @@ static void render_progress_bar(uint32_t current_files, uint32_t total_files,
     }
     bar_str[bar_width] = '\0';
 
-    char spinner = spinner_chars[spinner_idx % 4];
-    spinner_idx++;
-
-    double cur_mb = static_cast<double>(current_bytes) / (1024.0 * 1024.0);
-    double tot_mb = static_cast<double>(total_bytes) / (1024.0 * 1024.0);
-
     if (force_complete) {
-        printf("\r\033[K\033[1;32m[%s]\033[0m \033[1;32m100.0%%\033[0m | \033[1;36m%u/%u files\033[0m | \033[1;36m%.1f/%.1f MB\033[0m | \033[1;33m%.2f MB/s\033[0m | \033[1;32mDone! [OK]\033[0m\n",
-               bar_str, total_files, total_files, tot_mb, tot_mb, speed_mbps);
+        printf("\r\033[2K\033[1;32m[%s]\033[0m \033[1;32m100.0%%\033[0m | \033[1;36m%s\033[0m | \033[1;36m%s\033[0m | \033[1;33m%s\033[0m | \033[1;32mDone! [OK]\033[0m\n",
+               bar_str, files_buf, mb_buf, speed_buf);
     } else {
-        printf("\r\033[K\033[1;32m[%s]\033[0m \033[1;32m%5.1f%%\033[0m | \033[1;36m%u/%u\033[0m | \033[1;36m%.1f/%.1f MB\033[0m | \033[1;33m%.2f MB/s\033[0m | ETA \033[1;33m%.1fs\033[0m [%c]",
-               bar_str, pct, current_files, total_files, cur_mb, tot_mb, speed_mbps, eta_sec, spinner);
+        printf("\r\033[2K\033[1;32m[%s]\033[0m \033[1;32m%5.1f%%\033[0m | \033[1;36m%s\033[0m | \033[1;36m%s\033[0m | \033[1;33m%s\033[0m [%c]",
+               bar_str, pct, files_buf, mb_buf, speed_buf, spinner);
     }
     fflush(stdout);
 }
