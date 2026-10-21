@@ -1,0 +1,2453 @@
+[20:44:34] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[20:44:34] [INFO] Connecting to 127.0.0.1:8080...
+[20:44:34] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:34] [INFO] Retry attempt 1/50 after backoff 100 ms...
+[20:44:34] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:34] [INFO] Retry attempt 2/50 after backoff 200 ms...
+[20:44:35] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:35] [INFO] Retry attempt 3/50 after backoff 400 ms...
+[20:44:35] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:35] [INFO] Retry attempt 4/50 after backoff 800 ms...
+[20:44:36] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:36] [INFO] Retry attempt 5/50 after backoff 1000 ms...
+[20:44:37] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:37] [INFO] Retry attempt 6/50 after backoff 1000 ms...
+[20:44:38] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:38] [INFO] Retry attempt 7/50 after backoff 1000 ms...
+[20:44:39] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:39] [INFO] Retry attempt 8/50 after backoff 1000 ms...
+[20:44:40] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:40] [INFO] Retry attempt 9/50 after backoff 1000 ms...
+[20:44:41] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:41] [INFO] Retry attempt 10/50 after backoff 1000 ms...
+[20:44:42] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:42] [INFO] Retry attempt 11/50 after backoff 1000 ms...
+[20:44:43] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[20:44:43] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:43] [INFO] Retry attempt 12/50 after backoff 1000 ms...
+[20:44:44] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:44] [INFO] Retry attempt 13/50 after backoff 1000 ms...
+[20:44:45] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:45] [INFO] Retry attempt 14/50 after backoff 1000 ms...
+[20:44:46] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:46] [INFO] Retry attempt 15/50 after backoff 1000 ms...
+[20:44:47] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:47] [INFO] Retry attempt 16/50 after backoff 1000 ms...
+[20:44:48] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:48] [INFO] Retry attempt 17/50 after backoff 1000 ms...
+[20:44:49] [INFO] Indexed topic 'cavallo': 2623 files, 37420509 total bytes
+[20:44:49] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:49] [INFO] Retry attempt 18/50 after backoff 1000 ms...
+[20:44:50] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:50] [INFO] Retry attempt 19/50 after backoff 1000 ms...
+[20:44:51] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:51] [INFO] Retry attempt 20/50 after backoff 1000 ms...
+[20:44:52] [INFO] Indexed topic 'elefante': 1446 files, 58509473 total bytes
+[20:44:52] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:52] [INFO] Retry attempt 21/50 after backoff 1000 ms...
+[20:44:53] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:53] [INFO] Retry attempt 22/50 after backoff 1000 ms...
+[20:44:54] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:54] [INFO] Retry attempt 23/50 after backoff 1000 ms...
+[20:44:55] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:55] [INFO] Retry attempt 24/50 after backoff 1000 ms...
+[20:44:56] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:56] [INFO] Retry attempt 25/50 after backoff 1000 ms...
+[20:44:57] [INFO] Indexed topic 'farfalla': 2112 files, 61877367 total bytes
+[20:44:57] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:57] [INFO] Retry attempt 26/50 after backoff 1000 ms...
+[20:44:58] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:58] [INFO] Retry attempt 27/50 after backoff 1000 ms...
+[20:44:59] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:44:59] [INFO] Retry attempt 28/50 after backoff 1000 ms...
+[20:45:00] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:00] [INFO] Retry attempt 29/50 after backoff 1000 ms...
+[20:45:01] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:01] [INFO] Retry attempt 30/50 after backoff 1000 ms...
+[20:45:02] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:02] [INFO] Retry attempt 31/50 after backoff 1000 ms...
+[20:45:03] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:03] [INFO] Retry attempt 32/50 after backoff 1000 ms...
+[20:45:04] [INFO] Indexed topic 'gallina': 3098 files, 51842424 total bytes
+[20:45:04] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:04] [INFO] Retry attempt 33/50 after backoff 1000 ms...
+[20:45:05] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:05] [INFO] Retry attempt 34/50 after backoff 1000 ms...
+[20:45:06] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:06] [INFO] Retry attempt 35/50 after backoff 1000 ms...
+[20:45:07] [INFO] Indexed topic 'gatto': 1668 files, 151144282 total bytes
+[20:45:07] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:07] [INFO] Retry attempt 36/50 after backoff 1000 ms...
+[20:45:08] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:08] [INFO] Retry attempt 37/50 after backoff 1000 ms...
+[20:45:09] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:09] [INFO] Retry attempt 38/50 after backoff 1000 ms...
+[20:45:10] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:10] [INFO] Retry attempt 39/50 after backoff 1000 ms...
+[20:45:11] [INFO] Indexed topic 'mucca': 1866 files, 25833171 total bytes
+[20:45:11] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:11] [INFO] Retry attempt 40/50 after backoff 1000 ms...
+[20:45:12] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:12] [INFO] Retry attempt 41/50 after backoff 1000 ms...
+[20:45:13] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:13] [INFO] Retry attempt 42/50 after backoff 1000 ms...
+[20:45:14] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:14] [INFO] Retry attempt 43/50 after backoff 1000 ms...
+[20:45:15] [INFO] Indexed topic 'pecora': 1820 files, 62629703 total bytes
+[20:45:15] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:15] [INFO] Retry attempt 44/50 after backoff 1000 ms...
+[20:45:16] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:16] [INFO] Retry attempt 45/50 after backoff 1000 ms...
+[20:45:17] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:17] [INFO] Retry attempt 46/50 after backoff 1000 ms...
+[20:45:18] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:19] [INFO] Retry attempt 47/50 after backoff 1000 ms...
+[20:45:20] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:20] [INFO] Retry attempt 48/50 after backoff 1000 ms...
+[20:45:21] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:21] [INFO] Retry attempt 49/50 after backoff 1000 ms...
+[20:45:22] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:45:22] [ERROR] Transfer failed after 50 retries
+[20:45:25] [INFO] Indexed topic 'ragno': 4821 files, 78999493 total bytes
+[20:45:29] [INFO] Indexed topic 'scoiattolo': 1862 files, 25409193 total bytes
+[20:45:29] [INFO] Successfully loaded 10 topics from ../Dataset/raw-img
+[20:45:29] [INFO] Listening socket created on port 8080 (fd=3)
+[20:45:29] [INFO] Entering multi-threaded concurrent accept loop
+[20:45:29] [INFO] Exited concurrent accept loop
+[20:45:29] [INFO] Server shutdown complete
+[20:48:02] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[20:48:03] [INFO] Connecting to 127.0.0.1:8080...
+[20:48:03] [INFO] Connecting to 127.0.0.1:8080...
+led: Connection refused
+[20:48:03] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:03] [INFO] Retry attempt 1/50 after backoff 100 ms...
+[20:48:03] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:03] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:03] [INFO] Retry attempt 2/50 after backoff 200 ms...
+[20:48:03] [INFO] Retry attempt 2/50 after backoff 200 ms...
+[20:48:03] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:03] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:03] [INFO] Retry attempt 3/50 after backoff 400 ms...
+[20:48:04] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:04] [INFO] Retry attempt 4/50 after backoff 800 ms...
+[20:48:05] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:05] [INFO] Retry attempt 5/50 after backoff 1000 ms...
+[20:48:05] [INFO] Retry attempt 5/50 after backoff 1000 ms...
+[20:48:06] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:06] [INFO] Retry attempt 6/50 after backoff 1000 ms...
+[20:48:06] [INFO] Retry attempt 6/50 after backoff 1000 ms...
+[20:48:07] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:07] [INFO] Retry attempt 7/50 after backoff 1000 ms...
+[20:48:07] [INFO] Retry attempt 7/50 after backoff 1000 ms...
+[20:48:08] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:08] [INFO] Retry attempt 8/50 after backoff 1000 ms...
+[20:48:08] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[20:48:09] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:09] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:09] [INFO] Retry attempt 9/50 after backoff 1000 ms...
+[20:48:10] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:10] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:10] [INFO] Retry attempt 10/50 after backoff 1000 ms...
+[20:48:10] [INFO] Retry attempt 10/50 after backoff 1000 ms...
+[20:48:11] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:11] [INFO] Retry attempt 11/50 after backoff 1000 ms...
+[20:48:12] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:12] [INFO] Retry attempt 12/50 after backoff 1000 ms...
+[20:48:12] [INFO] Indexed topic 'cavallo': 2623 files, 37420509 total bytes
+[20:48:13] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:13] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:13] [INFO] Retry attempt 13/50 after backoff 1000 ms...
+[20:48:13] [INFO] Retry attempt 13/50 after backoff 1000 ms...
+[20:48:14] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:14] [INFO] Retry attempt 14/50 after backoff 1000 ms...
+[20:48:14] [INFO] Indexed topic 'elefante': 1446 files, 58509473 total bytes
+[20:48:15] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:15] [INFO] Retry attempt 15/50 after backoff 1000 ms...
+[20:48:15] [INFO] Retry attempt 15/50 after backoff 1000 ms...
+[20:48:19] [INFO] Indexed topic 'farfalla': 2112 files, 61877367 total bytes
+[20:48:32] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[20:48:33] [INFO] Connecting to 127.0.0.1:8080...
+[20:48:33] [ERROR] connect() to 127.0.0.1:8080 fai[20:48:33] [INFO] Connecting to 127.0.0.1:8080...
+[20:48:33] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:33] [INFO] Retry attempt 1/50 after backoff 100 ms...
+tion refused
+[20:48:33] [INFO] Retry attempt 1/50 after backoff 100 ms...
+[20:48:33] [INFO] Retry attempt 1/50 after backoff 100 ms...
+[20:48:33] [ERROR] connect() to 127.0.0.1:8080 failed: Connection refused
+[20:48:33] [INFO] Retry attempt 2/50 after backoff 200 ms...
+tion refused
+[20:48:33] [INFO] Retry attempt 2/50 after backoff 200 ms...
+[20:48:33] [INFO] Retry attempt 2/50 after backoff 200 ms...
+[21:03:37] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[21:03:45] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[21:03:45] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_4332
+[21:03:45] [INFO] Listening socket created on port 8080 (fd=3)
+[21:03:45] [INFO] Entering multi-threaded concurrent accept loop
+[21:03:45] [INFO] Connecting to 127.0.0.1:8080...
+[21:03:45] [INFO] Connected to server. Requesting topic 'cane'...
+[21:03:45] [INFO] Client requested topic: 'cane'
+[21:03:45] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[21:03:45] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:03:49] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[21:03:52] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[21:03:56] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[21:03:59] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[21:04:03] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[21:04:06] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[21:04:09] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[21:04:13] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[21:04:17] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[21:04:20] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[21:04:20] [INFO] Received OP_TRANSFER_END from server
+[21:04:20] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[21:04:20] [INFO] Performance: Duration = 34.86s | Goodput = 1.74 MB/s | Wire Throughput = 1.75 MB/s | Overhead = 0.81%
+[21:04:20] [INFO] Exited concurrent accept loop
+[21:04:20] [INFO] Server shutdown complete
+[21:07:02] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[21:07:10] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[21:07:10] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_5017
+[21:07:10] [INFO] Listening socket created on port 8080 (fd=3)
+[21:07:10] [INFO] Entering multi-threaded concurrent accept loop
+[21:07:10] [INFO] Connecting to 127.0.0.1:8080...
+[21:07:10] [INFO] Accepted client from 127.0.0.1:38055 (fd=4)
+...
+[21:07:10] [INFO] Client requested topic: 'cane'
+[21:07:10] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[21:07:10] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:07:14] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[21:07:18] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[21:07:21] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[21:07:24] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[21:07:27] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[21:07:30] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[21:07:33] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[21:07:37] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[21:07:41] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[21:07:44] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[21:07:44] [INFO] Received OP_TRANSFER_END from server
+[21:07:44] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[21:07:44] [INFO] Performance: Duration = 34.03s | Goodput = 1.78 MB/s | Wire Throughput = 1.80 MB/s | Overhead = 0.81%
+[21:07:44] [INFO] Exited concurrent accept loop
+[21:07:44] [INFO] Server shutdown complete
+[21:08:57] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[21:09:03] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[21:09:03] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_5017
+[21:09:03] [INFO] Listening socket created on port 8080 (fd=3)
+[21:09:03] [INFO] Entering multi-threaded concurrent accept loop
+[21:09:03] [INFO] Connecting to 127.0.0.1:8080...
+[21:09:03] [INFO] Accepted client from 127.0.0.1:38331 (fd=4)
+...
+[21:09:03] [INFO] Accepted client from 127.0.0.1:38345 (fd=5)
+[21:09:04] [INFO] Client requested topic: 'cane'
+[21:09:04] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[21:09:04] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[21:09:04] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+[21:09:04] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:09:05] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[21:09:06] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[21:09:08] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[21:09:09] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[21:09:11] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[21:09:12] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[21:09:14] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[21:09:15] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[21:09:17] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[21:09:17] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[21:09:18] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[21:09:18] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[21:09:18] [INFO] Completed streaming topic 'cane' (486[21:09:18] [INFO] Received OP_TRANSFER_END from server
+[21:09:18] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[21:09:18] [INFO] Performance: Duration = 15.15s | Goodput = 4.01 MB/s | Wire Throughput = 4.04 MB/s | Overhead = 0.81%
+[21:09:18] [INFO] Exited concurrent accept loop
+[21:09:18] [INFO] Server shutdown complete
+[21:11:35] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[21:11:42] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[21:11:42] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_5017
+[21:11:42] [INFO] Listening socket created on port 8080 (fd=3)
+[21:11:42] [INFO] Entering multi-threaded concurrent accept loop
+[21:11:42] [INFO] Connecting to 127.0.0.1:8080...
+[21:11:42] [INFO] Connecting to 127.0.0.1:8080...
+[21:11:42] [INFO] Accepted client from 127.0.0.1:38223 (fd=4)
+...
+[21:11:42] [INFO] Connected to server. Requesting topic 'cane'...
+[21:11:42] [INFO] Accepted client from 127.0.0.1:38239 (fd=5)
+[21:11:42] [INFO] Client requested topic: 'cane'
+[21:11:42] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[21:11:42] [INFO] Client requested topic: 'cane'
+[21:11:42] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[21:11:42] [INFO] Accepted client from 127.0.0.1:38253 (fd=8)
+[21:11:42] [INFO] Client requested topic: 'cane'
+2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:11:42] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[21:11:42] [INFO] Client requested topic: 'cane'
+[21:11:42] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+451 bytes)
+[21:11:42] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+[21:11:42] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:11:42] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:11:44] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[21:11:46] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[21:11:48] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[21:11:49] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[21:11:49] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[21:11:51] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[21:11:51] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[21:11:51] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[21:11:52] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[21:11:53] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[21:11:53] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[21:11:54] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[21:11:55] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[21:11:55] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[21:11:56] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[21:11:57] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[21:11:57] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[21:11:58] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[21:12:00] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[21:12:00] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[21:12:00] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[21:12:00] [INFO] Received OP_TRANSFER_END from server
+[21:12:00] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+/client_bench_output/c3/cane' in 0 retries
+[21:12:00] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[21:12:00] [INFO] Performance: Duration = 18.05s | Goodput = 3.36 MB/s | Wire Throughput = 3.39 MB/s | Overhead = 0.81%
+[21:12:00] [INFO] Received OP_TRANSFER_END from server
+[21:12:00] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[21:12:00] [INFO] Performance: Duration = 18.06s | Goodput = 3.36 MB/s | Wire Throughput = 3.39 MB/s | Overhead = 0.81%
+[21:12:01] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[21:12:01] [INFO] Received OP_TRANSFER_END from server
+[21:12:01] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[21:12:01] [INFO] Performance: Duration = 19.08s | Goodput = 3.18 MB/s | Wire Throughput = 3.21 MB/s | Overhead = 0.81%
+[21:12:01] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[21:12:01] [INFO] Received OP_TRANSFER_END from server
+[21:12:01] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c4/cane' in 0 retries
+[21:12:01] [INFO] Performance: Duration = 19.21s | Goodput = 3.16 MB/s | Wire Throughput = 3.18 MB/s | Overhead = 0.81%
+[21:12:01] [INFO] Exited concurrent accept loop
+[21:12:01] [INFO] Server shutdown complete
+[21:16:39] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[21:16:46] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[21:16:46] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_5017
+[21:16:46] [INFO] Listening socket created on port 8080 (fd=3)
+[21:16:46] [INFO] Entering multi-threaded concurrent accept loop
+[21:16:47] [INFO] Connecting to 127.0.0.1:8080...
+[21:16:47] [INFO] Connecting to 127.0.0.1:8080...
+[21:16:47] [INFO] Accepted client from 127.0.0.1:38255 (fd=4)
+...
+[21:16:47] [INFO] Connected to server. Requesting topic 'cane'...
+[21:16:47] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[21:16:47] [INFO] Connected to server. Requesting topic 'cane'...
+[21:16:47] [INFO] Connected to server. Requesting topic 'cane'...
+[21:16:47] [INFO] Accepted client from 127.0.0.1:38271 (fd=7)
+...
+[21:16:47] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[21:16:47] [INFO] Client requested topic: 'cane'
+[21:16:47] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[21:16:47] [INFO] Accepted client from 127.0.0.1:38281 (fd=8)
+[21:16:47] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:16:47] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[21:16:47] [INFO] Accepted client from 127.0.0.1:38287 (fd=10)
+[21:16:47] [INFO] Client requested topic: 'cane'
+2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:16:47] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[21:16:47] [INFO] Accepted client from 127.0.0.1:38293 (fd=12)
+[21:16:47] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:16:47] [INFO] Client requested topic: 'cane'
+[21:16:47] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[21:16:47] [INFO] Accepted client from 127.0.0.1:38309 (fd=14)
+[21:16:47] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:16:47] [INFO] Client requested topic: 'cane'
+[21:16:47] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[21:16:47] [INFO] Accepted client from 127.0.0.1:38323 (fd=9)
+[21:16:47] [INFO] Client requested topic: 'cane'
+2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:16:47] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[21:16:47] [INFO] Client requested topic: 'cane'
+[21:16:47] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:16:47] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[21:16:47] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+[21:16:47] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:16:47] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:16:49] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[21:16:49] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[21:16:52] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[21:16:52] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[21:16:52] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[21:16:54] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[21:16:54] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[21:16:56] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[21:16:56] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[21:16:59] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[21:16:59] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[21:16:59] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[21:17:01] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[21:17:01] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[21:17:02] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[21:17:02] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[21:17:04] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[21:17:05] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[21:17:05] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[21:17:07] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[21:17:08] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[21:17:09] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[21:17:10] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[21:17:10] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[21:17:12] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[21:17:12] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[21:17:12] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[21:17:12] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[21:17:12] [INFO] Received OP_TRANSFER_END from server
+[21:17:12] [INFO] Received OP_TRANSFER_END from server
+3 files, 60686716 bytes)
+[21:17:12] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+[21:17:12] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[21:17:12] [INFO] Performance: Duration = 26.38s | Goodput = 2.30 MB/s | Wire Throughput = 2.32 MB/s | Overhead = 0.81%
+[21:17:12] [INFO] Performance: Duration = 26.39s | Goodput = 2.30 MB/s | Wire Throughput = 2.32 MB/s | Overhead = 0.81%
+[21:17:12] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+[21:17:12] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[21:17:12] [INFO] Performance: Duration = 26.39s | Goodput = 2.30 MB/s | Wire Throughput = 2.32 MB/s | Overhead = 0.81%
+[21:17:13] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[21:17:13] [INFO] Received OP_TRANSFER_END from server
+[21:17:13] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c7/cane' in 0 retries
+[21:17:13] [INFO] Performance: Duration = 27.33s | Goodput = 2.22 MB/s | Wire Throughput = 2.24 MB/s | Overhead = 0.81%
+[21:17:14] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[21:17:14] [INFO] Received OP_TRANSFER_END from server
+[21:17:14] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c3/cane' in 0 retries
+[21:17:14] [INFO] Performance: Duration = 27.52s | Goodput = 2.21 MB/s | Wire Throughput = 2.22 MB/s | Overhead = 0.81%
+[21:17:14] [INFO] Exited concurrent accept loop
+[21:17:14] [INFO] Server shutdown complete
+[21:35:00] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[21:35:01] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[21:35:01] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_6726
+[21:35:01] [INFO] Listening socket created on port 8080 (fd=3)
+[21:35:01] [INFO] Entering multi-threaded concurrent accept loop
+[21:35:01] [INFO] Connecting to 127.0.0.1:8080...
+[21:35:01] [INFO] Accepted client from 127.0.0.1:38669 (fd=4)
+...
+[21:35:01] [INFO] Client requested topic: 'cane'
+[21:35:01] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:35:01] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:35:02] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:35:02] [INFO] Received OP_TRANSFER_END from server
+[21:35:02] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[21:35:02] [INFO] Performance: Duration = 1.47s | Goodput = 1.70 MB/s | Wire Throughput = 1.72 MB/s | Overhead = 0.81%
+[21:35:02] [INFO] Exited concurrent accept loop
+[21:35:02] [INFO] Server shutdown complete
+[21:35:07] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[21:35:08] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[21:35:08] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_6726
+[21:35:08] [INFO] Listening socket created on port 8080 (fd=3)
+[21:35:08] [INFO] Entering multi-threaded concurrent accept loop
+[21:35:08] [INFO] Connecting to 127.0.0.1:8080...
+[21:35:08] [INFO] Connected to server. Requesting topic 'cane'...
+[21:35:08] [INFO] Connected to server. Requesting topic 'cane'...
+[21:35:08] [INFO] Accepted client from 127.0.0.1:38015 (fd=5)
+[21:35:08] [INFO] Client requested topic: 'cane'
+[21:35:08] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:35:08] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:35:08] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:35:08] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:35:09] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:35:09] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:35:09] [INFO] Received OP_TRANSFER_END from server
+[21:35:09] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[21:35:09] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[21:35:09] [INFO] Performance: Duration = 0.65s | Goodput = 3.85 MB/s | Wire Throughput = 3.88 MB/s | Overhead = 0.81%
+[21:35:09] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[21:35:09] [INFO] Performance: Duration = 0.65s | Goodput = 3.81 MB/s | Wire Throughput = 3.84 MB/s | Overhead = 0.81%
+[21:35:09] [INFO] Exited concurrent accept loop
+[21:35:09] [INFO] Server shutdown complete
+[21:36:19] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[21:36:20] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[21:36:20] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_6951
+[21:36:20] [INFO] Listening socket created on port 8080 (fd=3)
+[21:36:20] [INFO] Entering multi-threaded concurrent accept loop
+[21:36:20] [INFO] Connecting to 127.0.0.1:8080...
+[21:36:20] [INFO] Connected to server. Requesting topic 'cane'...
+[21:36:20] [INFO] Client requested topic: 'cane'
+[21:36:20] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:36:20] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:36:21] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:36:21] [INFO] Received OP_TRANSFER_END from server
+[21:36:21] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[21:36:21] [INFO] Performance: Duration = 1.32s | Goodput = 1.90 MB/s | Wire Throughput = 1.91 MB/s | Overhead = 0.81%
+[21:36:21] [INFO] Exited concurrent accept loop
+[21:36:21] [INFO] Server shutdown complete
+[21:36:25] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[21:36:26] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[21:36:26] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_6951
+[21:36:26] [INFO] Listening socket created on port 8080 (fd=3)
+[21:36:26] [INFO] Entering multi-threaded concurrent accept loop
+[21:36:26] [INFO] Connecting to 127.0.0.1:8080...
+[21:36:26] [INFO] Accepted client from 127.0.0.1:39703 (fd=4)
+...
+[21:36:26] [INFO] Connected to server. Requesting topic 'cane'...
+[21:36:26] [INFO] Accepted client from 127.0.0.1:39719 (fd=5)
+[21:36:26] [INFO] Client requested topic: 'cane'
+[21:36:26] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:36:26] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:36:26] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:36:26] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:36:27] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:36:27] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:36:27] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[21:36:27] [INFO] Received OP_TRANSFER_END from server
+[21:36:27] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[21:36:27] [INFO] Performance: Duration = 0.53s | Goodput = 4.68 MB/s | Wire Throughput = 4.72 MB/s | Overhead = 0.81%
+[21:36:27] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[21:36:27] [INFO] Performance: Duration = 0.54s | Goodput = 4.67 MB/s | Wire Throughput = 4.70 MB/s | Overhead = 0.81%
+[21:36:27] [INFO] Exited concurrent accept loop
+[21:36:27] [INFO] Server shutdown complete
+[21:36:35] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[21:36:35] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[21:36:35] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_6951
+[21:36:35] [INFO] Listening socket created on port 8080 (fd=3)
+[21:36:35] [INFO] Entering multi-threaded concurrent accept loop
+[21:36:35] [INFO] Connecting to 127.0.0.1:8080...
+[21:36:35] [INFO] Connecting to 127.0.0.1:8080...
+[21:36:35] [INFO] Accepted client from 127.0.0.1:40193 (fd=4)
+...
+[21:36:35] [INFO] Connected to server. Requesting topic 'cane'...
+[21:36:35] [INFO] Connected to server. Requesting topic 'cane'...
+[21:36:35] [INFO] Accepted client from 127.0.0.1:40199 (fd=5)
+...
+[21:36:35] [INFO] Client requested topic: 'cane'
+[21:36:35] [INFO] Client requested topic: 'cane'
+2497353 total bytes (2.38 MB)
+[21:36:35] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:36:35] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:36:35] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:36:35] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:36:35] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:36:35] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:36:35] [INFO] Client requested topic: 'cane'
+[21:36:35] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:36:35] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:36:35] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:36:36] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:36:36] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[21:36:36] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c4/cane' in 0 retries
+[21:36:36] [INFO] Performance: Duration = 0.97s | Goodput = 2.57 MB/s | Wire Throughput = 2.59 MB/s | Overhead = 0.81%
+[21:36:36] [INFO] Performance: Duration = 0.97s | Goodput = 2.58 MB/s | Wire Throughput = 2.60 MB/s | Overhead = 0.81%
+[21:36:36] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:36:36] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:36:36] [INFO] Received OP_TRANSFER_END from server
+[21:36:36] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[21:36:36] [INFO] Performance: Duration = 0.99s | Goodput = 2.53 MB/s | Wire Throughput = 2.55 MB/s | Overhead = 0.81%
+[21:36:36] [INFO] Exited concurrent accept loop
+[21:36:36] [INFO] Server shutdown complete
+[21:36:49] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[21:36:50] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[21:36:50] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_6951
+[21:36:50] [INFO] Listening socket created on port 8080 (fd=3)
+[21:36:50] [INFO] Entering multi-threaded concurrent accept loop
+[21:36:50] [INFO] Connecting to 127.0.0.1:8080...
+[21:36:50] [INFO] Connecting to 127.0.0.1:8080...
+[21:36:50] [INFO] Connected to server. Requesting [21:36:50] [INFO] Connected to server. Requesting topic 'cane'[21:36:50] [INFO] Connected to server. Requesting topic 'cane'...
+[21:36:50] [INFO] Connected to server. Requesting topic 'cane'...
+[21:36:50] [INFO] Connected to server. Requesting topic 'cane'...
+[21:36:50] [INFO] Client requested topic: 'cane'
+[21:36:50] [INFO] Accepted client from 127.0.0.1:38069 (fd=7)
+[21:36:50] [INFO] Client requested topic: 'cane'
+2497353 total bytes (2.38 MB)
+[21:36:50] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:36:50] [INFO] Accepted client from 127.0.0.1:38079 (fd=8)
+[21:36:50] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:36:50] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:36:50] [INFO] Accepted client from 127.0.0.1:38083 (fd=10)
+[21:36:50] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:36:50] [INFO] Client requested topic: 'cane'
+[21:36:50] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:36:50] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:36:50] [INFO] Accepted client from 127.0.0.1:38099 (fd=12)
+[21:36:50] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:36:50] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:36:50] [INFO] Accepted client from 127.0.0.1:38109 (fd=11)
+[21:36:50] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:36:50] [INFO] Client requested topic: 'cane'
+[21:36:50] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:36:50] [INFO] Client requested topic: 'cane'
+[21:36:50] [INFO] Accepted client from 127.0.0.1:38123 (fd=9)
+PcUfOWQ.jpeg' (9451 bytes)
+[21:36:50] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:36:50] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:36:50] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:36:50] [INFO] Client requested topic: 'cane'
+[21:36:50] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:36:50] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:36:50] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:36:51] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:36:51] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:36:51] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c5/cane' in 0 retries
+[21:36:51] [INFO] Performance: Duration = 0.90s | Goodput = 2.77 MB/s | Wire Throughput = 2.79 MB/s | Overhead = 0.81%
+[21:36:51] [INFO] Performance: Duration = 0.90s | Goodput = 2.77 MB/s | Wire Throughput = 2.80 MB/s | Overhead = 0.81%
+[21:36:51] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:36:51] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:36:51] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:36:51] [INFO] Received OP_TRANSFER_END from server
+[21:36:51] [INFO] Received OP_TRANSFER_END from server
+[21:36:51] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:36:51] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp[21:36:51] [INFO] Transfer SUCCESS: 200 fil[21:36:51] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c4/cane' in 0 retries
+[21:36:51] [INFO] Performance: Duration = 0.92s | Goodput = 2.71 MB/s | Wire T[21:36:51] [INFO] Performance: Duration =[21:36:51] [INFO] Performance: Duration = 0.93s | Goodput = 2.68 MB/s | Wire Throughput = 2.70 MB/s | Overhead = 0.81%
+[21:36:51] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:36:51] [INFO] Received OP_TRANSFER_END from server
+[21:36:51] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c7/cane' in 0 retries
+[21:36:51] [INFO] Performance: Duration = 1.13s | Goodput = 2.22 MB/s | Wire Throughput = 2.24 MB/s | Overhead = 0.81%
+[21:36:51] [INFO] Exited concurrent accept loop
+[21:36:51] [INFO] Server shutdown complete
+[21:37:17] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[21:37:17] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[21:37:17] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_6951
+[21:37:17] [INFO] Listening socket created on port 8080 (fd=3)
+[21:37:17] [INFO] Entering multi-threaded concurrent accept loop
+[21:37:18] [INFO] Connecting to 127.0.0.1:8080...
+[21:37:18] [INFO] Connecting to 127.0.0.1:8080...
+[21:37:18] [INFO] Connected to server. Requesting [21:37:18] [INFO[21:37:18] [INFO] Connected to server. Requesting topic 'cane'...
+[21:37:18] [INFO] Accepted client from 127.0.0.1:3[21:37:18] [[21:37:18] [INFO] Connected to server. Requesting topic 'cane'...
+[21:37:18] [INFO] Connecting to 127.0.0.1:8080...
+[21:37:18] [INFO] Connecting to 127.0.0.1:8080...[21:37:18] [INFO][21:37:18] [INFO] Connected to server. Requesting topic 'cane'...
+[21:37:18] [INFO] Connected to server. Requesting topic 'cane'...
+es (2.38 MB)
+[21:37:18] [INFO] Connected to server. Requesting topic 'cane'...
+353 bytes)
+[21:37:18] [INFO] Connecting to 127.0.0.1:8080...
+[21:37:18] [INFO] Client requested topic: 'cane'
+ topic 'cane'...
+[21:37:18] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[21:37:18] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:37:18] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:37:18] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:37:18] [INFO] Accepted client from 127.0.0.1:39845 (fd=9)
+[21:37:18] [INFO] Client requested topic: 'cane'
+[21:37:18] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:37:18] [INFO] Client requested topic: 'cane'
+[21:37:18] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:37:18] [INFO] Accepted client from 127.0.0.1:39875 (fd=12)
+[21:37:18] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:37:18] [INFO] Client requested topic: 'cane'
+[21:37:18] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:37:18] [INFO] Accepted client from 127.0.0.1:39891 (fd=14)
+[21:37:18] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:37:18] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:37:18] [INFO] Accepted client from 127.0.0.1:39905 (fd=16)
+[21:37:18] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:37:18] [INFO] Client requested topic: 'cane'
+[21:37:18] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:37:18] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:37:18] [INFO] Client requested topic: 'cane'
+[21:37:18] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:37:18] [INFO] Accepted client from 127.0.0.1:39929 (fd=20)
+[21:37:18] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:37:18] [INFO] Client requested topic: 'cane'
+[21:37:18] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:37:18] [INFO] Accepted client from 127.0.0.1:39935 (fd=22)
+[21:37:18] [INFO] Client requested topic: 'cane'
+[21:37:18] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:37:18] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:37:18] [INFO] Accepted client from 127.0.0.1:39949 (fd=24)
+[21:37:18] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:37:18] [INFO] Client requested topic: 'cane'
+[21:37:18] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:37:18] [INFO] Accepted client from 127.0.0.1:39951 (fd=23)
+[21:37:18] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:37:18] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:37:18] [INFO] Accepted client from 127.0.0.1:39963 (fd=18)
+[21:37:18] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:37:18] [INFO] Client requested topic: 'cane'
+[21:37:18] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:37:18] [INFO] Client requested topic: 'cane'
+[21:37:18] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+51 bytes)
+[21:37:18] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:37:18] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:37:18] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:37:18] [INFO] Accepted client from 127.0.0.1:39993 (fd=30)
+[21:37:18] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:37:18] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:37:18] [INFO] Client requested topic: 'cane'
+[21:37:18] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+51 bytes)
+[21:37:18] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:37:19] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:37:19] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[21:37:19] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c3/cane' in 0 retries
+[21:37:19] [INFO] Performance: Duration = 1.44s | Goodput = 1.73 MB/s | Wire Throughput = 1.75 MB/s | Overhead = 0.81%
+[21:37:19] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:37:19] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:37:19] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:37:19] [INFO] Received OP_TRANSFER_END from server
+[21:37:19] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:37:19] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c6/cane' in 0 retries
+
+[21:37:19] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c14/cane' in 0 retries
+[21:37:19] [INFO] Performance: Duration = 1.60s | Goodput = 1.57 MB/s | Wire T[21:37:19] [INFO] Performance: Duration =[21:37:19] [INFO] Performance: Duration = 1.61s | Goodput = 1.55 MB/s | Wire Throughput = 1.56 MB/s | Overhead = 0.81%
+[21:37:19] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:37:19] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:37:19] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:37:19] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:37:19] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:37:19] [INFO] Received OP_TRANSFER_END from server
+[21:37:19] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c5/cane' in 0 retries
+[21:37:19] [INFO] Performance: Duration = 1.64s | Goodput = 1.52 MB/s | Wire T[21:37:19] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:37:19] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[21:37:19] [INFO] Received OP_TRANSFER_END from server
+[21:37:19] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:37:19] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:37:19] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:37:19] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c15/cane' in 0 retries
+[21:37:19] [INFO] Performance: Duration = 1.64s | Goodput = 1.53 MB/s | Wire Throughput = 1.54 MB/s | Overhead = 0.81%
+[21:37:19] [INFO] Performance: Duration = 1.64s | Goodput = 1.53 MB/s | Wire Throughput = 1.54 MB/s | Overhead = 0.81%
+[21:37:19] [INFO] Exited concurrent accept loop
+[21:37:19] [INFO] Server shutdown complete
+[21:38:08] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[21:38:09] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[21:38:09] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_6951
+[21:38:09] [INFO] Listening socket created on port 8080 (fd=3)
+[21:38:09] [INFO] Entering multi-threaded concurrent accept loop
+[21:38:09] [INFO] Connecting to 127.0.0.1:8080...
+[21:38:09] [INFO] Connecting to 127.0.0.1:8080...
+[21:38:09] [INFO] Connecting to 127.0.0.1:8080...
+[21:38:09] [INFO] Connected to server. Requesting topic 'cane'...
+[21:38:09] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[21:38:09] [INFO] Connected to server. Requesting topic 'cane'...
+[21:38:09] [INFO] Accepted client from 127.0.0.1:4[21:38:09] [[21:38:09] [INFO] Connected to server. Requesting topic 'cane'...
+[21:38:09] [INFO] Connected to server. Requesting topic 'cane'...
+[21:38:09] [INFO] Connected to server. Requesting topic 'cane'...
+[21:38:09] [INFO] Connected to server. Requesting topic 'cane'...
+353 bytes)
+[21:38:09] [INFO] Connecting to 127.0.0.1:8080...
+497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Connected to server. Requesting topic 'cane'...
+[21:38:09] [INFO] Connected to server. Requesting [21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total[21:38:09] [INFO][21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2b[21:38:09] [INFO[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:38:09] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[21:38:09] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[21:38:09] [INFO] Connected to server. Requesting [21:38:09] [INFO[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Connected to server. Requesting topic 'cane'...
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2[21:38:09] [INFO] Connected t[21:38:09] [INFO] Connecting to 127.0.0.1:8080...
+[21:38:09] [INFO] Connected to server. Requesting topic 'cane'...
+[21:38:09] [INFO] Accepted client from 127.0.0.1:4[21:38:09] [I[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497[21:38:09] [INFO] Conne[21:38:09] [INFO] Connected[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:38:09] [INFO] Connecting to 127.0.0.1:8080...
+[21:38:09] [INFO] Connecting to 127.0.0.1:8080...
+1307 (fd=8)
+...
+[21:38:09] [INFO] Connected to server. Requesting topic 'cane'...
+OWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Connecting to 127.0.0.1:8080...
+[21:38:09] [INFO] Connected to server. Requesting topic 'cane'...
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Accepted client from 127.0.0.1:41323 (fd=12)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Accepted client from 127.0.0.1:41345 (fd=20)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Accepted client from 127.0.0.1:41353 (fd=10)
+[21:38:09] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:38:09] [INFO] Accepted client from 127.0.0.1:41357 (fd=24)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:38:09] [INFO] Accepted client from 127.0.0.1:41369 (fd=25)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Accepted client from 127.0.0.1:41383 (fd=23)
+[21:38:09] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Accepted client from 127.0.0.1:41391 (fd=29)
+[21:38:09] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:38:09] [INFO] Accepted client from 127.0.0.1:41399 (fd=14)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Accepted client from 127.0.0.1:41457 (fd=30)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:38:09] [INFO] Accepted client from 127.0.0.1:41467 (fd=35)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Accepted client from 127.0.0.1:41491 (fd=17)
+[21:38:09] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Accepted client from 127.0.0.1:41501 (fd=48)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:38:09] [INFO] Accepted client from 127.0.0.1:41527 (fd=50)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:38:09] [INFO] Accepted client from 127.0.0.1:41529 (fd=53)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Client requested topic: 'cane'
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[21:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[21:38:11] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:38:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:38:11] [INFO] Received OP_TRANSFER_END from server
+[21:38:11] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c4/cane' in 0 retries
+[21:38:11] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c3/cane' in 0 retries
+[21:38:11] [INFO] Performance: Duration = 2.15s | Goodput = 1.16 MB/s | Wire Throughput = 1.17 MB/s | Overhead = 0.81%
+[21:38:11] [INFO] Performance: Duration = 2.16s | Goodput = 1.16 MB/s | Wire Throughput = 1.17 MB/s | Overhead = 0.81%
+[21:38:11] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:38:11] [INFO] Received OP_TRANSFER_END from server
+.0%) - 2.38 MB written
+[21:38:11] [INFO] Received OP_TRANSFER_END from server
+[21:38:11] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[21:38:11] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp[21:38:11] [INFO] Transfer SUCCESS: 200 file[21:38:11] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c15/cane' in 0 retries
+[21:38:11] [INFO] Performance: Duration = 2.54s | Goodput = 0.98 MB/s | Wire T[21:38:11] [INFO] Performance: Duration =[21:38:11] [INFO] Performance: Duration = 2.51s | Goodput = 1.00 MB/s | Wire Throughput = 1.00 MB/s | Overhead = 0.81%
+[21:38:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:38:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+/client_bench_output/c5/cane' in 0 retries
+[21:38:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+hroughput = 0.98 MB/s | Overhead = 0.81%
+[21:38:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:38:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:38:11] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp[21:38:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:38:11] [INFO] Performance: Duration = 2.59s | Goodput = 0.97 MB/s | Wire Throughput = 0.97 MB/s | Overhead = 0.81%
+[21:38:11] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c16/cane' in 0 retries
+[21:38:11] [INFO] Performance: Duration = 2.59s | Goodput = 0.96 MB/s | Wire Throughput = 0.97 MB/s | Overhead = 0.81%
+[21:38:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:38:11] [INFO] Received OP_TRANSFER_END from server
+[21:38:11] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c20/cane' in 0 retries
+[21:38:11] [INFO] Performance: Duration = 2.65s | Goodput = 0.94 MB/s | Wire Throughput = 0.95 MB/s | Overhead = 0.81%
+[21:38:11] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:38:11] [INFO] Received OP_TRANSFER_END from server
+[21:38:11] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c9/cane' in 0 retries
+[21:38:11] [INFO] Performance: Duration = 2.74s | Goodput = 0.91 MB/s | Wire Throughput = 0.92 MB/s | Overhead = 0.81%
+[21:38:11] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c12/cane' in 0 retries
+[21:38:11] [INFO] Performance: Duration = 2.74s | Goodput = 0.91 MB/s | Wire Throughput = 0.92 MB/s | Overhead = 0.81%
+[21:38:11] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:38:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:38:11] [INFO] Received OP_TRANSFER_END from server
+.0%) - 2.38 MB written
+[21:38:11] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[21:38:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:38:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+/client_bench_output/c21/cane' in 0 retries
+[21:38:11] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c22/cane' in 0 retries
+[21:38:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+hroughput = 0.91 MB/s | Overhead = 0.81%
+es
+[21:38:11] [INFO] Performance: Duration = 2.78s | Goodput = 0.90 MB/s | Wire Throughput = 0.90 MB/s | Overhead = 0.81%
+[21:38:11] [INFO] Performance: Duration = 2.77s | Goodput = 0.90 MB/s | Wire Throughput = 0.91 MB/s | Overhead = 0.81%
+[21:38:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:38:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:38:11] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:38:11] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[21:38:11] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:38:11] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c19/cane' in 0 retries
+[21:38:12] [INFO] Received OP_TRANSFER_END from server
+bytes) written to '/tmp/client_bench_output/c30/cane' in 0 retries
+[21:38:12] [INFO] Performance: Duration = 2.75s | Goodput = 0.91 MB/s | Wire Throughput = 0.91 MB/s | Overhead = 0.81%
+[21:38:12] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:38:12] [INFO] Received OP_TRANSFER_END from server
+[21:38:12] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c25/cane' in 0 retries
+[21:38:12] [INFO] Performance: Duration = 2.81s | Goodput = 0.89 MB/s | Wire Throughput = 0.90 MB/s | Overhead = 0.81%
+[21:38:12] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:38:12] [INFO] Received OP_TRANSFER_END from server
+[21:38:12] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+/client_bench_output/c23/cane' in 0 retries
+[21:38:12] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c24/cane' in 0 retries
+[21:38:12] [INFO] Performance: Duration = 2.82s | Goodput = 0.88 MB/s | Wire Throughput = 0.89 MB/s | Overhead = 0.81%
+[21:38:12] [INFO] Performance: Duration = 2.84s | Goodput = 0.88 MB/s | Wire Throughput = 0.89 MB/s | Overhead = 0.81%
+[21:38:12] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:38:12] [INFO] Received OP_TRANSFER_END from server
+[21:38:12] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c27/cane' in 0 retries
+[21:38:12] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+hroughput = 0.88 MB/s | Overhead = 0.81%
+[21:38:12] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:38:12] [INFO] Received OP_TRANSFER_END from server
+[21:38:12] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[21:38:12] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c26/cane' in 0 retries
+[21:38:12] [INFO] Received OP_TRANSFER_END from server
+[21:38:12] [INFO] Performance: Duration = 2.87s | Goodput = 0.87 MB/s | Wire Throughput = 0.88 MB/s | Overhead = 0.81%
+[21:38:12] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c29/cane' in 0 retries
+[21:38:12] [INFO] Performance: Duration = 2.88s | Goodput = 0.87 MB/s | Wire Throughput = 0.87 MB/s | Overhead = 0.81%
+[21:38:12] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[21:38:12] [INFO] Received OP_TRANSFER_END from server
+[21:38:12] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c31/cane' in 0 retries
+[21:38:12] [INFO] Performance: Duration = 2.92s | Goodput = 0.85 MB/s | Wire Throughput = 0.86 MB/s | Overhead = 0.81%
+[21:38:12] [INFO] Exited concurrent accept loop
+[21:38:12] [INFO] Server shutdown complete
+[09:36:34] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[09:36:41] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[09:36:41] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_557
+[09:36:41] [INFO] Listening socket created on port 8080 (fd=3)
+[09:36:41] [INFO] Entering multi-threaded concurrent accept loop
+[09:36:41] [INFO] Connecting to 127.0.0.1:8080...
+[09:36:41] [INFO] Accepted client from 127.0.0.1:39851 (fd=4)
+...
+[09:36:41] [INFO] Client requested topic: 'cane'
+[09:36:41] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[09:36:41] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:36:44] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:36:46] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:36:49] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:36:51] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:36:54] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:36:56] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:36:59] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:37:01] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:37:04] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:37:06] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:37:06] [INFO] Received OP_TRANSFER_END from server
+[09:37:06] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[09:37:06] [INFO] Performance: Duration = 25.72s | Goodput = 2.36 MB/s | Wire Throughput = 2.38 MB/s | Overhead = 0.81%
+[09:37:06] [INFO] Exited concurrent accept loop
+[09:37:06] [INFO] Server shutdown complete
+[09:38:04] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[09:38:09] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[09:38:09] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_557
+[09:38:09] [INFO] Listening socket created on port 8080 (fd=3)
+[09:38:09] [INFO] Entering multi-threaded concurrent accept loop
+[09:38:09] [INFO] Connecting to 127.0.0.1:8080...
+[09:38:09] [INFO] Connecting to 127.0.0.1:8080...
+[09:38:09] [INFO] Accepted client from 127.0.0.1:39183 (fd=4)
+...
+[09:38:09] [INFO] Connected to server. Requesting topic 'cane'...
+[09:38:09] [INFO] Accepted client from 127.0.0.1:39195 (fd=5)
+[09:38:09] [INFO] Client requested topic: 'cane'
+[09:38:09] [INFO] Client requested topic: 'cane'
+ 60686716 total bytes (57.88 MB)
+[09:38:09] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:38:09] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+[09:38:09] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:38:12] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:38:12] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:38:15] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:38:15] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:38:17] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:38:17] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:38:19] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:38:19] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:38:21] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:38:21] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:38:23] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:38:23] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:38:25] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:38:25] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:38:27] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:38:27] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:38:29] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:38:29] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:38:30] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:38:30] [INFO] Received OP_TRANSFER_END from server
+[09:38:30] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[09:38:30] [INFO] Performance: Duration = 21.09s | Goodput = 2.88 MB/s | Wire Throughput = 2.90 MB/s | Overhead = 0.81%
+[09:38:30] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:38:30] [INFO] Received OP_TRANSFER_END from server
+[09:38:30] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[09:38:30] [INFO] Performance: Duration = 21.21s | Goodput = 2.86 MB/s | Wire Throughput = 2.88 MB/s | Overhead = 0.81%
+[09:38:30] [INFO] Exited concurrent accept loop
+[09:38:30] [INFO] Server shutdown complete
+[09:40:33] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[09:40:40] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[09:40:40] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_557
+[09:40:40] [INFO] Listening socket created on port 8080 (fd=3)
+[09:40:40] [INFO] Entering multi-threaded concurrent accept loop
+[09:40:40] [INFO] Connecting to 127.0.0.1:8080...
+[09:40:40] [INFO] Connecting to 127.0.0.1:8080...
+[09:40:40] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'[09:40:40] [INFO] Connected to server. Requesting topic 'cane'...
+[09:40:40] [INFO] Connected to server. Requesting topic 'cane'...
+[09:40:40] [INFO] Accepted client from 127.0.0.1:39873 (fd=5)
+[09:40:40] [INFO] Connected to server. Requesting topic 'cane'...
+[09:40:40] [INFO] Client requested topic: 'cane'
+[09:40:40] [INFO] Accepted client from 127.0.0.1:39869 (fd=7)
+[09:40:40] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:40:40] [INFO] Client requested topic: 'cane'
+[09:40:40] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:40:40] [INFO] Accepted client from 127.0.0.1:39881 (fd=8)
+[09:40:40] [INFO] Client requested topic: 'cane'
+[09:40:40] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:40:40] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:40:40] [INFO] Client requested topic: 'cane'
+[09:40:40] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+451 bytes)
+[09:40:40] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:40:40] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+[09:40:40] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:40:40] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:40:43] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:40:44] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:40:44] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:40:47] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:40:47] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:40:50] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:40:50] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:40:50] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:40:53] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:40:53] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:40:54] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:40:54] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:40:57] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:40:57] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:40:57] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:40:58] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:41:01] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:41:01] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:41:02] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:41:03] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:41:05] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:41:06] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:41:06] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:41:08] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:41:08] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:41:10] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:41:10] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:41:12] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:41:12] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:41:14] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:41:14] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:41:15] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+[09:41:15] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:41:15] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+[09:41:15] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:41:15] [INFO] Received OP_TRANSFER_END from server
+[09:41:15] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[09:41:15] [INFO] Performance: Duration = 34.47s | Goodput = 1.76 MB/s | Wire Throughput = 1.77 MB/s | Overhead = 0.81%
+[09:41:15] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[09:41:15] [INFO] Performance: Duration = 34.49s | Goodput = 1.76 MB/s | Wire Throughput = 1.77 MB/s | Overhead = 0.81%
+[09:41:16] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:41:16] [INFO] Received OP_TRANSFER_END from server
+[09:41:16] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c3/cane' in 0 retries
+[09:41:16] [INFO] Performance: Duration = 35.72s | Goodput = 1.70 MB/s | Wire Throughput = 1.71 MB/s | Overhead = 0.81%
+[09:41:16] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:41:16] [INFO] Received OP_TRANSFER_END from server
+[09:41:16] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c4/cane' in 0 retries
+[09:41:16] [INFO] Performance: Duration = 35.91s | Goodput = 1.69 MB/s | Wire Throughput = 1.70 MB/s | Overhead = 0.81%
+[09:41:16] [INFO] Exited concurrent accept loop
+[09:41:16] [INFO] Server shutdown complete
+[09:46:20] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[09:46:30] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[09:46:30] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_557
+[09:46:30] [INFO] Listening socket created on port 8080 (fd=3)
+[09:46:30] [INFO] Entering multi-threaded concurrent accept loop
+[09:46:30] [INFO] Connecting to 127.0.0.1:8080...
+[09:46:30] [INFO] Connecting to 127.0.0.1:8080...
+[09:46:30] [INFO] Accepted client from 127.0.0.1:40893 (fd=4)
+...
+[09:46:30] [INFO] Connected to server. Requesting topic 'cane'...
+[09:46:30] [INFO] Connected to server. Requesting topic 'cane'...
+[09:46:30] [INFO] Connected to server. Requesting topic 'cane'...
+[09:46:30] [INFO] Connected to server. Requesting topic 'cane'...
+[09:46:30] [INFO] Client requested topic: 'cane'
+[09:46:30] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:46:30] [INFO] Accepted client from 127.0.0.1:40921 (fd=8)
+[09:46:30] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:46:30] [INFO] Client requested topic: 'cane'
+[09:46:30] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:46:30] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+[09:46:30] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:46:30] [INFO] Client requested topic: 'cane'
+[09:46:30] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:46:30] [INFO] Accepted client from 127.0.0.1:40965 (fd=12)
+[09:46:30] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:46:30] [INFO] Client requested topic: 'cane'
+[09:46:30] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:46:30] [INFO] Accepted client from 127.0.0.1:40951 (fd=14)
+[09:46:30] [INFO] Client requested topic: 'cane'
+2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:46:30] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[09:46:30] [INFO] Accepted client from 127.0.0.1:40969 (fd=16)
+[09:46:30] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:46:30] [INFO] Client requested topic: 'cane'
+[09:46:30] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:46:30] [INFO] Client requested topic: 'cane'
+[09:46:30] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+ bytes)
+[09:46:30] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+[09:46:30] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:46:30] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:46:34] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:46:34] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:46:34] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:46:34] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:46:37] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:46:37] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:46:38] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:46:38] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:46:40] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:46:41] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:46:41] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:46:41] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:46:42] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:46:44] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:46:44] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:46:44] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:46:45] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:46:45] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:46:46] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:46:46] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:46:48] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:46:48] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:46:48] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:46:49] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:46:49] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:46:50] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:46:50] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:46:51] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:46:51] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:46:53] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:46:53] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:46:53] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:46:53] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:46:54] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:46:55] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:46:55] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:46:56] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:46:57] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:46:57] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:46:57] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:46:58] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:46:59] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:46:59] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:47:00] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:47:00] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:47:01] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:47:01] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:47:02] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:47:02] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:47:02] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:47:02] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:47:04] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:47:04] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:47:05] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[09:47:05] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+[09:47:05] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[09:47:05] [INFO] Performance: Duration = 34.52s | Goodput = 1.76 MB/s | Wire Throughput = 1.77 MB/s | Overhead = 0.81%
+[09:47:05] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:47:05] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:47:05] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:47:06] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:47:07] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[09:47:07] [INFO] Received OP_TRANSFER_END from server
+[09:47:07] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[09:47:07] [INFO] Performance: Duration = 36.44s | Goodput = 1.67 MB/s | Wire Throughput = 1.68 MB/s | Overhead = 0.81%
+[09:47:07] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[09:47:07] [INFO] Received OP_TRANSFER_END from server
+[09:47:07] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c4/cane' in 0 retries
+[09:47:07] [INFO] Performance: Duration = 36.58s | Goodput = 1.66 MB/s | Wire Throughput = 1.67 MB/s | Overhead = 0.81%
+[09:47:07] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[09:47:07] [INFO] Received OP_TRANSFER_END from server
+[09:47:07] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c3/cane' in 0 retries
+[09:47:07] [INFO] Performance: Duration = 36.99s | Goodput = 1.64 MB/s | Wire Throughput = 1.65 MB/s | Overhead = 0.81%
+[09:47:07] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:47:07] [INFO] Received OP_TRANSFER_END from server
+[09:47:07] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c6/cane' in 0 retries
+[09:47:07] [INFO] Performance: Duration = 37.07s | Goodput = 1.64 MB/s | Wire Throughput = 1.65 MB/s | Overhead = 0.81%
+[09:47:07] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[09:47:07] [INFO] Received OP_TRANSFER_END from server
+[09:47:07] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c5/cane' in 0 retries
+[09:47:07] [INFO] Performance: Duration = 37.39s | Goodput = 1.62 MB/s | Wire Throughput = 1.64 MB/s | Overhead = 0.81%
+[09:47:08] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:47:08] [INFO] Received OP_TRANSFER_END from server
+[09:47:08] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c8/cane' in 0 retries
+[09:47:08] [INFO] Performance: Duration = 38.02s | Goodput = 1.60 MB/s | Wire Throughput = 1.61 MB/s | Overhead = 0.81%
+[09:47:08] [INFO] Exited concurrent accept loop
+[09:47:08] [INFO] Server shutdown complete
+[09:57:19] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[09:57:26] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[09:57:27] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_557
+[09:57:27] [INFO] Listening socket created on port 8080 (fd=3)
+[09:57:27] [INFO] Entering multi-threaded concurrent accept loop
+[09:57:27] [INFO] Connecting to 127.0.0.1:8080...
+[09:57:27] [INFO] Connecting to 127.0.0.1:8080...
+[09:57:27] [INFO] Connected to server. Requesting [09:57:27] [INFO] Connected to server. Requesting topic 'cane'...
+[09:57:27] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[09:57:27] [INFO] Connecting to 127.0.0.1:8080...
+0509 (fd=5)
+...
+[09:57:27] [INFO] Connected to server. Requesting [09:57:27] [INFO[09:57:27] [INFO] Connected to server. Requesting [09:57:27] [INFO[09:57:27] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[09:57:27] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:57:27] [INFO] Connecting to 127.0.0.1:8080...
+[09:57:27] [INFO] Connected to server. Requesting topic 'cane'...
+[09:57:27] [INFO] Client requested topic: 'cane'
+[09:57:27] [INFO] Connected to server. Requesting topic 'cane'...
+[09:57:27] [INFO] Accepted client from 127.0.0.1:40511 (fd=7)
+al bytes (57.88 MB)
+[09:57:27] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+[09:57:27] [INFO] Accepted client from 127.0.0.1:40515 (fd=8)
+[09:57:27] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Client requested topic: 'cane'
+[09:57:27] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:57:27] [INFO] Client requested topic: 'cane'
+[09:57:27] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:57:27] [INFO] Accepted client from 127.0.0.1:40525 (fd=12)
+[09:57:27] [INFO] Client requested topic: 'cane'
+2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:57:27] [INFO] Accepted client from 127.0.0.1:40541 (fd=6)
+[09:57:27] [INFO] Client requested topic: 'cane'
+2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:57:27] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Client requested topic: 'cane'
+[09:57:27] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[09:57:27] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Client requested topic: 'cane'
+[09:57:27] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[09:57:27] [INFO] Accepted client from 127.0.0.1:40571 (fd=13)
+[09:57:27] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Client requested topic: 'cane'
+[09:57:27] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:57:27] [INFO] Accepted client from 127.0.0.1:40573 (fd=15)
+[09:57:27] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:57:27] [INFO] Accepted client from 127.0.0.1:40577 (fd=21)
+[09:57:27] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:57:27] [INFO] Accepted client from 127.0.0.1:40591 (fd=17)
+[09:57:27] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:57:27] [INFO] Accepted client from 127.0.0.1:40607 (fd=14)
+[09:57:27] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Client requested topic: 'cane'
+[09:57:27] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[09:57:27] [INFO] Client requested topic: 'cane'
+[09:57:27] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[09:57:27] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+[09:57:27] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Accepted client from 127.0.0.1:40621 (fd=29)
+[09:57:27] [INFO] Client requested topic: 'cane'
+[09:57:27] [INFO] Client requested topic: 'cane'
+ 60686716 total bytes (57.88 MB)
+[09:57:27] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[09:57:27] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:27] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[09:57:31] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:57:31] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:57:31] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:57:31] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:57:31] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[09:57:36] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:57:37] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:57:37] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:57:37] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:57:37] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:57:37] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[09:57:42] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:57:42] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:57:42] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:57:42] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:57:43] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:57:43] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:57:44] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:57:44] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[09:57:48] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:57:48] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:57:48] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:57:48] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:57:49] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:57:49] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:57:49] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:57:50] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:57:50] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:57:50] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[09:57:53] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:57:53] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:57:53] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:57:53] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:57:54] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:57:55] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:57:55] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:57:56] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:57:56] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:57:56] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:57:56] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[09:57:58] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:57:58] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:57:58] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:57:59] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:57:59] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:58:00] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:58:01] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:58:01] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:58:02] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:58:02] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:58:02] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:58:02] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[09:58:03] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:58:03] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:58:03] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:58:04] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:58:05] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:58:05] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:58:06] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:58:07] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:58:07] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:58:08] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:58:08] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:58:09] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:58:09] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[09:58:09] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:58:10] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:58:10] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:58:11] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:58:12] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:58:12] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:58:13] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:58:14] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:58:14] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:58:14] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:58:14] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:58:15] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:58:15] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:58:15] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:58:15] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:58:15] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[09:58:16] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:58:16] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:58:17] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:58:18] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[09:58:18] [INFO] Received OP_TRANSFER_END from server
+[09:58:18] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:58:18] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c15/cane' in 0 retries
+[09:58:18] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+roughput = 1.19 MB/s | Overhead = 0.81%
+[09:58:18] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c12/cane' in 0 retries
+[09:58:18] [INFO] Performance: Duration = 51.52s | Goodput = 1.18 MB/s | Wire Throughput = 1.19 MB/s | Overhead = 0.81%
+[09:58:18] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:58:18] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:58:18] [INFO] Received OP_TRANSFER_END from server
+[09:58:18] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c13/cane' in 0 retries
+[09:58:18] [INFO] Performance: Duration = 51.72s | Goodput = 1.17 MB/s | Wire Throughput = 1.18 MB/s | Overhead = 0.81%
+[09:58:19] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:58:19] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:58:19] [INFO] Received OP_TRANSFER_END from server
+[09:58:20] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c7/cane' in 0 retries
+[09:58:20] [INFO] Performance: Duration = 52.83s | Goodput = 1.15 MB/s | Wire Throughput = 1.16 MB/s | Overhead = 0.81%
+[09:58:20] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:58:20] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:58:20] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:58:20] [INFO] Received OP_TRANSFER_END from server
+[09:58:20] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c10/cane' in 0 retries
+[09:58:20] [INFO] Performance: Duration = 53.70s | Goodput = 1.13 MB/s | Wire Throughput = 1.14 MB/s | Overhead = 0.81%
+[09:58:20] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:58:20] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[09:58:20] [INFO] Received OP_TRANSFER_END from server
+[09:58:21] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c11/cane' in 0 retries
+[09:58:21] [INFO] Performance: Duration = 53.80s | Goodput = 1.13 MB/s | Wire Throughput = 1.14 MB/s | Overhead = 0.81%
+[09:58:21] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:58:21] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:58:21] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[09:58:21] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[09:58:21] [INFO] Received OP_TRANSFER_END from server
+[09:58:21] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c4/cane' in 0 retries
+[09:58:21] [INFO] Performance: Duration = 54.29s | Goodput = 1.12 MB/s | Wire Throughput = 1.13 MB/s | Overhead = 0.81%
+[09:58:22] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:58:22] [INFO] Received OP_TRANSFER_END from server
+[09:58:22] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c3/cane' in 0 retries
+[09:58:22] [INFO] Performance: Duration = 55.12s | Goodput = 1.10 MB/s | Wire Throughput = 1.11 MB/s | Overhead = 0.81%
+[09:58:22] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:58:22] [INFO] Received OP_TRANSFER_END from server
+[09:58:22] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[09:58:22] [INFO] Performance: Duration = 55.19s | Goodput = 1.10 MB/s | Wire Throughput = 1.11 MB/s | Overhead = 0.81%
+[09:58:22] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:58:22] [INFO] Received OP_TRANSFER_END from server
+[09:58:22] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c9/cane' in 0 retries
+[09:58:22] [INFO] Performance: Duration = 55.49s | Goodput = 1.09 MB/s | Wire Throughput = 1.10 MB/s | Overhead = 0.81%
+[09:58:23] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:58:23] [INFO] Received OP_TRANSFER_END from server
+[09:58:23] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c8/cane' in 0 retries
+[09:58:23] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+roughput = 1.09 MB/s | Overhead = 0.81%
+[09:58:23] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:58:23] [INFO] Received OP_TRANSFER_END from server
+[09:58:23] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[09:58:23] [INFO] Performance: Duration = 56.13s | Goodput = 1.08 MB/s | Wire Throughput = 1.09 MB/s | Overhead = 0.81%
+[09:58:23] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[09:58:23] [INFO] Received OP_TRANSFER_END from server
+[09:58:23] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c5/cane' in 0 retries
+[09:58:23] [INFO] Performance: Duration = 56.39s | Goodput = 1.08 MB/s | Wire Throughput = 1.08 MB/s | Overhead = 0.81%
+[09:58:23] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:58:23] [INFO] Received OP_TRANSFER_END from server
+[09:58:23] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c14/cane' in 0 retries
+[09:58:23] [INFO] Performance: Duration = 56.54s | Goodput = 1.07 MB/s | Wire Throughput = 1.08 MB/s | Overhead = 0.81%
+[09:58:23] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:58:23] [INFO] Received OP_TRANSFER_END from server
+[09:58:23] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c16/cane' in 0 retries
+[09:58:23] [INFO] Performance: Duration = 56.57s | Goodput = 1.07 MB/s | Wire Throughput = 1.08 MB/s | Overhead = 0.81%
+[09:58:23] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[09:58:23] [INFO] Received OP_TRANSFER_END from server
+[09:58:23] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c6/cane' in 0 retries
+[09:58:23] [INFO] Performance: Duration = 56.76s | Goodput = 1.07 MB/s | Wire Throughput = 1.08 MB/s | Overhead = 0.81%
+[09:58:23] [INFO] Exited concurrent accept loop
+[09:58:23] [INFO] Server shutdown complete
+[10:18:25] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[10:18:33] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[10:18:33] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_557
+[10:18:33] [INFO] Listening socket created on port 8080 (fd=3)
+[10:18:33] [INFO] Entering multi-threaded concurrent accept loop
+[10:18:34] [INFO] Connecting to 127.0.0.1:8080...
+[10:18:34] [INFO] Connecting to 127.0.0.1:8080...
+[10:18:34] [INFO] Connected to server. Requesting [10:18:34] [INFO] Connected to server. Requesting topic 'cane'...
+[10:18:34] [INFO] Connected to server. Requesting [10:18:34] [INFO[10:18:34] [INFO] Accepted client from 127.0.0.1:3[10:18:34] [INFO] Connected to server. Requesting topic 'cane'...
+[10:18:34] [INFO] Connecting to 127.0.0.1:8080...
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39251 (fd=6)
+...
+[10:18:34] [INFO] Connected to server. Requesting [10:18:34] [INFO] Connecting to 127.0.0.1:8080...
+[10:18:34] [INFO[10:18:34] [INFO] Connected to server. Requesting topic 'cane'...
+[10:18:34] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 606[10:18:34] [I[10:18:34] [INFO] Connected to server. Requesting topic 'cane'...
+B)
+[10:18:34] [INFO] Connected to server. Requesting topic 'cane'...
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+ bytes)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39269 (fd=9)
+[10:18:34] [INFO] Client requested topic: 'cane'
+2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+451 bytes)
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39283 (fd=12)
+[10:18:34] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+451 bytes)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39315 (fd=18)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39329 (fd=19)
+[10:18:34] [INFO] Client requested topic: 'cane'
+2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39341 (fd=17)
+[10:18:34] [INFO] Client requested topic: 'cane'
+2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39377 (fd=13)
+[10:18:34] [INFO] Client requested topic: 'cane'
+2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39367 (fd=22)
+[10:18:34] [INFO] Client requested topic: 'cane'
+2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39385 (fd=36)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39391 (fd=35)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39393 (fd=20)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39409 (fd=38)
+[10:18:34] [INFO] Client requested topic: 'cane'
+2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39423 (fd=37)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39443 (fd=30)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39439 (fd=41)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[10:18:34] [INFO] Accepted client from 127.0.0.1:39477 (fd=32)
+[10:18:34] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:34] [INFO] Client requested topic: 'cane'
+[10:18:34] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:35] [INFO] Accepted client from 127.0.0.1:39491 (fd=33)
+[10:18:35] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:35] [INFO] Client requested topic: 'cane'
+[10:18:35] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[10:18:35] [INFO] Accepted client from 127.0.0.1:39505 (fd=49)
+[10:18:35] [INFO] Client requested topic: 'cane'
+2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:35] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:35] [INFO] Accepted client from 127.0.0.1:39513 (fd=52)
+[10:18:35] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:35] [INFO] Client requested topic: 'cane'
+[10:18:35] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[10:18:35] [INFO] Accepted client from 127.0.0.1:39523 (fd=50)
+[10:18:35] [INFO] Client requested topic: 'cane'
+2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:35] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[10:18:35] [INFO] Client requested topic: 'cane'
+[10:18:35] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+ bytes)
+[10:18:35] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+[10:18:35] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:35] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:18:45] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:47] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:47] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:47] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:47] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:47] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:47] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:47] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:48] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:48] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:48] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:49] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:49] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:49] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:49] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:50] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:50] [INFO] Progress: 500/4863 files received (10.3%) - 5.94 MB written
+[10:18:59] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:00] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:00] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:00] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:00] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:00] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:01] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:02] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:02] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:03] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:03] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:06] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:06] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:06] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:07] [INFO] Progress: 1000/4863 files received (20.6%) - 12.03 MB written
+[10:19:13] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:14] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:14] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:14] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:15] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:15] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:16] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:16] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:17] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:18] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:20] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:20] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:22] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:23] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:23] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:23] [INFO] Progress: 1500/4863 files received (30.8%) - 17.76 MB written
+[10:19:27] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:28] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:28] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:28] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:28] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:29] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:30] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:30] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:31] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:33] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:34] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:35] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:36] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:37] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:39] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:40] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:40] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:40] [INFO] Progress: 2000/4863 files received (41.1%) - 23.66 MB written
+[10:19:41] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:42] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:42] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:43] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:43] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:44] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:44] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:46] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:47] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:49] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:50] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:51] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:53] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:53] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:54] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:19:56] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:19:56] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:19:56] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:19:57] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:57] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:58] [INFO] Progress: 2500/4863 files received (51.4%) - 29.67 MB written
+[10:19:58] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:19:58] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:19:58] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:19:59] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:19:59] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:19:59] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:00] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:00] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:00] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:01] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:07] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:08] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:13] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:13] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:15] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:17] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:17] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:17] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:17] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:17] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:18] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:18] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:19] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:19] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:20] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:21] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:21] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:21] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:22] [INFO] Progress: 3000/4863 files received (61.7%) - 35.58 MB written
+[10:20:22] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:23] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:23] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:23] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:23] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:23] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:25] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:29] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:30] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:33] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:34] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:34] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:34] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:35] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:36] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:37] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:37] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:38] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:39] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:40] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:41] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:41] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:41] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:42] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:42] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:42] [INFO] Progress: 3500/4863 files received (72.0%) - 41.64 MB written
+[10:20:43] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:43] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:44] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:44] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:44] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:44] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:45] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:50] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:51] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:51] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:20:51] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:20:52] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:20:53] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:20:53] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:20:54] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:20:54] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:55] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:56] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:20:56] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:57] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:20:58] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:59] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:20:59] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:00] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:01] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:02] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:21:02] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:21:03] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:21:03] [INFO] Progress: 4000/4863 files received (82.3%) - 47.57 MB written
+[10:21:04] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:04] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:04] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:04] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:04] [INFO] Received OP_TRANSFER_END from server
+3 files, 60686716 bytes)
+[10:21:04] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+[10:21:05] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c10/cane' in 0 retries[10:21:05] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c16/cane' in 0 retries
+[10:21:05] [INFO] Performance: Duration = 152.01s | Goodput = 0.40 MB/s | Wire Throughput = 0.40 MB/s | Overhead = 0.81%
+[10:21:05] [INFO] Performance: Duration = 152.02s | Goodput = 0.40 MB/s | Wire Throughput = 0.40 MB/s | Overhead = 0.81%
+[10:21:05] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:05] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:06] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:07] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:07] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:07] [INFO] Completed streaming topic 'cane' (486[10:21:07] [INFO] Received OP_TRANSFER_END from server
+[10:21:07] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+[10:21:07] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c21/cane' in 0 retries
+[10:21:07] [INFO] Performance: Duration = 154.13s | Goodput = 0.39 MB/s | Wire Throughput = 0.40 MB/s | Overhead = 0.81%
+s
+[10:21:07] [INFO] Performance: Duration = 154.12s | Goodput = 0.39 MB/s | Wire Throughput = 0.40 MB/s | Overhead = 0.81%
+[10:21:07] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:07] [INFO] Received OP_TRANSFER_END from server
+[10:21:08] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c12/cane' in 0 retries
+[10:21:08] [INFO] Performance: Duration = 155.02s | Goodput = 0.39 MB/s | Wire Throughput = 0.39 MB/s | Overhead = 0.81%
+[10:21:08] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:08] [INFO] Received OP_TRANSFER_END from server
+[10:21:08] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c7/cane' in 0 retries
+[10:21:08] [INFO] Performance: Duration = 155.35s | Goodput = 0.39 MB/s | Wire Throughput = 0.39 MB/s | Overhead = 0.81%
+[10:21:10] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:10] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[10:21:10] [INFO] Received OP_TRANSFER_END from server
+[10:21:10] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c11/cane' in 0 retries
+[10:21:10] [INFO] Performance: Duration = 157.71s | Goodput = 0.38 MB/s | Wire Throughput = 0.39 MB/s | Overhead = 0.81%
+[10:21:10] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:11] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:11] [INFO] Received OP_TRANSFER_END from server
+[10:21:11] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c13/cane' in 0 retries
+[10:21:11] [INFO] Performance: Duration = 158.41s | Goodput = 0.38 MB/s | Wire Throughput = 0.39 MB/s | Overhead = 0.81%
+[10:21:12] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[10:21:12] [INFO] Received OP_TRANSFER_END from server
+[10:21:12] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c17/cane' in 0 retries
+[10:21:12] [INFO] Performance: Duration = 159.40s | Goodput = 0.38 MB/s | Wire Throughput = 0.38 MB/s | Overhead = 0.81%
+[10:21:12] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:12] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:12] [INFO] Received OP_TRANSFER_END from server
+[10:21:13] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c18/cane' in 0 retries
+[10:21:13] [INFO] Performance: Duration = 160.02s | Goodput = 0.38 MB/s | Wire Throughput = 0.38 MB/s | Overhead = 0.81%
+[10:21:13] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:13] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[10:21:13] [INFO] Received OP_TRANSFER_END from server
+[10:21:13] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c19/cane' in 0 retries
+[10:21:13] [INFO] Performance: Duration = 160.77s | Goodput = 0.38 MB/s | Wire Throughput = 0.38 MB/s | Overhead = 0.81%
+[10:21:13] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:13] [INFO] Received OP_TRANSFER_END from server
+3 files, 60686716 bytes)
+
+[10:21:13] [INFO] Received OP_TRANSFER_END from server
+[10:21:13] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+[10:21:13] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c4/cane' in 0 retries
+
+[10:21:13] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[10:21:13] [INFO] Performance: Duration = 160.88s | Goodput = 0.38 MB/s | Wire Throughput = 0.38 MB/s | Overhead = 0.81%
+[10:21:13] [INFO] Performance: Duration = 160.88s | Goodput = 0.38 MB/s | Wire Throughput = 0.38 MB/s | Overhead = 0.81%
+[10:21:14] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:14] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:14] [INFO] Received OP_TRANSFER_END from server
+[10:21:14] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c14/cane' in 0 retries
+[10:21:14] [INFO] Performance: Duration = 161.66s | Goodput = 0.38 MB/s | Wire Throughput = 0.38 MB/s | Overhead = 0.81%
+[10:21:14] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:14] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:14] [INFO] Received OP_TRANSFER_END from server
+[10:21:15] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[10:21:15] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:15] [INFO] Performance: Duration = 162.01s | Goodput = 0.37 MB/s | Wire Throughput = 0.38 MB/s | Overhead = 0.81%
+[10:21:15] [INFO] Received OP_TRANSFER_END from server
+2.5%) - 53.50 MB written
+[10:21:15] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c28/cane' in 0 retries
+[10:21:15] [INFO] Performance: Duration = 162.03s | Goodput = 0.37 MB/s | Wire Throughput = 0.38 MB/s | Overhead = 0.81%
+[10:21:15] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:15] [INFO] Received OP_TRANSFER_END from server
+[10:21:15] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c30/cane' in 0 retries
+[10:21:15] [INFO] Performance: Duration = 162.48s | Goodput = 0.37 MB/s | Wire Throughput = 0.38 MB/s | Overhead = 0.81%
+[10:21:15] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:16] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:16] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:16] [INFO] Progress: 4500/4863 files received (92.5%) - 53.50 MB written
+[10:21:17] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[10:21:17] [INFO] Received OP_TRANSFER_END from server
+[10:21:17] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c15/cane' in 0 retries
+[10:21:17] [INFO] Performance: Duration = 164.12s | Goodput = 0.37 MB/s | Wire Throughput = 0.37 MB/s | Overhead = 0.81%
+[10:21:17] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:17] [INFO] Received OP_TRANSFER_END from server
+[10:21:17] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c25/cane' in 0 retries
+[10:21:17] [INFO] Performance: Duration = 164.31s | Goodput = 0.37 MB/s | Wire Throughput = 0.37 MB/s | Overhead = 0.81%
+[10:21:18] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:18] [INFO] Received OP_TRANSFER_END from server
+[10:21:18] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c9/cane' in 0 retries
+[10:21:18] [INFO] Performance: Duration = 165.36s | Goodput = 0.37 MB/s | Wire Throughput = 0.37 MB/s | Overhead = 0.81%
+[10:21:18] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+
+[10:21:18] [INFO] Received OP_TRANSFER_END from server
+[10:21:18] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c31/cane' in 0 retries
+[10:21:18] [INFO] Performance: Duration = 165.43s | Goodput = 0.37 MB/s | Wire Throughput = 0.37 MB/s | Overhead = 0.81%
+[10:21:18] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+[10:21:18] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:18] [INFO] Received OP_TRANSFER_END from server
+[10:21:18] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c24/cane' in 0 retries
+[10:21:18] [INFO] Performance: Duration = 165.83s | Goodput = 0.37 MB/s | Wire Throughput = 0.37 MB/s | Overhead = 0.81%
+[10:21:19] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:19] [INFO] Received OP_TRANSFER_END from server
+[10:21:19] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c26/cane' in 0 retries
+[10:21:19] [INFO] Performance: Duration = 166.15s | Goodput = 0.37 MB/s | Wire Throughput = 0.37 MB/s | Overhead = 0.81%
+[10:21:19] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:19] [INFO] Received OP_TRANSFER_END from server
+[10:21:19] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c22/cane' in 0 retries
+[10:21:19] [INFO] Performance: Duration = 166.30s | Goodput = 0.36 MB/s | Wire Throughput = 0.37 MB/s | Overhead = 0.81%
+[10:21:19] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:19] [INFO] Received OP_TRANSFER_END from server
+[10:21:19] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c23/cane' in 0 retries
+[10:21:19] [INFO] Performance: Duration = 166.65s | Goodput = 0.36 MB/s | Wire Throughput = 0.37 MB/s | Overhead = 0.81%
+[10:21:19] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:19] [INFO] Completed streaming topic 'cane' (486[10:21:19] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:19] [INFO] Received OP_TRANSFER_END from server
+[10:21:19] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c27/cane' in 0 retries
+[10:21:19] [INFO] Performance: Duration = 166.67s | Goodput = 0.36 MB/s | Wire Throughput = 0.37 MB/s | Overhead = 0.81%
+[10:21:19] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c32/cane' in 0 retries
+[10:21:19] [INFO] Performance: Duration = 166.66s | Goodput = 0.36 MB/s | Wire Throughput = 0.37 MB/s | Overhead = 0.81%
+[10:21:19] [INFO] Progress: 4863/4863 files received (100.0%) - 57.88 MB written
+[10:21:19] [INFO] Received OP_TRANSFER_END from server
+[10:21:19] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/client_bench_output/c29/cane' in 0 retries
+[10:21:19] [INFO] Performance: Duration = 166.82s | Goodput = 0.36 MB/s | Wire Throughput = 0.37 MB/s | Overhead = 0.81%
+[10:21:19] [INFO] Exited concurrent accept loop
+[10:21:19] [INFO] Server shutdown complete
+[10:50:53] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[10:50:54] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[10:50:54] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_29700
+[10:50:54] [INFO] Listening socket created on port 8080 (fd=3)
+[10:50:54] [INFO] Entering multi-threaded concurrent accept loop
+[10:50:54] [INFO] Connecting to 127.0.0.1:8080...
+[10:50:54] [INFO] Accepted client from 127.0.0.1:41817 (fd=4)
+...
+[10:50:54] [INFO] Client requested topic: 'cane'
+[10:50:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:50:54] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[10:50:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:50:56] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:50:56] [INFO] Received OP_TRANSFER_END from server
+[10:50:56] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[10:50:56] [INFO] Performance: Duration = 1.48s | Goodput = 1.68 MB/s | Wire Throughput = 1.70 MB/s | Overhead = 0.81%
+[10:50:56] [INFO] Exited concurrent accept loop
+[10:50:56] [INFO] Server shutdown complete
+[10:51:02] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[10:51:03] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[10:51:03] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_29700
+[10:51:03] [INFO] Listening socket created on port 8080 (fd=3)
+[10:51:03] [INFO] Entering multi-threaded concurrent accept loop
+[10:51:03] [INFO] Connecting to 127.0.0.1:8080...
+[10:51:03] [INFO] Accepted client from 127.0.0.1:40291 (fd=4)
+...
+[10:51:03] [INFO] Accepted client from 127.0.0.1:40293 (fd=5)
+[10:51:03] [INFO] Client requested topic: 'cane'
+[10:51:03] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:51:03] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:51:03] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[10:51:03] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:51:04] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:51:04] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:51:04] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[10:51:04] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[10:51:04] [INFO] Performance: Duration = 0.74s | Goodput = 3.36 MB/s | Wire Throughput = 3.38 MB/s | Overhead = 0.81%
+[10:51:04] [INFO] Performance: Duration = 0.75s | Goodput = 3.35 MB/s | Wire Throughput = 3.38 MB/s | Overhead = 0.81%
+[10:51:04] [INFO] Exited concurrent accept loop
+[10:51:04] [INFO] Server shutdown complete
+[10:51:12] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[10:51:14] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[10:51:14] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_29700
+[10:51:14] [INFO] Listening socket created on port 8080 (fd=3)
+[10:51:14] [INFO] Entering multi-threaded concurrent accept loop
+[10:51:14] [INFO] Connecting to 127.0.0.1:8080...
+[10:51:14] [INFO] Connecting to 127.0.0.1:8080...
+[10:51:14] [INFO] Connected to server. Requesting topic 'cane'...
+[10:51:14] [INFO] Connected to server. Requesting topic 'cane'...
+[10:51:14] [INFO] Accepted client from 127.0.0.1:41849 (fd=5)
+[10:51:14] [INFO] Client requested topic: 'cane'
+[10:51:14] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[10:51:14] [INFO] Client requested topic: 'cane'
+[10:51:14] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+51 bytes)
+[10:51:14] [INFO] Accepted client from 127.0.0.1:41859 (fd=7)
+[10:51:14] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:51:14] [INFO] Client requested topic: 'cane'
+[10:51:14] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:51:14] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:51:14] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:51:14] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:51:15] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:51:15] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:51:15] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:51:15] [INFO] Received OP_TRANSFER_END from server
+[10:51:15] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[10:51:15] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[10:51:15] [INFO] Performance: Duration = 0.91s | Goodput = 2.74 MB/s | Wire Throughput = 2.77 MB/s | Overhead = 0.81%
+[10:51:15] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:51:15] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:51:15] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c3/cane' in 0 retries
+[10:51:15] [INFO] Performance: Duration = 0.93s | Goodput = 2.67 MB/s | Wire Throughput = 2.70 MB/s | Overhead = 0.81%
+[10:51:15] [INFO] Exited concurrent accept loop
+[10:51:15] [INFO] Server shutdown complete
+[10:51:31] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[10:51:32] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[10:51:32] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_29700
+[10:51:32] [INFO] Listening socket created on port 8080 (fd=3)
+[10:51:32] [INFO] Entering multi-threaded concurrent accept loop
+[10:51:32] [INFO] Connecting to 127.0.0.1:8080...
+[10:51:32] [INFO] Connecting to 127.0.0.1:8080...
+[10:51:32] [INFO] Connecting to 127.0.0.1:8080...
+[10:51:32] [INFO] Connected to server. Requesting topic 'cane'...
+[10:51:32] [INFO] Connected to server. Requesting topic 'cane'...
+[10:51:32] [INFO] Connected to server. Requesting topic 'cane'...
+[10:51:32] [INFO] Accepted client from 127.0.0.1:40357 (fd=5)
+[10:51:32] [INFO] Client requested topic: 'cane'
+[10:51:32] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:51:32] [INFO] Client requested topic: 'cane'
+[10:51:32] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:51:32] [INFO] Accepted client from 127.0.0.1:40373 (fd=8)
+[10:51:32] [INFO] Client requested topic: 'cane'
+[10:51:32] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:51:32] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[10:51:32] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:51:32] [INFO] Accepted client from 127.0.0.1:40385 (fd=10)
+[10:51:32] [INFO] Client requested topic: 'cane'
+[10:51:32] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:51:32] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[10:51:32] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:51:32] [INFO] Accepted client from 127.0.0.1:40387 (fd=12)
+[10:51:32] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:51:32] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:51:32] [INFO] Accepted client from 127.0.0.1:40395 (fd=14)
+[10:51:32] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:51:32] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:51:33] [INFO] Accepted client from 127.0.0.1:40409 (fd=13)
+[10:51:33] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:51:33] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:51:33] [INFO] Client requested topic: 'cane'
+[10:51:33] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:51:33] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:51:33] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[10:51:33] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:51:33] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:51:33] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:51:33] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:51:33] [INFO] Received OP_TRANSFER_END from server
+[10:51:33] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:51:33] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp[10:51:33] [INFO] Transfer SUCCESS: 200 fil[10:51:33] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp[10:51:33] [INFO] Progress: 200/200 files r[10:51:33] [INFO] Completed streami[10:51:33] [INFO] Performance: Duration = 1[10:51:33] [INFO] Performance: Duration = 1.01s | Goodput = 2.46 MB/s | Wire[10:51:33] [INFO] Performance: Duration = 1[10:51:33] [INFO] Received OP_TRANSFER_END from server
+ut = 2.46 MB/s | Wire Throughput = 2.48 MB/s | Overhead = 0.81%
+[10:51:33] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:51:33] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:51:33] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c7/cane' in 0 retries
+[10:51:33] [INFO] Performance: Duration = 1.02s | Goodput = 2.45 MB/s | Wire Throughput = 2.47 MB/s | Overhead = 0.81%
+[10:51:34] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:51:34] [INFO] Received OP_TRANSFER_END from server
+[10:51:34] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[10:51:34] [INFO] Performance: Duration = 1.10s | Goodput = 2.27 MB/s | Wire Throughput = 2.29 MB/s | Overhead = 0.81%
+[10:51:34] [INFO] Exited concurrent accept loop
+[10:51:34] [INFO] Server shutdown complete
+[10:52:01] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[10:52:02] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[10:52:02] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_29700
+[10:52:02] [INFO] Listening socket created on port 8080 (fd=3)
+[10:52:02] [INFO] Entering multi-threaded concurrent accept loop
+[10:52:02] [INFO] Connecting to 127.0.0.1:8080...
+[10:52:02] [INFO] Accepted client from 127.0.0.1:38495 (fd=4)
+...
+[10:52:02] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[10:52:02] [INFO] Connecting to 127.0.0.1:8080...
+8505 (fd=5)
+...
+[10:52:02] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[10:52:02] [INFO] Accepted client from 127.0.0.1:38511 (fd=6)
+...
+[10:52:02] [INFO] Connecting to 127.0.0.1:8080...
+[10:52:02] [INFO] Connected to server. Requesting topic 'cane'...
+[10:52:02] [INFO] Connected to server. Requesting topic 'cane'...
+[10:52:02] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB[10:52:02] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[10:52:02] [INFO] Accepted client from 127.0.0.1:38527 (fd=7)
+[10:52:02] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[10:52:02] [INFO] Client requested topic: 'cane'
+[10:52:02] [INFO] Connecting to 127.0.0.1:8080...
+exWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:02] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:02] [INFO] Connected to server. Requesting topic 'cane'...
+[10:52:02] [INFO] Accepted client from 127.0.0.1:38529 (fd=10)
+[10:52:02] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:02] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:02] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:02] [INFO] Client requested topic: 'cane'
+[10:52:02] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[10:52:02] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[10:52:02] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:02] [INFO] Accepted client from 127.0.0.1:38537 (fd=13)
+[10:52:02] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:02] [INFO] Client requested topic: 'cane'
+[10:52:02] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:02] [INFO] Accepted client from 127.0.0.1:38543 (fd=16)
+[10:52:02] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:02] [INFO] Client requested topic: 'cane'
+[10:52:02] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:02] [INFO] Accepted client from 127.0.0.1:38553 (fd=18)
+[10:52:02] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:02] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:02] [INFO] Accepted client from 127.0.0.1:38565 (fd=9)
+[10:52:02] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:02] [INFO] Client requested topic: 'cane'
+[10:52:02] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:02] [INFO] Accepted client from 127.0.0.1:38573 (fd=22)
+[10:52:02] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:02] [INFO] Client requested topic: 'cane'
+[10:52:02] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:02] [INFO] Accepted client from 127.0.0.1:38589 (fd=20)
+[10:52:02] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:02] [INFO] Accepted client from 127.0.0.1:38597 (fd=23)
+[10:52:02] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[10:52:02] [INFO] Client requested topic: 'cane'
+[10:52:02] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:02] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:02] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:02] [INFO] Client requested topic: 'cane'
+[10:52:02] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+51 bytes)
+[10:52:02] [INFO] Accepted client from 127.0.0.1:38609 (fd=21)
+[10:52:02] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:02] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[10:52:02] [INFO] Accepted client from 127.0.0.1:38623 (fd=29)
+[10:52:02] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:02] [INFO] Client requested topic: 'cane'
+[10:52:02] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[10:52:02] [INFO] Client requested topic: 'cane'
+[10:52:02] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:02] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:02] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[10:52:02] [INFO] Client requested topic: 'cane'
+[10:52:02] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:02] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:02] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:03] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:52:03] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:52:03] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[10:52:03] [INFO] Performance: Duration = 1.49s | Goodput = 1.68 MB/s | Wire Throughput = 1.69 MB/s | Overhead = 0.81%
+[10:52:03] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:03] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:03] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[10:52:03] [INFO] Received OP_TRANSFER_END from server
+[10:52:03] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:52:03] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[10:52:03] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c8/cane' in 0 retries
+
+[10:52:03] [INFO] Performance: Duration = 1.63s | Goodput = 1.53 MB/s | Wire Throughput = 1.55 MB/s | Overhead = 0.81%
+[10:52:03] [INFO] Performance: Duration = 1.62s | Goodput = 1.54 MB/s | Wire Throughput = 1.56 MB/s | Overhead = 0.81%
+[10:52:03] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:52:03] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:52:03] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:03] [INFO] Received OP_TRANSFER_END from server
+[10:52:03] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:03] [INFO] Progress: 200/200 files re[10:52:03] [INFO] Progress: 200/20[10:52:03] [INFO] Received OP_TRANSFER_END f[10:52:03] [INFO] Received OP_TRANSFER_END from server
+ut = 1.48 MB/s | Wire Throughput = 1.49 MB/s | Overhead = 0.81%
+[10:52:03] [INFO] Received OP_TRANSFER_END from server
+[10:52:03] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:52:03] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:52:03] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:52:03] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c16/cane' in 0 retries
+[10:52:03] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c14/cane' in 0 retries
+[10:52:03] [INFO] Performance: Duration = 1.70s | Goodput = 1.47 MB/s | Wire Throughput = 1.48 MB/s | Overhead = 0.81%
+es
+[10:52:03] [INFO] Performance: Duration = 1.69s | Goodput = 1.47 MB/s | Wire Throughput = 1.49 MB/s | Overhead = 0.81%
+[10:52:03] [INFO] Performance: Duration = 1.71s | Goodput = 1.46 MB/s | Wire Throughput = 1.48 MB/s | Overhead = 0.81%
+[10:52:03] [INFO] Performance: Duration = 1.71s | Goodput = 1.46 MB/s | Wire Throughput = 1.47 MB/s | Overhead = 0.81%
+[10:52:03] [INFO] Exited concurrent accept loop
+[10:52:03] [INFO] Server shutdown complete
+[10:52:53] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[10:52:54] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[10:52:54] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_29700
+[10:52:54] [INFO] Listening socket created on port 8080 (fd=3)
+[10:52:54] [INFO] Entering multi-threaded concurrent accept loop
+[10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+[10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40151 (fd=4)
+...
+[10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+[10:52:54] [INFO] Connected to server. Requesting [10:52:54] [INFO[10:52:54] [INFO] Connected to server. Requesting topic 'cane'...
+[10:52:54] [INFO] Connected to server. Requesting [10:52:54] [INFO[10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40167 (fd=7)
+...
+[10:52:54] [INFO] Connected to server. Requesting topic 'cane'...
+es (2.38 MB)
+[10:52:54] [INFO] Client requested topic: 'cane'
+ topic 'cane'...
+[10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+[10:52:54] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497[10:52:54] [10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+l bytes (2.38 MB)
+[10:52:54] [INFO] Connected to server. Requesting topic 'cane'...
+[10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[10:52:54] [INFO] Client requested topic: 'cane'
+
+topic 'cane'...
+[10:52:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Sent OP_GET_OK for topic 'cane' [10:52:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:54] [INFO] Accepted client from 127.0.0.1:4[10:52:54] [I[10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+..
+[10:52:54] [INFO] Client requested topic: 'cane'
+ topic 'cane'...
+[10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+exWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Connected to server. Requesting topic 'cane'...
+[10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+497353 total bytes (2.38 MB[10:52:54] [INFO] Connected to server. Requesting topic 'cane'...
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40203 (fd=6)
+[10:52:54] [INFO] Connected to server. Requesting [10:52:54] [INFO[10:52:54] [INFO] Client requested topic: 'cane'
+fOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Connected to server. Requesting topic 'cane'...
+[10:52:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:54] [INFO] Connected to server. Requesting topic 'cane'...
+[10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+0215 (fd=14)
+[10:52:54] [INFO] Client requested topic: 'cane'
+
+exWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[10:52:54] [INFO] Connected to server. Requesting [10:52:54] [INFO] Received [10:52:54] [INFO] Connected to server. Requesting topic 'cane'...
+[10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40223 (fd=12)
+[10:52:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Connected to server. Requesting topic 'cane'...
+[10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+[10:52:54] [INFO] Connecting to 127.0.0.1:8080...
+497353 total bytes (2.38 MB[10:52:54] [INFO] Connected to server. Requesting topic 'cane'...
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40235 (fd=17)
+[10:52:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUf[10:52:54] [INFO] Client requested topic: 'cane'
+[10:52:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Client requested topic: 'cane'
+[10:52:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40247 (fd=13)
+[10:52:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Client requested topic: 'cane'
+[10:52:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Client requested topic: 'cane'
+[10:52:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40271 (fd=11)
+[10:52:54] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40283 (fd=26)
+[10:52:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Client requested topic: 'cane'
+[10:52:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40293 (fd=21)
+[10:52:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Client requested topic: 'cane'
+[10:52:54] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40299 (fd=29)
+[10:52:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Client requested topic: 'cane'
+[10:52:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40311 (fd=27)
+[10:52:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Client requested topic: 'cane'
+[10:52:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40315 (fd=35)
+[10:52:54] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40321 (fd=9)
+[10:52:54] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40323 (fd=25)
+[10:52:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Client requested topic: 'cane'
+[10:52:54] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[10:52:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Client requested topic: 'cane'
+[10:52:54] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[10:52:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Client requested topic: 'cane'
+[10:52:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40343 (fd=44)
+[10:52:54] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40359 (fd=37)
+[10:52:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:54] [INFO] Client requested topic: 'cane'
+[10:52:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:54] [INFO] Accepted client from 127.0.0.1:40367 (fd=31)
+[10:52:54] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:55] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:55] [INFO] Accepted client from 127.0.0.1:40381 (fd=33)
+[10:52:55] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:55] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[10:52:55] [INFO] Accepted client from 127.0.0.1:40389 (fd=30)
+[10:52:55] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:55] [INFO] Client requested topic: 'cane'
+[10:52:55] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[10:52:55] [INFO] Accepted client from 127.0.0.1:40405 (fd=49)
+[10:52:55] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:55] [INFO] Client requested topic: 'cane'
+[10:52:55] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:55] [INFO] Accepted client from 127.0.0.1:40409 (fd=24)
+[10:52:55] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:55] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:55] [INFO] Accepted client from 127.0.0.1:40417 (fd=18)
+[10:52:55] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:55] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:55] [INFO] Accepted client from 127.0.0.1:40429 (fd=59)
+[10:52:55] [INFO] Client requested topic: 'cane'
+bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:55] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:55] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:55] [INFO] Client requested topic: 'cane'
+[10:52:55] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:55] [INFO] Client requested topic: 'cane'
+[10:52:55] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:55] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[10:52:55] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[10:52:55] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:55] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[10:52:56] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:52:56] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:52:56] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[10:52:56] [INFO] Performance: Duration = 2.21s | Goodput = 1.13 MB/s | Wire Throughput = 1.14 MB/s | Overhead = 0.81%
+[10:52:56] [INFO] Performance: Duration = 2.21s | Goodput = 1.13 MB/s | Wire Throughput = 1.14 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c3/cane' in 0 retries
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+[10:52:57] [INFO] Performance: Duration = 2.60s | Goodput = 0.96 MB/s | Wire Throughput = 0.97 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c4/cane' in 0 retries
+[10:52:57] [INFO] Performance: Duration = 2.61s | Goodput = 0.96 MB/s | Wire Throughput = 0.96 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c6/cane' in 0 retries
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+ut = 0.95 MB/s | Wire Throughput = 0.96 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+/client_bench_output/c7/cane' in 0 retries
+[10:52:57] [INFO] Performance: Duration = 2.65s | Goodput = 0.94 MB/s | Wire Throughput = 0.95 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c5/cane' in 0 retries
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+[10:52:57] [INFO] Performance: Duration = 2.70s | Goodput = 0.92 MB/s | Wire Throughput = 0.93 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c8/cane' in 0 retries
+[10:52:57] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+hroughput = 0.93 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c9/cane' in 0 retries
+[10:52:57] [INFO] Performance: Duration = 2.75s | Goodput = 0.91 MB/s | Wire Throughput = 0.91 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+/client_bench_output/c10/cane' in 0 retries
+[10:52:57] [INFO] Performance: Duration = 2.77s | Goodput = 0.90 MB/s | Wire Throughput = 0.91 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+[10:52:57] [INFO] Recei[10:52:57] [INFO] Received OP_TRANSFER_END from server
+[10:52:57] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+/client_bench_output/c12/cane' in 0 retries
+[10:52:57] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+hroughput = 0.90 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp[10:52:57] [INFO] Transfer SUCCESS: 200 file[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp[10:52:57] [INFO] Transfer SUCCESS: 200 file[10:52:57] [INFO] Performance: Duration = 2.78s | Goodput = 0.90 MB/s | Wire T[10:52:57] [INFO] Performance: Duration =[10:52:57] [INFO] Performance: Durati[10:52:57] [INFO] Performance: Duration =[10:52:57] [INFO] Performance: Duration =[10:52:57] [INFO] Performance: Durati[10:52:57] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+81%
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c16/cane' in 0 retries
+[10:52:57] [INFO] Performance: Duration = 2.82s | Goodput = 0.89 MB/s | Wire Throughput = 0.89 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c15/cane' in 0 retries
+[10:52:57] [INFO] Performance: Duration = 2.83s | Goodput = 0.88 MB/s | Wire T[10:52:57] [INFO] Performance: Duration = 2.79s | Goodput = 0.89 MB/s | Wire Throughput = 0.90 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c21/cane' in 0 retries
+[10:52:57] [INFO] Performance: Duration = 2.86s | Goodput = 0.87 MB/s | Wire Throughput = 0.88 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+bytes) written to '/tmp/client_bench_output/c23/cane' in 0 retries
+[10:52:57] [INFO] Performance: Duration = 2.87s | Goodput = 0.87 MB/s | Wire Throughput = 0.88 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c24/cane' in 0 retries
+[10:52:57] [INFO] Performance: Duration = 2.88s | Goodput = 0.87 MB/s | Wire Throughput = 0.87 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c20/cane' in 0 retries
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:57] [INFO] Performance: Duration = 2.94s | Goodput = 0.85 MB/s | Wire Throughput = 0.86 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c28/cane' in 0 retries
+[10:52:57] [INFO] Performance: Duration = 2.93s | Goodput = 0.85 MB/s | Wire Throughput = 0.86 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+/client_bench_output/c25/cane' in 0 retries
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+ut = 0.85 MB/s | Wire Throughput = 0.85 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c29/cane' in 0 retries
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+[10:52:57] [INFO] Performance: Duration = 2.97s | Goodput = 0.84 MB/s | Wire Throughput = 0.85 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c30/cane' in 0 retries
+[10:52:57] [INFO] Performance: Duration = 2.98s | Goodput = 0.84 MB/s | Wire Throughput = 0.85 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Progress: 200/200 files received (100.0%) - 2.38 MB written
+[10:52:57] [INFO] Received OP_TRANSFER_END from server
+bytes) written to '/tmp/client_bench_output/c31/cane' in 0 retries
+[10:52:57] [INFO] Performance: Duration = 2.99s | Goodput = 0.83 MB/s | Wire Throughput = 0.84 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c32/cane' in 0 retries
+[10:52:57] [INFO] Performance: Duration = 3.01s | Goodput = 0.83 MB/s | Wire Throughput = 0.84 MB/s | Overhead = 0.81%
+[10:52:57] [INFO] Exited concurrent accept loop
+[10:52:57] [INFO] Server shutdown complete
