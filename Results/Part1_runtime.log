@@ -7199,3 +7199,20 @@ bytes) written to '/tmp/client_bench_output/c31/cane' in 0 retries
 [17:11:23] [INFO] Indexed topic 'gatto': 1668 files, 151144282 total bytes
 [17:11:27] [INFO] Indexed topic 'mucca': 1866 files, 25833171 total bytes
 [17:11:30] [INFO] Indexed topic 'pecora': 1820 files, 62629703 total bytes
+[17:11:38] [INFO] Indexed topic 'ragno': 4821 files, 78999493 total bytes
+[17:11:40] [INFO] Indexed topic 'scoiattolo': 1862 files, 25409193 total bytes
+[17:11:40] [INFO] Successfully loaded 10 topics from ../Dataset/raw-img
+[17:11:40] [INFO] Listening socket created on port 9000 (fd=3)
+[17:11:40] [INFO] Entering multi-threaded concurrent accept loop
+[17:13:15] [ERROR] Invalid IPv4 address format: '1127.0.0.1'
+[17:13:22] [INFO] Connecting to 127.0.0.1:9000...
+[17:13:22] [INFO] Connected to server. Requesting topic 'cane'...
+[17:13:22] [INFO] Client requested topic: 'cane'
+[17:13:22] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[17:13:22] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[17:14:03] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+[17:14:04] [INFO] Transfer SUCCESS: 4863 files (60686716 bytes) written to '/tmp/output_p1/cane' in 0 retries
+[17:14:04] [INFO] Performance: Duration = 39.62s | Goodput = 1.53 MB/s | Wire Throughput = 1.54 MB/s | Overhead = 0.81%
+[17:14:51] [INFO] Exited concurrent accept loop
+[17:14:51] [INFO] Server shutdown complete
