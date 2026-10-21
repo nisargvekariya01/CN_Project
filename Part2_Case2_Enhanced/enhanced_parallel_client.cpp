@@ -16,6 +16,7 @@
 #include <sys/socket.h>
 #include <sys/stat.h>
 #include <netinet/in.h>
+#include <netinet/tcp.h>
 #include <arpa/inet.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -299,6 +300,14 @@ void* client_parallel_worker(void* arg) {
             continue;
         }
 
+        // Disable Nagle's algorithm + tune socket buffers to 256 KiB
+        {
+            int nd = 1, bsz = 256 * 1024;
+            setsockopt(sockfd, IPPROTO_TCP, TCP_NODELAY, &nd, sizeof(nd));
+            setsockopt(sockfd, SOL_SOCKET, SO_SNDBUF, &bsz, sizeof(bsz));
+            setsockopt(sockfd, SOL_SOCKET, SO_RCVBUF, &bsz, sizeof(bsz));
+        }
+
         // Take thread-safe snapshot of bitmask for resynchronization
         std::vector<uint8_t> bmap_snapshot;
         pthread_mutex_lock(&state->bmap_mutex);
@@ -447,6 +456,14 @@ int run_enhanced_client(const char* server_ip, uint16_t port,
         log_event("ERROR", "Control socket failed to connect to %s:%u: %s", server_ip, port, strerror(errno));
         close(control_fd);
         return -1;
+    }
+
+    // Disable Nagle's algorithm + tune socket buffers to 256 KiB
+    {
+        int nd = 1, bsz = 256 * 1024;
+        setsockopt(control_fd, IPPROTO_TCP, TCP_NODELAY, &nd, sizeof(nd));
+        setsockopt(control_fd, SOL_SOCKET, SO_SNDBUF, &bsz, sizeof(bsz));
+        setsockopt(control_fd, SOL_SOCKET, SO_RCVBUF, &bsz, sizeof(bsz));
     }
 
     if (send_get_enhanced(control_fd, static_cast<uint16_t>(num_streams), topic, &total_wire_bytes) < 0) {

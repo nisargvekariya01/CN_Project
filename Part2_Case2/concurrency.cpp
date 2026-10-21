@@ -13,6 +13,7 @@
 #include <sys/stat.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <netinet/tcp.h>
 #include <arpa/inet.h>
 #include <pthread.h>
 
@@ -140,6 +141,10 @@ int create_listening_socket(uint16_t port) {
 #ifdef SO_REUSEPORT
     setsockopt(fd, SOL_SOCKET, SO_REUSEPORT, &opt, sizeof(opt));
 #endif
+    // Pre-tune listen socket send/recv buffers (256 KiB each)
+    int buf_size = 256 * 1024;
+    setsockopt(fd, SOL_SOCKET, SO_SNDBUF, &buf_size, sizeof(buf_size));
+    setsockopt(fd, SOL_SOCKET, SO_RCVBUF, &buf_size, sizeof(buf_size));
 
     struct sockaddr_in addr;
     memset(&addr, 0, sizeof(addr));
@@ -328,6 +333,13 @@ void run_sequential_loop(int listen_fd, const std::unordered_map<std::string, To
         inet_ntop(AF_INET, &(client_addr.sin_addr), ip_buf, INET_ADDRSTRLEN);
         log_event("INFO", "Accepted client from %s:%u (fd=%d)", ip_buf, ntohs(client_addr.sin_port), client_fd);
 
+        // Disable Nagle's algorithm — flush frames immediately without 40ms delay
+        int nodelay = 1;
+        setsockopt(client_fd, IPPROTO_TCP, TCP_NODELAY, &nodelay, sizeof(nodelay));
+        int buf_sz = 256 * 1024;
+        setsockopt(client_fd, SOL_SOCKET, SO_SNDBUF, &buf_sz, sizeof(buf_sz));
+        setsockopt(client_fd, SOL_SOCKET, SO_RCVBUF, &buf_sz, sizeof(buf_sz));
+
         process_client(client_fd, topic_map, pf, case_mode, seed);
         close(client_fd);
     }
@@ -367,6 +379,13 @@ void run_concurrent_loop(int listen_fd, const std::unordered_map<std::string, To
         char ip_buf[INET_ADDRSTRLEN];
         inet_ntop(AF_INET, &(client_addr.sin_addr), ip_buf, INET_ADDRSTRLEN);
         log_event("INFO", "Accepted client from %s:%u (fd=%d)", ip_buf, ntohs(client_addr.sin_port), client_fd);
+
+        // Disable Nagle's algorithm — flush frames immediately without 40ms delay
+        int nodelay = 1;
+        setsockopt(client_fd, IPPROTO_TCP, TCP_NODELAY, &nodelay, sizeof(nodelay));
+        int buf_sz = 256 * 1024;
+        setsockopt(client_fd, SOL_SOCKET, SO_SNDBUF, &buf_sz, sizeof(buf_sz));
+        setsockopt(client_fd, SOL_SOCKET, SO_RCVBUF, &buf_sz, sizeof(buf_sz));
 
         WorkerArgs* args = new WorkerArgs();
         args->client_fd = client_fd;

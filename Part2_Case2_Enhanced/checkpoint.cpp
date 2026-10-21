@@ -12,6 +12,7 @@
 #include <sys/stat.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <netinet/tcp.h>
 #include <arpa/inet.h>
 #include <algorithm>
 #include <ctime>
@@ -261,6 +262,14 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
             continue;
         }
 
+        // Disable Nagle's algorithm + tune socket buffers to 256 KiB
+        {
+            int nd = 1, bsz = 256 * 1024;
+            setsockopt(sockfd, IPPROTO_TCP, TCP_NODELAY, &nd, sizeof(nd));
+            setsockopt(sockfd, SOL_SOCKET, SO_SNDBUF, &bsz, sizeof(bsz));
+            setsockopt(sockfd, SOL_SOCKET, SO_RCVBUF, &bsz, sizeof(bsz));
+        }
+
         if (has_ckpt) {
             log_event("INFO", "Loaded checkpoint for '%s': session='%s' file_index=%u offset=%llu filename='%s'",
                       topic, ckpt.session_id_hex, ckpt.file_index,
@@ -397,6 +406,11 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
                         log_event("ERROR", "Failed to open destination file '%s': %s", dest_path.c_str(), strerror(errno));
                         close(sockfd);
                         return -1;
+                    }
+
+                    // Pre-allocate disk space to avoid fragmentation and metadata stalls
+                    if (fb.bytes_following > 0) {
+                        posix_fallocate(current_file_fd, 0, static_cast<off_t>(fb.bytes_following + fb.byte_offset));
                     }
 
                     current_file_bytes_written = fb.byte_offset;

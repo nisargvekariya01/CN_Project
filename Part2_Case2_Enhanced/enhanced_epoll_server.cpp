@@ -9,6 +9,7 @@
 #include <sys/sendfile.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <netinet/tcp.h>
 #include <arpa/inet.h>
 #include <fcntl.h>
 #include <poll.h>
@@ -52,6 +53,10 @@ int init_epoll_instance(int listen_fd) {
         log_event("ERROR", "set_socket_nonblocking failed on listen_fd=%d", listen_fd);
         return -1;
     }
+    // Pre-tune listen socket send/recv buffers (256 KiB each)
+    int buf_size = 256 * 1024;
+    setsockopt(listen_fd, SOL_SOCKET, SO_SNDBUF, &buf_size, sizeof(buf_size));
+    setsockopt(listen_fd, SOL_SOCKET, SO_RCVBUF, &buf_size, sizeof(buf_size));
     int epoll_fd = epoll_create1(0);
     if (epoll_fd < 0) {
         log_event("ERROR", "epoll_create1 failed: %s", strerror(errno));
@@ -373,6 +378,13 @@ int run_enhanced_epoll_server_loop(int listen_fd,
                     inet_ntop(AF_INET, &(client_addr.sin_addr), ip_buf, INET_ADDRSTRLEN);
                     log_event("INFO", "Accepted connection from %s:%u (fd=%d)",
                               ip_buf, ntohs(client_addr.sin_port), client_fd);
+
+                    // Disable Nagle's algorithm + tune socket buffers to 256 KiB
+                    int nodelay = 1;
+                    setsockopt(client_fd, IPPROTO_TCP, TCP_NODELAY, &nodelay, sizeof(nodelay));
+                    int buf_sz = 256 * 1024;
+                    setsockopt(client_fd, SOL_SOCKET, SO_SNDBUF, &buf_sz, sizeof(buf_sz));
+                    setsockopt(client_fd, SOL_SOCKET, SO_RCVBUF, &buf_sz, sizeof(buf_sz));
 
                     // Dispatch client connection in worker thread
                     WorkerArgs* args = new WorkerArgs();

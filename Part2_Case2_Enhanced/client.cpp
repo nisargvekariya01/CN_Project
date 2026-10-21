@@ -16,6 +16,7 @@
 #include <sys/socket.h>
 #include <sys/stat.h>
 #include <netinet/in.h>
+#include <netinet/tcp.h>
 #include <arpa/inet.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -184,6 +185,14 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
             continue;
         }
 
+        // Disable Nagle's algorithm + tune socket buffers to 256 KiB
+        {
+            int nd = 1, bsz = 256 * 1024;
+            setsockopt(sockfd, IPPROTO_TCP, TCP_NODELAY, &nd, sizeof(nd));
+            setsockopt(sockfd, SOL_SOCKET, SO_SNDBUF, &bsz, sizeof(bsz));
+            setsockopt(sockfd, SOL_SOCKET, SO_RCVBUF, &bsz, sizeof(bsz));
+        }
+
         log_event("INFO", "Connected to server. Requesting topic '%s'...", topic);
 
         if (send_get(sockfd, topic, &total_wire_bytes) < 0) {
@@ -261,6 +270,10 @@ int run_client_part1_and_case1_loop(const char* server_ip, uint16_t port,
                         log_event("ERROR", "Failed to open destination file '%s': %s", dest_path.c_str(), strerror(errno));
                         close(sockfd);
                         return -1;
+                    }
+                    // Pre-allocate disk space to avoid fragmentation and metadata stalls
+                    if (fb.bytes_following > 0) {
+                        posix_fallocate(current_file_fd, 0, static_cast<off_t>(fb.bytes_following));
                     }
                 }
             } else if (hdr.type == OP_FILE_DATA) {
