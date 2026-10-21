@@ -1,3 +1,4 @@
+case_name,num_clients,pf,t_start_sec,t_end_sec,duration_sec,useful_bytes,total_bytes,redundant_bytes,goodput_mbps,throughput_mbps,overhead_pct,retries
 Part2_Case1,8,0.00,4729,4730,1.130865,2497353,2517619,0,2.208357,2.226278,0.81,0
 Part2_Case1,8,0.00,4729,4730,1.133315,2497353,2517619,0,2.203582,2.221464,0.81,0
 Part2_Case1,8,0.00,4729,4731,1.172983,2497353,2517619,0,2.129062,2.146339,0.81,0
