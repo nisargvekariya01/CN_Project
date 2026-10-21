@@ -26,6 +26,12 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
+    if (threaded_mode == 0) {
+        set_metrics_case_name("Part1_Single");
+    } else {
+        set_metrics_case_name("Part1_Multi");
+    }
+
     register_signal_handlers();
 
     log_event("INFO", "Starting Server (Part=%d, CaseMode=%d, Port=%u, pf=%.2f, Threaded=%d)",

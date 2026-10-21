@@ -5619,3 +5619,1385 @@ bytes) written to '/tmp/client_bench_output/c31/cane' in 0 retries
 [10:52:57] [INFO] Performance: Duration = 3.01s | Goodput = 0.83 MB/s | Wire Throughput = 0.84 MB/s | Overhead = 0.81%
 [10:52:57] [INFO] Exited concurrent accept loop
 [10:52:57] [INFO] Server shutdown complete
+[16:39:19] [INFO] Indexed topic 'Cavallo': 1 files, 11 total bytes
+[16:39:19] [INFO] Indexed topic 'Cane': 3 files, 18 total bytes
+[16:39:19] [INFO] Successfully loaded 2 topics from /tmp/it305_test_topics
+[16:39:19] [INFO] Listening socket created on port 18080 (fd=3)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 0 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 65536 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 131072 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 196608 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 262144 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 327680 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 393216 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 458752 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 524288 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 589824 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 655360 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 720896 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 786432 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 851968 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 917504 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 983040 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1048576 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1114112 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1179648 bytes (pf=1.000, r=1.0000)
+[16:39:19] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1245184 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1310720 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1376256 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1441792 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1507328 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1572864 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1638400 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1703936 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1769472 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1835008 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1900544 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1966080 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2031616 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2097152 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2162688 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2228224 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2293760 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2359296 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2424832 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2490368 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2555904 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2621440 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2686976 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2752512 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2818048 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2883584 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2949120 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3014656 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3080192 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3145728 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3211264 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3276800 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3342336 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3407872 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3473408 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3538944 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3604480 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3670016 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3735552 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3801088 bytes (pf=1.000, r=1.0000)
+[16:39:20] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3866624 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3932160 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3997696 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4063232 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4128768 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4194304 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4259840 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4325376 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4390912 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4456448 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4521984 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4587520 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4653056 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4718592 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4784128 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4849664 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4915200 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4980736 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5046272 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5111808 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5177344 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5242880 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5308416 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5373952 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5439488 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5505024 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5570560 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5636096 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5701632 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5767168 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5832704 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5898240 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5963776 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6029312 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6094848 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6160384 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6225920 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6291456 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6356992 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6422528 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6488064 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6553600 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6619136 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6684672 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6750208 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6815744 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6881280 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6946816 bytes (pf=1.000, r=1.0000)
+[16:39:21] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7012352 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7077888 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7143424 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7208960 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7274496 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7340032 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7405568 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7471104 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7536640 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7602176 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7667712 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7733248 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7798784 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7864320 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7929856 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7995392 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8060928 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8126464 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8192000 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8257536 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8323072 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8388608 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8454144 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8519680 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8585216 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8650752 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8716288 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8781824 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8847360 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8912896 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8978432 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9043968 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9109504 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9175040 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9240576 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9306112 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9371648 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9437184 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9502720 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9568256 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9633792 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9699328 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9764864 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9830400 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9895936 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9961472 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10027008 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10092544 bytes (pf=1.000, r=1.0000)
+[16:39:22] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10158080 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10223616 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10289152 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10354688 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10420224 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10485760 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10551296 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10616832 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10682368 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10747904 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10813440 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10878976 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10944512 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11010048 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11075584 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11141120 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11206656 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11272192 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11337728 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11403264 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11468800 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11534336 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11599872 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11665408 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11730944 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11796480 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11862016 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11927552 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11993088 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12058624 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12124160 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12189696 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12255232 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12320768 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12386304 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12451840 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12517376 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12582912 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12648448 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12713984 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12779520 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12845056 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12910592 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12976128 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 13041664 bytes (pf=1.000, r=1.0000)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 0 bytes (pf=0.100, r=0.0160)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 720896 bytes (pf=0.100, r=0.0539)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 983040 bytes (pf=0.100, r=0.0430)
+[16:39:23] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1507328 bytes (pf=0.100, r=0.0675)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1572864 bytes (pf=0.100, r=0.0290)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2031616 bytes (pf=0.100, r=0.0880)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2818048 bytes (pf=0.100, r=0.0121)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3276800 bytes (pf=0.100, r=0.0105)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6553600 bytes (pf=0.100, r=0.0383)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7274496 bytes (pf=0.100, r=0.0708)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10616832 bytes (pf=0.100, r=0.0907)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10747904 bytes (pf=0.100, r=0.0616)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11206656 bytes (pf=0.100, r=0.0451)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12713984 bytes (pf=0.100, r=0.0697)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 13172736 bytes (pf=0.100, r=0.0122)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 13303808 bytes (pf=0.100, r=0.0978)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 13631488 bytes (pf=0.100, r=0.0446)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 13697024 bytes (pf=0.100, r=0.0245)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 14483456 bytes (pf=0.100, r=0.0220)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 15007744 bytes (pf=0.100, r=0.0694)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 16711680 bytes (pf=0.100, r=0.0860)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 17301504 bytes (pf=0.100, r=0.0680)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 17891328 bytes (pf=0.100, r=0.0869)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 17956864 bytes (pf=0.100, r=0.0083)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 18022400 bytes (pf=0.100, r=0.0505)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 19202048 bytes (pf=0.100, r=0.0818)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 19595264 bytes (pf=0.100, r=0.0734)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 19791872 bytes (pf=0.100, r=0.0322)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 20250624 bytes (pf=0.100, r=0.0234)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 20316160 bytes (pf=0.100, r=0.0273)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 21037056 bytes (pf=0.100, r=0.0636)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 21168128 bytes (pf=0.100, r=0.0669)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 21823488 bytes (pf=0.100, r=0.0157)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 22085632 bytes (pf=0.100, r=0.0464)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 22478848 bytes (pf=0.100, r=0.0461)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 22675456 bytes (pf=0.100, r=0.0457)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 22740992 bytes (pf=0.100, r=0.0187)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 23199744 bytes (pf=0.100, r=0.0907)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 23461888 bytes (pf=0.100, r=0.0162)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 24444928 bytes (pf=0.100, r=0.0059)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 24576000 bytes (pf=0.100, r=0.0418)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 25821184 bytes (pf=0.100, r=0.0336)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 25952256 bytes (pf=0.100, r=0.0092)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 27197440 bytes (pf=0.100, r=0.0233)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 27656192 bytes (pf=0.100, r=0.0864)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 28770304 bytes (pf=0.100, r=0.0382)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 28901376 bytes (pf=0.100, r=0.0195)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 29229056 bytes (pf=0.100, r=0.0988)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 31064064 bytes (pf=0.100, r=0.0537)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 31195136 bytes (pf=0.100, r=0.0396)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 31850496 bytes (pf=0.100, r=0.0387)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 32964608 bytes (pf=0.100, r=0.0554)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 33226752 bytes (pf=0.100, r=0.0075)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 33619968 bytes (pf=0.100, r=0.0197)
+[16:39:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 34930688 bytes (pf=0.100, r=0.0051)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 36241408 bytes (pf=0.100, r=0.0556)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 36765696 bytes (pf=0.100, r=0.0834)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 37027840 bytes (pf=0.100, r=0.0828)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 37552128 bytes (pf=0.100, r=0.0324)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 37814272 bytes (pf=0.100, r=0.0701)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 39190528 bytes (pf=0.100, r=0.0479)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 39780352 bytes (pf=0.100, r=0.0321)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 40108032 bytes (pf=0.100, r=0.0009)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 40566784 bytes (pf=0.100, r=0.0715)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 40632320 bytes (pf=0.100, r=0.0040)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 41156608 bytes (pf=0.100, r=0.0271)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 41680896 bytes (pf=0.100, r=0.0266)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 43188224 bytes (pf=0.100, r=0.0450)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 43319296 bytes (pf=0.100, r=0.0323)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 44171264 bytes (pf=0.100, r=0.0572)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 44695552 bytes (pf=0.100, r=0.0191)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 45088768 bytes (pf=0.100, r=0.0347)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 45416448 bytes (pf=0.100, r=0.0859)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 45678592 bytes (pf=0.100, r=0.0676)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 48037888 bytes (pf=0.100, r=0.0759)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 48103424 bytes (pf=0.100, r=0.0129)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 49086464 bytes (pf=0.100, r=0.0857)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 49348608 bytes (pf=0.100, r=0.0942)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 49479680 bytes (pf=0.100, r=0.0352)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 49741824 bytes (pf=0.100, r=0.0123)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 51183616 bytes (pf=0.100, r=0.0792)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 51642368 bytes (pf=0.100, r=0.0198)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 51970048 bytes (pf=0.100, r=0.0599)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 52690944 bytes (pf=0.100, r=0.0834)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 53411840 bytes (pf=0.100, r=0.0185)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 54460416 bytes (pf=0.100, r=0.0792)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 55771136 bytes (pf=0.100, r=0.0301)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 56754176 bytes (pf=0.100, r=0.0366)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 58195968 bytes (pf=0.100, r=0.0610)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 58785792 bytes (pf=0.100, r=0.0185)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 59703296 bytes (pf=0.100, r=0.0013)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 60096512 bytes (pf=0.100, r=0.0402)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 60162048 bytes (pf=0.100, r=0.0649)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 61341696 bytes (pf=0.100, r=0.0893)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 61734912 bytes (pf=0.100, r=0.0209)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 61997056 bytes (pf=0.100, r=0.0485)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 63242240 bytes (pf=0.100, r=0.0046)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 65798144 bytes (pf=0.100, r=0.0294)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 67502080 bytes (pf=0.100, r=0.0797)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 69664768 bytes (pf=0.100, r=0.0236)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 70582272 bytes (pf=0.100, r=0.0062)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 70713344 bytes (pf=0.100, r=0.0590)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 70975488 bytes (pf=0.100, r=0.0039)
+[16:39:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 71106560 bytes (pf=0.100, r=0.0402)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 71565312 bytes (pf=0.100, r=0.0972)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 72089600 bytes (pf=0.100, r=0.0016)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 73269248 bytes (pf=0.100, r=0.0064)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 73793536 bytes (pf=0.100, r=0.0744)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 73990144 bytes (pf=0.100, r=0.0514)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 74645504 bytes (pf=0.100, r=0.0791)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 75497472 bytes (pf=0.100, r=0.0032)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 76087296 bytes (pf=0.100, r=0.0782)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 76546048 bytes (pf=0.100, r=0.0130)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 76742656 bytes (pf=0.100, r=0.0205)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 77594624 bytes (pf=0.100, r=0.0522)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 77856768 bytes (pf=0.100, r=0.0592)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 78512128 bytes (pf=0.100, r=0.0640)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 79101952 bytes (pf=0.100, r=0.0825)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 79298560 bytes (pf=0.100, r=0.0003)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 79364096 bytes (pf=0.100, r=0.0076)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 80347136 bytes (pf=0.100, r=0.0766)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 83165184 bytes (pf=0.100, r=0.0984)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 83230720 bytes (pf=0.100, r=0.0737)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 84017152 bytes (pf=0.100, r=0.0528)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 84082688 bytes (pf=0.100, r=0.0940)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 86573056 bytes (pf=0.100, r=0.0243)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 88211456 bytes (pf=0.100, r=0.0410)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 88408064 bytes (pf=0.100, r=0.0085)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 88735744 bytes (pf=0.100, r=0.0522)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 90308608 bytes (pf=0.100, r=0.0988)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 92995584 bytes (pf=0.100, r=0.0610)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 93782016 bytes (pf=0.100, r=0.0146)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 94502912 bytes (pf=0.100, r=0.0401)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 94896128 bytes (pf=0.100, r=0.0023)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 95420416 bytes (pf=0.100, r=0.0513)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 96993280 bytes (pf=0.100, r=0.0437)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 97124352 bytes (pf=0.100, r=0.0010)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 97452032 bytes (pf=0.100, r=0.0523)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 97517568 bytes (pf=0.100, r=0.0374)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 98435072 bytes (pf=0.100, r=0.0605)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 98500608 bytes (pf=0.100, r=0.0987)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 99287040 bytes (pf=0.100, r=0.0499)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 99352576 bytes (pf=0.100, r=0.0097)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 101187584 bytes (pf=0.100, r=0.0895)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 101515264 bytes (pf=0.100, r=0.0023)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 102170624 bytes (pf=0.100, r=0.0554)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 103219200 bytes (pf=0.100, r=0.0731)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 104398848 bytes (pf=0.100, r=0.0955)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 106102784 bytes (pf=0.100, r=0.0828)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 107216896 bytes (pf=0.100, r=0.0464)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 107806720 bytes (pf=0.100, r=0.0302)
+[16:39:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 108068864 bytes (pf=0.100, r=0.0776)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 108331008 bytes (pf=0.100, r=0.0679)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 108593152 bytes (pf=0.100, r=0.0429)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 109510656 bytes (pf=0.100, r=0.0234)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 109772800 bytes (pf=0.100, r=0.0943)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 110034944 bytes (pf=0.100, r=0.0539)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 110755840 bytes (pf=0.100, r=0.0974)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 112459776 bytes (pf=0.100, r=0.0866)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 113704960 bytes (pf=0.100, r=0.0865)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 114229248 bytes (pf=0.100, r=0.0597)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 114753536 bytes (pf=0.100, r=0.0725)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 114884608 bytes (pf=0.100, r=0.0091)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 115015680 bytes (pf=0.100, r=0.0039)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 116129792 bytes (pf=0.100, r=0.0047)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 119603200 bytes (pf=0.100, r=0.0405)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 120193024 bytes (pf=0.100, r=0.0902)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 122355712 bytes (pf=0.100, r=0.0547)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 122814464 bytes (pf=0.100, r=0.0130)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 124715008 bytes (pf=0.100, r=0.0624)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 125435904 bytes (pf=0.100, r=0.0590)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 125501440 bytes (pf=0.100, r=0.0353)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 126418944 bytes (pf=0.100, r=0.0332)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 126943232 bytes (pf=0.100, r=0.0296)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 127074304 bytes (pf=0.100, r=0.0041)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 127270912 bytes (pf=0.100, r=0.0344)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 127336448 bytes (pf=0.100, r=0.0265)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 127533056 bytes (pf=0.100, r=0.0352)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 127598592 bytes (pf=0.100, r=0.0139)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 128253952 bytes (pf=0.100, r=0.0698)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 128319488 bytes (pf=0.100, r=0.0027)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 128843776 bytes (pf=0.100, r=0.0478)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 129630208 bytes (pf=0.100, r=0.0579)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 129695744 bytes (pf=0.100, r=0.0249)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 129826816 bytes (pf=0.100, r=0.0185)
+[16:39:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 130416640 bytes (pf=0.100, r=0.0961)
+[16:39:27] [ERROR] Invalid IPv4 address format: '999.999.999.999'
+[16:39:27] [ERROR] Invalid server port: '0' (must be 1-65535)
+[16:39:27] [INFO] Indexed topic 'animals': 3 files, 358430 total bytes
+[16:39:27] [INFO] Successfully loaded 1 topics from /tmp/it305_test_data
+[16:39:28] [INFO] Listening socket created on port 19123 (fd=3)
+[16:39:28] [INFO] Connecting to 127.0.0.1:19123...
+[16:39:28] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:28] [INFO] Client requested topic: 'animals'
+[16:39:28] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:28] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:28] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:28] [INFO] Completed streaming topic 'animals' (3 files, 358430 bytes)
+[16:39:28] [INFO] Progress: 3/3 files (100.0%) - 0.34 MB
+[16:39:28] [INFO] Received OP_TRANSFER_END from server
+[16:39:28] [INFO] Transfer SUCCESS: 3 files (358430 bytes) written to '/tmp/it305_client_downloads/animals' in 0 retries
+[16:39:28] [INFO] Performance: Duration = 0.20s | Goodput = 1.79 MB/s | Wire Throughput = 1.79 MB/s | Overhead = 0.12%
+[16:39:28] [INFO] Client fd=4 disconnected before request
+[16:39:28] [INFO] Indexed topic 'animals': 3 files, 358430 total bytes
+[16:39:28] [INFO] Successfully loaded 1 topics from /tmp/it305_test_data
+[16:39:28] [INFO] Listening socket created on port 19124 (fd=3)
+[16:39:28] [INFO] Connecting to 127.0.0.1:19124...
+[16:39:28] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:28] [INFO] Client requested topic: 'animals'
+[16:39:28] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:28] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:28] [FAULT] Dropped connection on topic 'animals' file_index 0 at 65536 bytes (pf=0.200, r=0.1662)
+[16:39:28] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:28] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 0
+[16:39:28] [INFO] Retry attempt 1/50 after backoff 100 ms...
+[16:39:28] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:28] [INFO] Client requested topic: 'animals'
+[16:39:28] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:28] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:28] [FAULT] Dropped connection on topic 'animals' file_index 0 at 196608 bytes (pf=0.200, r=0.1594)
+[16:39:28] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:29] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 1
+[16:39:29] [INFO] Retry attempt 2/50 after backoff 200 ms...
+[16:39:29] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:29] [INFO] Client requested topic: 'animals'
+[16:39:29] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:29] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:29] [FAULT] Dropped connection on topic 'animals' file_index 0 at 131072 bytes (pf=0.200, r=0.0714)
+[16:39:29] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:29] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 2
+[16:39:29] [INFO] Retry attempt 3/50 after backoff 400 ms...
+[16:39:29] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:29] [INFO] Client requested topic: 'animals'
+[16:39:29] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:29] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:29] [FAULT] Dropped connection on topic 'animals' file_index 0 at 65536 bytes (pf=0.200, r=0.1408)
+[16:39:29] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:29] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 3
+[16:39:29] [INFO] Retry attempt 4/50 after backoff 800 ms...
+[16:39:30] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:30] [INFO] Client requested topic: 'animals'
+[16:39:30] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:30] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:30] [FAULT] Dropped connection on topic 'animals' file_index 1 at 131072 bytes (pf=0.200, r=0.1171)
+[16:39:30] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:30] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 4
+[16:39:30] [INFO] Retry attempt 5/50 after backoff 1000 ms...
+[16:39:31] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:31] [INFO] Client requested topic: 'animals'
+[16:39:32] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:32] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:32] [FAULT] Dropped connection on topic 'animals' file_index 0 at 131072 bytes (pf=0.200, r=0.1703)
+[16:39:32] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:32] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 5
+[16:39:32] [INFO] Retry attempt 6/50 after backoff 1000 ms...
+[16:39:33] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:33] [INFO] Client requested topic: 'animals'
+[16:39:33] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:33] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:33] [FAULT] Dropped connection on topic 'animals' file_index 0 at 131072 bytes (pf=0.200, r=0.1900)
+[16:39:33] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:33] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 6
+[16:39:33] [INFO] Retry attempt 7/50 after backoff 1000 ms...
+[16:39:34] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:34] [INFO] Client requested topic: 'animals'
+[16:39:34] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:34] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:34] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:34] [FAULT] Dropped connection on topic 'animals' file_index 0 at 204800 bytes (pf=0.200, r=0.0626)
+[16:39:34] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 7
+[16:39:34] [INFO] Retry attempt 8/50 after backoff 1000 ms...
+[16:39:35] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:35] [INFO] Client requested topic: 'animals'
+[16:39:35] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:35] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:35] [FAULT] Dropped connection on topic 'animals' file_index 0 at 65536 bytes (pf=0.200, r=0.1181)
+[16:39:35] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:35] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 8
+[16:39:35] [INFO] Retry attempt 9/50 after backoff 1000 ms...
+[16:39:36] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:36] [INFO] Client requested topic: 'animals'
+[16:39:36] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:36] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:36] [FAULT] Dropped connection on topic 'animals' file_index 0 at 196608 bytes (pf=0.200, r=0.0815)
+[16:39:36] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:36] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 9
+[16:39:36] [INFO] Retry attempt 10/50 after backoff 1000 ms...
+[16:39:37] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:37] [INFO] Client requested topic: 'animals'
+[16:39:38] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:38] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:38] [FAULT] Dropped connection on topic 'animals' file_index 0 at 131072 bytes (pf=0.200, r=0.1630)
+[16:39:38] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:38] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 10
+[16:39:38] [INFO] Retry attempt 11/50 after backoff 1000 ms...
+[16:39:39] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:39] [INFO] Client requested topic: 'animals'
+[16:39:39] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:39] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:39] [FAULT] Dropped connection on topic 'animals' file_index 0 at 65536 bytes (pf=0.200, r=0.1583)
+[16:39:39] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:39] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 11
+[16:39:39] [INFO] Retry attempt 12/50 after backoff 1000 ms...
+[16:39:40] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:40] [INFO] Client requested topic: 'animals'
+[16:39:40] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:40] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:40] [FAULT] Dropped connection on topic 'animals' file_index 0 at 65536 bytes (pf=0.200, r=0.0422)
+[16:39:40] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:40] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 12
+[16:39:40] [INFO] Retry attempt 13/50 after backoff 1000 ms...
+[16:39:41] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:41] [INFO] Client requested topic: 'animals'
+[16:39:41] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:41] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:41] [FAULT] Dropped connection on topic 'animals' file_index 1 at 153600 bytes (pf=0.200, r=0.0276)
+[16:39:41] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:41] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 13
+[16:39:41] [INFO] Retry attempt 14/50 after backoff 1000 ms...
+[16:39:42] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:42] [INFO] Client requested topic: 'animals'
+[16:39:42] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:42] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:42] [FAULT] Dropped connection on topic 'animals' file_index 0 at 65536 bytes (pf=0.200, r=0.0534)
+[16:39:42] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:42] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 14
+[16:39:42] [INFO] Retry attempt 15/50 after backoff 1000 ms...
+[16:39:43] [INFO] Connected to server. Requesting topic 'animals'...
+[16:39:43] [INFO] Client requested topic: 'animals'
+[16:39:43] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:39:43] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:39:43] [INFO] Completed streaming topic 'animals' (3 files, 358430 bytes)
+[16:39:43] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:39:43] [INFO] Progress: 3/3 files received (100.0%) - 0.34 MB written
+[16:39:43] [INFO] Received OP_TRANSFER_END from server
+[16:39:43] [INFO] Transfer SUCCESS: 3 files (358430 bytes) written to '/tmp/it305_client_downloads/animals' in 15 retries
+[16:39:43] [INFO] Performance: Duration = 15.31s | Goodput = 0.02 MB/s | Wire Throughput = 0.17 MB/s | Overhead = 617.30%
+[16:39:43] [INFO] Client fd=5 disconnected before request
+[16:39:43] [INFO] Created new server session '8898b908dcae676a77b3fa9d3ef9f8da' for topic 'Cane'
+[16:39:43] [INFO] Created new server session 'fd0aa2f248f054acbf91d3f8ddde4470' for topic 'Cane'
+[16:39:44] [INFO] Created new server session '7f0bdaa89de98769f7ba8663dc0a4fbf' for topic 'Cavallo'
+[16:39:44] [INFO] Created new server session 'd0f1cf0e08ddc9db7b0c65c22531f70b' for topic 'Cavallo'
+[16:39:44] [INFO] Swept expired session '7f0bdaa89de98769f7ba8663dc0a4fbf' (idle > 600s)
+[16:39:44] [INFO] Created new server session '874fa25fe2d8151b36389963e89b4e2c' for topic 'Cane'
+[16:39:44] [INFO] Validation Check 1 FAIL: Session 'eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee' not found
+[16:39:44] [INFO] Validation Check 2 FAIL: Session '874fa25fe2d8151b36389963e89b4e2c' idle TTL expired
+[16:39:44] [INFO] Created new server session '6699e40d365abd6247d9aba1f37e7fe1' for topic 'Cane'
+[16:39:44] [INFO] Validation Check 3 FAIL: Topic mismatch: checkpoint requested 'Elefante' but session bound to 'Cane'
+[16:39:44] [INFO] Validation Check 4 FAIL: file_index 5 exceeds topic file count 3
+[16:39:44] [INFO] Validation Check 4 FAIL: Terminal index file_index == file_count invalid: offset != 0 or filename != EOF or all_files_sent false
+[16:39:44] [INFO] Validation Check 4 FAIL: Terminal index file_index == file_count invalid: offset != 0 or filename != EOF or all_files_sent false
+[16:39:44] [INFO] Validation Check 4 FAIL: Terminal index file_index == file_count invalid: offset != 0 or filename != EOF or all_files_sent false
+[16:39:44] [INFO] Validation Check 4 PASS: Terminal EOF session '6699e40d365abd6247d9aba1f37e7fe1' verified
+[16:39:44] [INFO] Validation Check 5 FAIL: Filename mismatch at index 1: expected 'eb1002.jpg' but got 'wrong_name.jpg'
+[16:39:44] [INFO] Validation Check 6 FAIL: byte_offset 200001 exceeds file size 200000
+[16:39:44] [INFO] Validation Check 7 FAIL: claimed 360000 > highwater 350000
+[16:39:44] [INFO] Validation PASSED: session '6699e40d365abd6247d9aba1f37e7fe1' resuming at file_index 1 offset 50000 (rem_files=2, rem_bytes=450000)
+[16:39:44] [INFO] Created new server session '7c2ce4b3992f5bb40b8459310513df53' for topic 'Topic_0'
+[16:39:44] [INFO] Created new server session '89111c559341f1e5faec7ad1eaaa2e1f' for topic 'Topic_2'
+[16:39:44] [INFO] Created new server session '85e0e029e67e4214b8f25d18ccb64dd7' for topic 'Topic_4'
+[16:39:44] [INFO] Created new server session '645e7fbd0ebb51f63885ae5716c9fb37' for topic 'Topic_3'
+[16:39:44] [INFO] Created new server session 'cf594a1524f3d88922b277305a4e54ca' for topic 'Topic_1'
+[16:39:44] [INFO] Created new server session '525c2876c4e3a66643a8e86721c5fb85' for topic 'Topic_6'
+[16:39:44] [INFO] Created new server session 'a0300e5a4173c75cab19b8703e06907d' for topic 'Topic_5'
+[16:39:44] [INFO] Created new server session '16364487e6e6dd5cc6ef6c84b10aa58e' for topic 'Topic_7'
+[16:39:44] [INFO] Created new server session '59a86936cbc25d5901b38cadaa6074d8' for topic 'Topic_7'
+[16:39:44] [INFO] Created new server session 'f7ead57b1b206f582c88cce513850a12' for topic 'Topic_2'
+[16:39:44] [INFO] Created new server session '730eebc21b7318361e1846c96bcfe2ef' for topic 'Topic_4'
+[16:39:44] [INFO] Created new server session 'a87b083a106cb2cdaa1204603f15720b' for topic 'Topic_3'
+[16:39:44] [INFO] Created new server session '6af24ab45da7cd2be5d2af7da85c6519' for topic 'Topic_1'
+[16:39:44] [INFO] Created new server session 'a75f50bba2782bc8b67e6d46677b6b0d' for topic 'Topic_6'
+[16:39:44] [INFO] Created new server session '9fcd2f5ac607fbcd36586e9035e7150a' for topic 'Topic_5'
+[16:39:44] [INFO] Created new server session '794cc5384c4406037dfffc4d6c71308f' for topic 'Topic_0'
+[16:39:44] [INFO] Created new server session 'e1b6b44ddba0fd7b141c52fa97654778' for topic 'Topic_7'
+[16:39:44] [INFO] Created new server session 'fbdb2b074b7fc6fb695654cde63487d5' for topic 'Topic_2'
+[16:39:44] [INFO] Created new server session 'ea41836006a67bff887fbebe3c935cd9' for topic 'Topic_4'
+[16:39:44] [INFO] Created new server session '41c6df8941cc6d705849e5e34a678fc5' for topic 'Topic_3'
+[16:39:44] [INFO] Created new server session '025ab72ba13182bb465a081e366e3cb9' for topic 'Topic_1'
+[16:39:44] [INFO] Created new server session 'e45e4da33426110eb3f4e485e81ef14c' for topic 'Topic_6'
+[16:39:44] [INFO] Created new server session 'f8bd035658f3a0df68d199bc096cd958' for topic 'Topic_5'
+[16:39:44] [INFO] Created new server session '7dddc285d8ff733c3d877e6ed0696911' for topic 'Topic_0'
+[16:39:44] [INFO] Created new server session 'b7e3136edbb782f980a412fc89d85f80' for topic 'Topic_0'
+[16:39:44] [INFO] Created new server session '776a6aeca4c738edc20e540c775a8ddc' for topic 'Topic_2'
+[16:39:44] [INFO] Created new server session '8114511e49c7b05ea8146b6c0bb843b5' for topic 'Topic_4'
+[16:39:44] [INFO] Created new server session 'b73ee69b7b44fb451f6f2155c79c98e2' for topic 'Topic_3'
+[16:39:44] [INFO] Created new server session '681cd65e8478c71eaba59316faaf45aa' for topic 'Topic_1'
+[16:39:44] [INFO] Created new server session '042943640fc01b08b06c68fd63a504e0' for topic 'Topic_6'
+[16:39:45] [INFO] Created new server session 'afc7fa7e632ad9aa64cbe74ea8580725' for topic 'Topic_5'
+[16:39:45] [INFO] Created new server session '8fcd4f290aae2cfd36c8d2600ad180b7' for topic 'Topic_7'
+[16:39:45] [INFO] Created new server session '54fe64ee62dbb7a690404fc994a2d8e4' for topic 'Topic_0'
+[16:39:45] [INFO] Created new server session '5b57b64c9df66001f5521b8ee86477a2' for topic 'Topic_2'
+[16:39:45] [INFO] Created new server session 'd8f56b9b382f273d186661bfc15787ef' for topic 'Topic_4'
+[16:39:45] [INFO] Created new server session 'f2db7b87e4f2abf50982c521a15c7750' for topic 'Topic_3'
+[16:39:45] [INFO] Created new server session '88a5a8577d0897a0b795463eb66e20ae' for topic 'Topic_1'
+[16:39:45] [INFO] Created new server session '22c6719c7cf4d1935503fa92139b9a2a' for topic 'Topic_6'
+[16:39:45] [INFO] Created new server session '2113b9484d2ac0be107bef878caf1518' for topic 'Topic_5'
+[16:39:45] [INFO] Created new server session '7afc12532bb274f4f2f8483e9a58a44f' for topic 'Topic_7'
+[16:39:45] [INFO] Created new server session '3847cc0a52f56d1c7294b4b770d2205e' for topic 'Topic_0'
+[16:39:45] [INFO] Created new server session 'be8f1252c64869d0fc3e90ae97eadca2' for topic 'Topic_2'
+[16:39:45] [INFO] Created new server session 'bb9a79411cc8c40a2a8c317749d78d51' for topic 'Topic_4'
+[16:39:45] [INFO] Created new server session 'e845ca00a0a8f55aaa6e256c99032a05' for topic 'Topic_3'
+[16:39:45] [INFO] Created new server session '4e099c64430577e75dc1e6604b538543' for topic 'Topic_3'
+[16:39:45] [INFO] Created new server session '96cae625d958bd2bb842286020a89f90' for topic 'Topic_6'
+[16:39:45] [INFO] Created new server session 'e2b1b01658395a656190d3288fbe9ce0' for topic 'Topic_5'
+[16:39:45] [INFO] Created new server session '477252dede8c8807ea6928e0316e92b6' for topic 'Topic_7'
+[16:39:45] [INFO] Created new server session 'b82a540d18d29fd6ca546b471b1d2c5e' for topic 'Topic_7'
+[16:39:45] [INFO] Created new server session '6b075aa9f3b15fbacffb76e84facae2c' for topic 'Topic_2'
+[16:39:45] [INFO] Created new server session '52396ba6ee472b2a4bff54887922fccd' for topic 'Topic_4'
+[16:39:45] [INFO] Created new server session '5482618fcf908ff3d210d8279e660e2f' for topic 'Topic_1'
+[16:39:45] [INFO] Created new server session 'a62a598e9f9e6183863d7404d8ff9e14' for topic 'Topic_3'
+[16:39:45] [INFO] Created new server session '8cf91f7597aef10b439ac6e3890186d6' for topic 'Topic_6'
+[16:39:45] [INFO] Created new server session 'e98c95a8baf556dcd3ca5019aab20332' for topic 'Topic_5'
+[16:39:45] [INFO] Created new server session 'dc583c147cdcd18dbf025bb00c347ec6' for topic 'Topic_0'
+[16:39:45] [INFO] Created new server session '045100a3b93fe6f42f4a510db1d61046' for topic 'Topic_7'
+[16:39:45] [INFO] Created new server session 'dc88c1211e87b0fad8f74db5b9feaf27' for topic 'Topic_2'
+[16:39:45] [INFO] Created new server session '52b0ce7e790cae19097589dd3047e3e7' for topic 'Topic_4'
+[16:39:45] [INFO] Created new server session 'a2bd8601968636907372279029aaf6bd' for topic 'Topic_1'
+[16:39:45] [INFO] Created new server session 'b5a6a72819d51310cc764a5361d17689' for topic 'Topic_3'
+[16:39:45] [INFO] Created new server session 'e15c506067259022125e54027f1be4fa' for topic 'Topic_6'
+[16:39:45] [INFO] Created new server session '3658522702e947dbb2fabadc06bdc05e' for topic 'Topic_5'
+[16:39:45] [INFO] Created new server session 'd87b13b244dcb425ffa8a51c2ecbef46' for topic 'Topic_0'
+[16:39:45] [INFO] Created new server session 'a0aeb6089eaac9f5b4763140a882d20d' for topic 'Topic_7'
+[16:39:45] [INFO] Created new server session 'fb629d3291884154790476570a7280f0' for topic 'Topic_2'
+[16:39:45] [INFO] Created new server session '8041a1e6809f3683a4266de87618786e' for topic 'Topic_4'
+[16:39:45] [INFO] Created new server session '96dc8d92086986e3fc4be42231e47bcb' for topic 'Topic_1'
+[16:39:45] [INFO] Created new server session '3886f47ec5551425827018fd8129b84b' for topic 'Topic_1'
+[16:39:45] [INFO] Created new server session '5ea04daf6f2e9fc5c8fef38c7f2419a2' for topic 'Topic_6'
+[16:39:45] [INFO] Created new server session '8dcf8d183fc90c31bc1e18bd49706342' for topic 'Topic_5'
+[16:39:45] [INFO] Created new server session '66941830224a8869fe619837367a932b' for topic 'Topic_0'
+[16:39:45] [INFO] Created new server session '710bd6bd1a28a7e2cbb058211fc0c3de' for topic 'Topic_7'
+[16:39:45] [INFO] Created new server session 'eebda573278a40a9af71e183fbe59486' for topic 'Topic_2'
+[16:39:45] [INFO] Created new server session 'dc1318f885f35db5a9abbfeccbeb37bc' for topic 'Topic_4'
+[16:39:45] [INFO] Created new server session '640b362ad1d734a44bf7fdb99738b735' for topic 'Topic_3'
+[16:39:45] [INFO] Created new server session 'bcbb8a3efc22516fd6710d4ef64f229a' for topic 'Topic_1'
+[16:39:45] [INFO] Created new server session '31b11f1cfa74225a1745fca59ed88553' for topic 'Topic_6'
+[16:39:45] [INFO] Created new server session 'ca71792133f723ab9339212876682488' for topic 'Topic_5'
+[16:39:45] [INFO] Created new server session '1472f6667d2f8f73cb61b4365d3cd33b' for topic 'Topic_0'
+[16:39:45] [INFO] Created new server session '9224e8ca2888c35a9a27a2c7673c4232' for topic 'Topic_7'
+[16:39:45] [INFO] Created new server session 'a04310ef492e2883f73f3dd1b7cb00e7' for topic 'Topic_7'
+[16:39:46] [INFO] Created new server session '794628847b63163d42511d49ba4d4c37' for topic 'Topic_4'
+[16:39:46] [INFO] Created new server session '569312632ff592cd5db1df28869c3aa8' for topic 'Topic_4'
+[16:39:46] [INFO] Created new server session 'e8439da4cd22d3832440c3d90e69ab68' for topic 'Topic_4'
+[16:39:46] [INFO] Created new server session '631ecc7f9f7a4cfa7d02c9b67fe631d6' for topic 'Topic_4'
+[16:39:46] [INFO] Created new server session '7d9d85c2cfb9935a4a86a81db323e645' for topic 'Topic_5'
+[16:39:46] [INFO] Created new server session '0f1d101d921265cbba6d1d8244e05adf' for topic 'Topic_0'
+[16:39:46] [INFO] Created new server session '8a52f1751b250f538ed3560467c2b46c' for topic 'Topic_2'
+[16:39:46] [INFO] Created new server session 'cd86b528b3ba3459daa3e04616c8bf96' for topic 'Topic_7'
+[16:39:46] [INFO] Created new server session '0b73939df331aaeadac83ce77e58c8a8' for topic 'Topic_3'
+[16:39:46] [INFO] Created new server session 'ed0ac413360c18417641d0145abbf8aa' for topic 'Topic_1'
+[16:39:46] [INFO] Created new server session 'b347d8e004aedebbe5265cf7cdf4426e' for topic 'Topic_6'
+[16:39:46] [INFO] Created new server session 'ec0e058ac00dfec7443feac71eda259f' for topic 'Topic_4'
+[16:39:46] [INFO] Created new server session '3288b14c3898fa5eb45f408bca5c37ad' for topic 'Topic_5'
+[16:39:46] [INFO] Created new server session '2b374e67b557d8e337b78cbbc0f179e6' for topic 'Topic_5'
+[16:39:46] [INFO] Created new server session 'b700762fa4f95409af7d826582f44e6b' for topic 'Topic_2'
+[16:39:46] [INFO] Created new server session 'e3edd4fda04c75248212771c54c743b0' for topic 'Topic_7'
+[16:39:46] [INFO] Created new server session '7b7000d29e51e459df3bb602a55826e6' for topic 'Topic_3'
+[16:39:46] [INFO] Created new server session '51d11f5b618ba08c6fd54eccf4db004f' for topic 'Topic_1'
+[16:39:46] [INFO] Created new server session '319594704b668526a33deece26d6a2af' for topic 'Topic_6'
+[16:39:46] [INFO] Created new server session '00d3b4dd558da59fa8d1615b118b6d51' for topic 'Topic_4'
+[16:39:46] [INFO] Created new server session '1762f803583e6e25e6a6a01e2e14a42a' for topic 'Topic_0'
+[16:39:46] [INFO] Created new server session 'c6dc3d77ed3361107437f3fd5fd5cea0' for topic 'Topic_5'
+[16:39:46] [INFO] Created new server session '98d62e54f53c38f6f4a2c52ebca132a5' for topic 'Topic_2'
+[16:39:46] [INFO] Created new server session '61334f236464cf5059b1ac699d7953d3' for topic 'Topic_7'
+[16:39:46] [INFO] Created new server session '372f6fa40f30db07faa6ba1253a0f84d' for topic 'Topic_3'
+[16:39:46] [INFO] Created new server session '618792a4fbe760233d3c740723fc64c9' for topic 'Topic_1'
+[16:39:46] [INFO] Created new server session 'a75559285dcdf1a37eab96cb2945a495' for topic 'Topic_6'
+[16:39:46] [INFO] Created new server session 'a9b2eb493091d3e810782a25a8cc334b' for topic 'Topic_4'
+[16:39:46] [INFO] Created new server session '2cb3ad65a997789b930ae78be61be15b' for topic 'Topic_0'
+[16:39:46] [INFO] Created new server session '7cc034132620a69631d03e1702bdf8d8' for topic 'Topic_5'
+[16:39:46] [INFO] Created new server session '3b9eda6bea181dd47000983aab75fdc0' for topic 'Topic_2'
+[16:39:46] [INFO] Created new server session 'a8bb2eccbb7927275e730b1b060ca666' for topic 'Topic_7'
+[16:39:46] [INFO] Created new server session '755c1da2c779a1ada9ec9084ef2108e5' for topic 'Topic_3'
+[16:39:46] [INFO] Created new server session 'e6db338455d25d4e57ea74a5775b4444' for topic 'Topic_1'
+[16:39:46] [INFO] Created new server session '9589cae975afcfe95f60d032e021c7e3' for topic 'Topic_6'
+[16:39:46] [INFO] Created new server session 'ec08b3cb08607514191aac6a0134b962' for topic 'Topic_4'
+[16:39:46] [INFO] Created new server session 'fc3e863523d88f641fecf05ae6af2f67' for topic 'Topic_0'
+[16:39:46] [INFO] Created new server session '885eae759b71092239f812ed3d853cd2' for topic 'Topic_5'
+[16:39:46] [INFO] Created new server session 'a3a9ceaf78b1fa4bc4750556aa736c00' for topic 'Topic_2'
+[16:39:46] [INFO] Created new server session 'e4a5e4e208b960d0c8780f18d34289bb' for topic 'Topic_7'
+[16:39:46] [INFO] Created new server session 'f5cb5acb8827367518857e52455f8bbc' for topic 'Topic_3'
+[16:39:46] [INFO] Created new server session '15782cc1e1ce0707e590aac49fbe30d5' for topic 'Topic_1'
+[16:39:46] [INFO] Created new server session 'e3f7d583fd700ed020e73c1f894e7096' for topic 'Topic_6'
+[16:39:46] [INFO] Created new server session 'a169dd0c6c1ee66f78afb50c985c5d7c' for topic 'Topic_4'
+[16:39:46] [INFO] Created new server session 'd54822547f088d50531530336174c215' for topic 'Topic_0'
+[16:39:46] [INFO] Created new server session '35988215ed74c9fa43ede3b3cc18b971' for topic 'Topic_5'
+[16:39:46] [INFO] Created new server session '7c4fe6252c2ec1f1ca5ed0d84a9f3b18' for topic 'Topic_2'
+[16:39:46] [INFO] Created new server session '22948c1b65370aa5b9290fd17c3d4fae' for topic 'Topic_7'
+[16:39:46] [INFO] Created new server session 'bcc4f61862026456df2948296e29e3b2' for topic 'Topic_7'
+[16:39:46] [INFO] Created new server session '9c863287c07b1223574d08cd432b720d' for topic 'Topic_1'
+[16:39:46] [INFO] Created new server session 'f994b9aead72a1d363d8bc1a02c3377f' for topic 'Topic_6'
+[16:39:46] [INFO] Created new server session 'b7a46f739ca1550e4c273b9abea8d7b4' for topic 'Topic_4'
+[16:39:46] [INFO] Created new server session '025b0899b0d22dbe0f2d1dfda87c6db0' for topic 'Topic_0'
+[16:39:46] [INFO] Created new server session '089e48da78d8e7cae1b4773f5183ba17' for topic 'Topic_5'
+[16:39:47] [INFO] Created new server session 'c2b5026e9c139ea1ee0a7e037fcd1d1f' for topic 'Topic_2'
+[16:39:47] [INFO] Created new server session 'cfc3706dfaab9bd6bd0e43dbe4cd0d43' for topic 'Topic_3'
+[16:39:47] [INFO] Created new server session 'b7aa3a993ee5d3d7c4dfd7419bcafd0d' for topic 'Topic_7'
+[16:39:47] [INFO] Created new server session '70176d11ee4d6f5a7cd7f476e46d4fd6' for topic 'Topic_1'
+[16:39:47] [INFO] Created new server session '0e8e7da00ec62dbaa54cde1085ecf76f' for topic 'Topic_6'
+[16:39:47] [INFO] Created new server session 'd932077af8171382d3c546a9812fb93c' for topic 'Topic_0'
+[16:39:47] [INFO] Created new server session '038daca0e9b1f078d77500b6c1761adc' for topic 'Topic_5'
+[16:39:47] [INFO] Created new server session '911b5f32f771bbd2ad3e66cc0fecf94d' for topic 'Topic_2'
+[16:39:47] [INFO] Created new server session '5817c580fd5184530ab6d7e8e016f04c' for topic 'Topic_3'
+[16:39:47] [INFO] Created new server session 'ecd860c942a69d7574f47d36ae2fc18f' for topic 'Topic_1'
+[16:39:47] [INFO] Created new server session 'f33884d6be4382afea7bc33722328452' for topic 'Topic_6'
+[16:39:47] [INFO] Created new server session '8b317cd12db60401866ca26f53ca3260' for topic 'Topic_6'
+[16:39:47] [INFO] Created new server session 'f0ad734a07d1e1c21f6a7bf3a42ed931' for topic 'Topic_5'
+[16:39:47] [INFO] Created new server session '1043bd55da3bbf4685c6f8cca999dca4' for topic 'Topic_2'
+[16:39:47] [INFO] Created new server session 'ce6486773bb16ce0bd9c65d312705f3b' for topic 'Topic_3'
+[16:39:47] [INFO] Created new server session '15422a87c6952be67a2108def03ff163' for topic 'Topic_3'
+[16:39:47] [INFO] Created new server session '18fa759703f5b51921d5e10bf94ce21b' for topic 'Topic_0'
+[16:39:47] [INFO] Created new server session '4dc2a37b0c6543d2667093b378d08bef' for topic 'Topic_6'
+[16:39:47] [INFO] Created new server session '879e29a4d9795e2366ccb718c7a694e9' for topic 'Topic_2'
+[16:39:47] [INFO] Created new server session '00bcf6c6f5a8153e6a9397b8473051aa' for topic 'Topic_1'
+[16:39:47] [INFO] Created new server session '1372d3da360a6aa6f7c61f60f2cb1a7a' for topic 'Topic_3'
+[16:39:47] [INFO] Created new server session '27ae34057ab4b3000ec0adb4c91a6609' for topic 'Topic_0'
+[16:39:47] [INFO] Created new server session '60b7ad31a59c0a670fcae0e87383de2a' for topic 'Topic_0'
+[16:39:47] [INFO] Created new server session 'b936ff849efd9df02fc0166bc6890b85' for topic 'Topic_1'
+[16:39:47] [INFO] Initialized epoll instance (fd=5) monitoring listen_fd=3
+[16:39:47] [INFO] Created EnhancedSessionState '55555555555555555555555555555555' with 5 64 KiB work units across 3 files
+[16:39:47] [INFO] Created EnhancedSessionState '77777777777777777777777777777777' with 4 64 KiB work units across 1 files
+[16:39:47] [INFO] Requeued 1 in-flight chunks from dropped sub-stream 1
+[16:39:47] [INFO] Created EnhancedSessionState '88888888888888888888888888888888' with 8 64 KiB work units across 1 files
+[16:39:47] [INFO] Applied client bitmask: confirmed 3 units committed on disk
+[16:42:24] [INFO] Indexed topic 'Cavallo': 1 files, 11 total bytes
+[16:42:24] [INFO] Indexed topic 'Cane': 3 files, 18 total bytes
+[16:42:24] [INFO] Successfully loaded 2 topics from /tmp/it305_test_topics
+[16:42:24] [INFO] Listening socket created on port 18080 (fd=3)
+[16:42:24] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 0 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 65536 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 131072 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 196608 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 262144 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 327680 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 393216 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 458752 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 524288 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 589824 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 655360 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 720896 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 786432 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 851968 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 917504 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 983040 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1048576 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1114112 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1179648 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1245184 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1310720 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1376256 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1441792 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1507328 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1572864 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1638400 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1703936 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1769472 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1835008 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1900544 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1966080 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2031616 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2097152 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2162688 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2228224 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2293760 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2359296 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2424832 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2490368 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2555904 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2621440 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2686976 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2752512 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2818048 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2883584 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2949120 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3014656 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3080192 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3145728 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3211264 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3276800 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3342336 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3407872 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3473408 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3538944 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3604480 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3670016 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3735552 bytes (pf=1.000, r=1.0000)
+[16:42:25] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3801088 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3866624 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3932160 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3997696 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4063232 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4128768 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4194304 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4259840 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4325376 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4390912 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4456448 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4521984 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4587520 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4653056 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4718592 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4784128 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4849664 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4915200 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4980736 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5046272 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5111808 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5177344 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5242880 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5308416 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5373952 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5439488 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5505024 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5570560 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5636096 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5701632 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5767168 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5832704 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5898240 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5963776 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6029312 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6094848 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6160384 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6225920 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6291456 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6356992 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6422528 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6488064 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6553600 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6619136 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6684672 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6750208 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6815744 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6881280 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6946816 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7012352 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7077888 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7143424 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7208960 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7274496 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7340032 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7405568 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7471104 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7536640 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7602176 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7667712 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7733248 bytes (pf=1.000, r=1.0000)
+[16:42:26] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7798784 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7864320 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7929856 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7995392 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8060928 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8126464 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8192000 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8257536 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8323072 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8388608 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8454144 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8519680 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8585216 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8650752 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8716288 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8781824 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8847360 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8912896 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8978432 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9043968 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9109504 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9175040 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9240576 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9306112 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9371648 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9437184 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9502720 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9568256 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9633792 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9699328 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9764864 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9830400 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9895936 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9961472 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10027008 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10092544 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10158080 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10223616 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10289152 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10354688 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10420224 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10485760 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10551296 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10616832 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10682368 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10747904 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10813440 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10878976 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10944512 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11010048 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11075584 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11141120 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11206656 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11272192 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11337728 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11403264 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11468800 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11534336 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11599872 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11665408 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11730944 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11796480 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11862016 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11927552 bytes (pf=1.000, r=1.0000)
+[16:42:27] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11993088 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12058624 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12124160 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12189696 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12255232 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12320768 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12386304 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12451840 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12517376 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12582912 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12648448 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12713984 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12779520 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12845056 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12910592 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12976128 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 13041664 bytes (pf=1.000, r=1.0000)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1441792 bytes (pf=0.100, r=0.0335)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1966080 bytes (pf=0.100, r=0.0439)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2162688 bytes (pf=0.100, r=0.0018)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2424832 bytes (pf=0.100, r=0.0607)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3538944 bytes (pf=0.100, r=0.0375)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3604480 bytes (pf=0.100, r=0.0786)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3866624 bytes (pf=0.100, r=0.0515)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3997696 bytes (pf=0.100, r=0.0324)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5242880 bytes (pf=0.100, r=0.0007)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5570560 bytes (pf=0.100, r=0.0033)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5963776 bytes (pf=0.100, r=0.0832)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6029312 bytes (pf=0.100, r=0.0827)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6225920 bytes (pf=0.100, r=0.0242)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6356992 bytes (pf=0.100, r=0.0914)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6946816 bytes (pf=0.100, r=0.0291)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7012352 bytes (pf=0.100, r=0.0475)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7536640 bytes (pf=0.100, r=0.0545)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8585216 bytes (pf=0.100, r=0.0510)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8650752 bytes (pf=0.100, r=0.0638)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8781824 bytes (pf=0.100, r=0.0199)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9109504 bytes (pf=0.100, r=0.0045)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10027008 bytes (pf=0.100, r=0.0086)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10682368 bytes (pf=0.100, r=0.0129)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10747904 bytes (pf=0.100, r=0.0161)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10878976 bytes (pf=0.100, r=0.0325)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12255232 bytes (pf=0.100, r=0.0069)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 13303808 bytes (pf=0.100, r=0.0962)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 13828096 bytes (pf=0.100, r=0.0373)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 14548992 bytes (pf=0.100, r=0.0190)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 15007744 bytes (pf=0.100, r=0.0726)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 16515072 bytes (pf=0.100, r=0.0807)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 17694720 bytes (pf=0.100, r=0.0180)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 17891328 bytes (pf=0.100, r=0.0218)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 18153472 bytes (pf=0.100, r=0.0600)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 18284544 bytes (pf=0.100, r=0.0320)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 20250624 bytes (pf=0.100, r=0.0432)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 20643840 bytes (pf=0.100, r=0.0912)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 21233664 bytes (pf=0.100, r=0.0558)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 22216704 bytes (pf=0.100, r=0.0901)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 22872064 bytes (pf=0.100, r=0.0648)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 23461888 bytes (pf=0.100, r=0.0748)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 23986176 bytes (pf=0.100, r=0.0998)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 25100288 bytes (pf=0.100, r=0.0012)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 25362432 bytes (pf=0.100, r=0.0756)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 25493504 bytes (pf=0.100, r=0.0634)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 26083328 bytes (pf=0.100, r=0.0235)
+[16:42:28] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 26804224 bytes (pf=0.100, r=0.0240)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 27066368 bytes (pf=0.100, r=0.0205)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 27262976 bytes (pf=0.100, r=0.0685)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 29229056 bytes (pf=0.100, r=0.0775)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 30801920 bytes (pf=0.100, r=0.0878)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 32243712 bytes (pf=0.100, r=0.0801)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 32571392 bytes (pf=0.100, r=0.0551)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 33816576 bytes (pf=0.100, r=0.0678)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 34078720 bytes (pf=0.100, r=0.0844)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 34209792 bytes (pf=0.100, r=0.0878)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 35192832 bytes (pf=0.100, r=0.0828)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 35454976 bytes (pf=0.100, r=0.0120)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 36503552 bytes (pf=0.100, r=0.0382)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 37879808 bytes (pf=0.100, r=0.0529)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 37945344 bytes (pf=0.100, r=0.0853)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 39124992 bytes (pf=0.100, r=0.0988)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 39452672 bytes (pf=0.100, r=0.0698)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 40828928 bytes (pf=0.100, r=0.0723)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 41418752 bytes (pf=0.100, r=0.0843)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 41484288 bytes (pf=0.100, r=0.0097)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 43843584 bytes (pf=0.100, r=0.0920)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 44498944 bytes (pf=0.100, r=0.0482)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 45678592 bytes (pf=0.100, r=0.0455)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 45809664 bytes (pf=0.100, r=0.0182)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 47513600 bytes (pf=0.100, r=0.0496)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 48234496 bytes (pf=0.100, r=0.0857)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 48562176 bytes (pf=0.100, r=0.0256)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 49348608 bytes (pf=0.100, r=0.0630)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 49479680 bytes (pf=0.100, r=0.0507)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 49610752 bytes (pf=0.100, r=0.0609)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 50135040 bytes (pf=0.100, r=0.0917)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 50462720 bytes (pf=0.100, r=0.0900)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 51707904 bytes (pf=0.100, r=0.0142)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 52625408 bytes (pf=0.100, r=0.0978)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 52690944 bytes (pf=0.100, r=0.0932)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 53673984 bytes (pf=0.100, r=0.0531)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 53936128 bytes (pf=0.100, r=0.0427)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 54329344 bytes (pf=0.100, r=0.0090)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 54591488 bytes (pf=0.100, r=0.0381)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 56426496 bytes (pf=0.100, r=0.0404)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 57475072 bytes (pf=0.100, r=0.0859)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 57868288 bytes (pf=0.100, r=0.0054)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 59637760 bytes (pf=0.100, r=0.0642)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 60555264 bytes (pf=0.100, r=0.0086)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 61472768 bytes (pf=0.100, r=0.0805)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 62586880 bytes (pf=0.100, r=0.0916)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 63045632 bytes (pf=0.100, r=0.0876)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 63963136 bytes (pf=0.100, r=0.0495)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 64159744 bytes (pf=0.100, r=0.0395)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 65208320 bytes (pf=0.100, r=0.0175)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 65273856 bytes (pf=0.100, r=0.0565)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 66584576 bytes (pf=0.100, r=0.0828)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 66781184 bytes (pf=0.100, r=0.0184)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 68485120 bytes (pf=0.100, r=0.0694)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 70189056 bytes (pf=0.100, r=0.0304)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 70320128 bytes (pf=0.100, r=0.0984)
+[16:42:29] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 70647808 bytes (pf=0.100, r=0.0786)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 70909952 bytes (pf=0.100, r=0.0732)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 71172096 bytes (pf=0.100, r=0.0158)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 71434240 bytes (pf=0.100, r=0.0857)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 71565312 bytes (pf=0.100, r=0.0707)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 71696384 bytes (pf=0.100, r=0.0215)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 71892992 bytes (pf=0.100, r=0.0753)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 72613888 bytes (pf=0.100, r=0.0805)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 72941568 bytes (pf=0.100, r=0.0547)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 73334784 bytes (pf=0.100, r=0.0731)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 74317824 bytes (pf=0.100, r=0.0622)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 74973184 bytes (pf=0.100, r=0.0343)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 76414976 bytes (pf=0.100, r=0.0603)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 77135872 bytes (pf=0.100, r=0.0232)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 77332480 bytes (pf=0.100, r=0.0185)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 78512128 bytes (pf=0.100, r=0.0068)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 80019456 bytes (pf=0.100, r=0.0790)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 80150528 bytes (pf=0.100, r=0.0425)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 80412672 bytes (pf=0.100, r=0.0397)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 82968576 bytes (pf=0.100, r=0.0144)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 83427328 bytes (pf=0.100, r=0.0074)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 83755008 bytes (pf=0.100, r=0.0041)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 85458944 bytes (pf=0.100, r=0.0214)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 85786624 bytes (pf=0.100, r=0.0337)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 86114304 bytes (pf=0.100, r=0.0819)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 87490560 bytes (pf=0.100, r=0.0413)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 87752704 bytes (pf=0.100, r=0.0694)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 90767360 bytes (pf=0.100, r=0.0710)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 91422720 bytes (pf=0.100, r=0.0852)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 92667904 bytes (pf=0.100, r=0.0808)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 92930048 bytes (pf=0.100, r=0.0506)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 93257728 bytes (pf=0.100, r=0.0537)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 93454336 bytes (pf=0.100, r=0.0209)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 93716480 bytes (pf=0.100, r=0.0275)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 95354880 bytes (pf=0.100, r=0.0635)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 95420416 bytes (pf=0.100, r=0.0137)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 96010240 bytes (pf=0.100, r=0.0668)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 97714176 bytes (pf=0.100, r=0.0540)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 99024896 bytes (pf=0.100, r=0.0513)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 99876864 bytes (pf=0.100, r=0.0761)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 101122048 bytes (pf=0.100, r=0.0722)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 101515264 bytes (pf=0.100, r=0.0108)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 101974016 bytes (pf=0.100, r=0.0784)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 102563840 bytes (pf=0.100, r=0.0637)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 104464384 bytes (pf=0.100, r=0.0282)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 104988672 bytes (pf=0.100, r=0.0083)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 105316352 bytes (pf=0.100, r=0.0644)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 105775104 bytes (pf=0.100, r=0.0564)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 105906176 bytes (pf=0.100, r=0.0022)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 106692608 bytes (pf=0.100, r=0.0837)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 107216896 bytes (pf=0.100, r=0.0383)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 107610112 bytes (pf=0.100, r=0.0709)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 109445120 bytes (pf=0.100, r=0.0656)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 110100480 bytes (pf=0.100, r=0.0920)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 110297088 bytes (pf=0.100, r=0.0052)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 110362624 bytes (pf=0.100, r=0.0719)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 110493696 bytes (pf=0.100, r=0.0072)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 110624768 bytes (pf=0.100, r=0.0019)
+[16:42:30] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 110755840 bytes (pf=0.100, r=0.0937)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 115277824 bytes (pf=0.100, r=0.0630)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 115408896 bytes (pf=0.100, r=0.0135)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 115539968 bytes (pf=0.100, r=0.0597)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 116260864 bytes (pf=0.100, r=0.0583)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 118095872 bytes (pf=0.100, r=0.0888)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 122486784 bytes (pf=0.100, r=0.0777)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 122617856 bytes (pf=0.100, r=0.0719)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 122683392 bytes (pf=0.100, r=0.0867)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 123863040 bytes (pf=0.100, r=0.0518)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 123994112 bytes (pf=0.100, r=0.0169)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 124649472 bytes (pf=0.100, r=0.0600)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 127139840 bytes (pf=0.100, r=0.0566)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 127467520 bytes (pf=0.100, r=0.0314)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 127598592 bytes (pf=0.100, r=0.0255)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 129302528 bytes (pf=0.100, r=0.0012)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 130088960 bytes (pf=0.100, r=0.0114)
+[16:42:31] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 130809856 bytes (pf=0.100, r=0.0113)
+[16:42:31] [ERROR] Invalid IPv4 address format: '999.999.999.999'
+[16:42:31] [ERROR] Invalid server port: '0' (must be 1-65535)
+[16:42:31] [INFO] Indexed topic 'animals': 3 files, 358430 total bytes
+[16:42:31] [INFO] Successfully loaded 1 topics from /tmp/it305_test_data
+[16:42:31] [INFO] Listening socket created on port 19123 (fd=3)
+[16:42:31] [INFO] Connecting to 127.0.0.1:19123...
+[16:42:31] [INFO] Connected to server. Requesting topic 'animals'...
+[16:42:31] [INFO] Client requested topic: 'animals'
+[16:42:31] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:42:31] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:42:31] [INFO] Completed streaming topic 'animals' (3 files, 358430 bytes)
+[16:42:31] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:42:31] [INFO] Progress: 3/3 files (100.0%) - 0.34 MB
+[16:42:31] [INFO] Received OP_TRANSFER_END from server
+[16:42:31] [INFO] Transfer SUCCESS: 3 files (358430 bytes) written to '/tmp/it305_client_downloads/animals' in 0 retries
+[16:42:31] [INFO] Performance: Duration = 0.18s | Goodput = 1.97 MB/s | Wire Throughput = 1.97 MB/s | Overhead = 0.12%
+[16:42:31] [INFO] Client fd=4 disconnected before request
+[16:42:31] [INFO] Indexed topic 'animals': 3 files, 358430 total bytes
+[16:42:31] [INFO] Successfully loaded 1 topics from /tmp/it305_test_data
+[16:42:31] [INFO] Listening socket created on port 19124 (fd=3)
+[16:42:31] [INFO] Connecting to 127.0.0.1:19124...
+[16:42:31] [INFO] Connected to server. Requesting topic 'animals'...
+[16:42:31] [INFO] Client requested topic: 'animals'
+[16:42:31] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:42:31] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:42:31] [FAULT] Dropped connection on topic 'animals' file_index 0 at 131072 bytes (pf=0.200, r=0.0754)
+[16:42:31] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:42:31] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 0
+[16:42:31] [INFO] Retry attempt 1/50 after backoff 100 ms...
+[16:42:31] [INFO] Connected to server. Requesting topic 'animals'...
+[16:42:32] [INFO] Client requested topic: 'animals'
+[16:42:32] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:42:32] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:42:32] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:42:32] [FAULT] Dropped connection on topic 'animals' file_index 0 at 204800 bytes (pf=0.200, r=0.1972)
+[16:42:32] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 1
+[16:42:32] [INFO] Retry attempt 2/50 after backoff 200 ms...
+[16:42:32] [INFO] Connected to server. Requesting topic 'animals'...
+[16:42:32] [INFO] Client requested topic: 'animals'
+[16:42:32] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:42:32] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:42:32] [FAULT] Dropped connection on topic 'animals' file_index 2 at 30 bytes (pf=0.200, r=0.0887)
+[16:42:32] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:42:32] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 2
+[16:42:32] [INFO] Retry attempt 3/50 after backoff 400 ms...
+[16:42:32] [INFO] Connected to server. Requesting topic 'animals'...
+[16:42:32] [INFO] Client requested topic: 'animals'
+[16:42:32] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:42:32] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:42:32] [FAULT] Dropped connection on topic 'animals' file_index 2 at 30 bytes (pf=0.200, r=0.1931)
+[16:42:32] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:42:32] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 3
+[16:42:32] [INFO] Retry attempt 4/50 after backoff 800 ms...
+[16:42:35] [INFO] Connected to server. Requesting topic 'animals'...
+[16:42:35] [INFO] Client requested topic: 'animals'
+[16:42:35] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:42:35] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:42:35] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:42:35] [FAULT] Dropped connection on topic 'animals' file_index 1 at 131072 bytes (pf=0.200, r=0.1198)
+[16:42:35] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 4
+[16:42:35] [INFO] Retry attempt 5/50 after backoff 1000 ms...
+[16:42:36] [INFO] Connected to server. Requesting topic 'animals'...
+[16:42:36] [INFO] Client requested topic: 'animals'
+[16:42:36] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:42:36] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:42:36] [FAULT] Dropped connection on topic 'animals' file_index 1 at 131072 bytes (pf=0.200, r=0.1137)
+[16:42:36] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:42:36] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 5
+[16:42:36] [INFO] Retry attempt 6/50 after backoff 1000 ms...
+[16:42:37] [INFO] Connected to server. Requesting topic 'animals'...
+[16:42:37] [INFO] Client requested topic: 'animals'
+[16:42:37] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:42:37] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:42:37] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:42:37] [FAULT] Dropped connection on topic 'animals' file_index 0 at 196608 bytes (pf=0.200, r=0.0145)
+[16:42:37] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 6
+[16:42:38] [INFO] Retry attempt 7/50 after backoff 1000 ms...
+[16:42:39] [INFO] Connected to server. Requesting topic 'animals'...
+[16:42:39] [INFO] Client requested topic: 'animals'
+[16:42:39] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[16:42:39] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[16:42:39] [INFO] Completed streaming topic 'animals' (3 files, 358430 bytes)
+[16:42:39] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[16:42:39] [INFO] Progress: 3/3 files received (100.0%) - 0.34 MB written
+[16:42:39] [INFO] Received OP_TRANSFER_END from server
+[16:42:39] [INFO] Transfer SUCCESS: 3 files (358430 bytes) written to '/tmp/it305_client_downloads/animals' in 7 retries
+[16:42:39] [INFO] Performance: Duration = 5.75s | Goodput = 0.06 MB/s | Wire Throughput = 0.40 MB/s | Overhead = 536.60%
+[16:42:39] [INFO] Client fd=4 disconnected before request
+[16:42:39] [INFO] Created new server session 'dd4b094ab27fdb1f16dcd2e11bcd0f77' for topic 'Cane'
+[16:42:39] [INFO] Created new server session '8177a0c641a98676d102e06118efca87' for topic 'Cane'
+[16:42:39] [INFO] Created new server session 'fde14842570eafce68c3fa7a707ee420' for topic 'Cavallo'
+[16:42:39] [INFO] Created new server session 'ed8903883165a4f161ca340805595b5a' for topic 'Cavallo'
+[16:42:39] [INFO] Swept expired session 'fde14842570eafce68c3fa7a707ee420' (idle > 600s)
+[16:42:39] [INFO] Created new server session '278644149d4b2a8450da3fce0bfb0d82' for topic 'Cane'
+[16:42:39] [INFO] Validation Check 1 FAIL: Session 'eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee' not found
+[16:42:39] [INFO] Validation Check 2 FAIL: Session '278644149d4b2a8450da3fce0bfb0d82' idle TTL expired
+[16:42:39] [INFO] Created new server session 'fb2d4b5bfa0dabbf308bfdcadad16937' for topic 'Cane'
+[16:42:39] [INFO] Validation Check 3 FAIL: Topic mismatch: checkpoint requested 'Elefante' but session bound to 'Cane'
+[16:42:39] [INFO] Validation Check 4 FAIL: file_index 5 exceeds topic file count 3
+[16:42:39] [INFO] Validation Check 4 FAIL: Terminal index file_index == file_count invalid: offset != 0 or filename != EOF or all_files_sent false
+[16:42:39] [INFO] Validation Check 4 FAIL: Terminal index file_index == file_count invalid: offset != 0 or filename != EOF or all_files_sent false
+[16:42:39] [INFO] Validation Check 4 FAIL: Terminal index file_index == file_count invalid: offset != 0 or filename != EOF or all_files_sent false
+[16:42:39] [INFO] Validation Check 4 PASS: Terminal EOF session 'fb2d4b5bfa0dabbf308bfdcadad16937' verified
+[16:42:39] [INFO] Validation Check 5 FAIL: Filename mismatch at index 1: expected 'eb1002.jpg' but got 'wrong_name.jpg'
+[16:42:39] [INFO] Validation Check 6 FAIL: byte_offset 200001 exceeds file size 200000
+[16:42:39] [INFO] Validation Check 7 FAIL: claimed 360000 > highwater 350000
+[16:42:39] [INFO] Validation PASSED: session 'fb2d4b5bfa0dabbf308bfdcadad16937' resuming at file_index 1 offset 50000 (rem_files=2, rem_bytes=450000)
+[16:42:39] [INFO] Created new server session 'd48b75c04d2ca27e28d8190211ea341e' for topic 'Topic_0'
+[16:42:39] [INFO] Created new server session '9396e199004165f95c516016e7c1fa11' for topic 'Topic_1'
+[16:42:39] [INFO] Created new server session '4dd8ca98559145e2501ed7cc353bff4f' for topic 'Topic_3'
+[16:42:39] [INFO] Created new server session '557bbbab54fd10cfd7f66f6eabc8b702' for topic 'Topic_3'
+[16:42:39] [INFO] Created new server session 'cd8e6d99830fc1329dcace495bd21c1b' for topic 'Topic_3'
+[16:42:39] [INFO] Created new server session '295f2e1d48d55febafc285dc8a26ead1' for topic 'Topic_5'
+[16:42:39] [INFO] Created new server session 'e06a722ca23439fa7fc4ef73445fcb3f' for topic 'Topic_7'
+[16:42:39] [INFO] Created new server session 'f1c59612f1e11bbb72299411872a6c13' for topic 'Topic_6'
+[16:42:39] [INFO] Created new server session 'fca8f45b18fd43ed16a4a151dfa5c33b' for topic 'Topic_0'
+[16:42:39] [INFO] Created new server session '0e6744f65b86829f181dcb74cc240018' for topic 'Topic_0'
+[16:42:39] [INFO] Created new server session 'fe114f02ac1ae785c0bf509d3db7441c' for topic 'Topic_2'
+[16:42:39] [INFO] Created new server session '7ca91ccc3338b12f979ece2542ac695a' for topic 'Topic_4'
+[16:42:39] [INFO] Created new server session 'ee352847fe7959fac48637adb1917145' for topic 'Topic_3'
+[16:42:39] [INFO] Created new server session '598ca5919f4b844fdf1d36aa2a91e2d6' for topic 'Topic_5'
+[16:42:39] [INFO] Created new server session '8b416debc017ae818a6e8c46919e9b30' for topic 'Topic_7'
+[16:42:39] [INFO] Created new server session 'eea16088edce76d2096538abc11b3785' for topic 'Topic_6'
+[16:42:40] [INFO] Created new server session 'b1a7fa2a8fdd507ec2bfc26706412911' for topic 'Topic_1'
+[16:42:40] [INFO] Created new server session 'bce72955129dbf7ab75cf3456c1a18f0' for topic 'Topic_0'
+[16:42:40] [INFO] Created new server session 'a8811711d7e3c34e4b62538a3031a1f4' for topic 'Topic_2'
+[16:42:40] [INFO] Created new server session '532fd6838cfe1409c7b0c751e4e8aa47' for topic 'Topic_4'
+[16:42:40] [INFO] Created new server session 'bef88b454ff549adfb62a131161e1951' for topic 'Topic_3'
+[16:42:40] [INFO] Created new server session '9e36742a4ae718b3a6c455bc09010cc5' for topic 'Topic_5'
+[16:42:40] [INFO] Created new server session '244ade8dd06bbc0a04f4f84ad4c6dd52' for topic 'Topic_7'
+[16:42:40] [INFO] Created new server session 'a313eedabbfab02b10e45720081d092c' for topic 'Topic_7'
+[16:42:40] [INFO] Created new server session 'f6f10abda06cfd9cffae35d7c0050f1c' for topic 'Topic_1'
+[16:42:40] [INFO] Created new server session 'e9a8a1dec3cb17c3a8a0cc0ad84480ec' for topic 'Topic_0'
+[16:42:40] [INFO] Created new server session '114597a2c4ba344fa4e71adb698c6f22' for topic 'Topic_2'
+[16:42:40] [INFO] Created new server session 'dad7a3a385d75dab58ada67686039826' for topic 'Topic_4'
+[16:42:40] [INFO] Created new server session 'ed4381a2db7608ab11bcdfee2cd28655' for topic 'Topic_3'
+[16:42:40] [INFO] Created new server session 'ff490430195356bdc628f5aa2218f83a' for topic 'Topic_5'
+[16:42:40] [INFO] Created new server session 'e229206458ec2b3265f428b7cc578a15' for topic 'Topic_6'
+[16:42:40] [INFO] Created new server session '3afb6c656019c161047f3cee75edce56' for topic 'Topic_7'
+[16:42:40] [INFO] Created new server session '90699121bfaf4c32c6855efbc73e9cee' for topic 'Topic_1'
+[16:42:40] [INFO] Created new server session 'd552cb533d51b16c987599b89f48e9de' for topic 'Topic_0'
+[16:42:40] [INFO] Created new server session '581ccba2b46ab838faf401037b188dec' for topic 'Topic_2'
+[16:42:40] [INFO] Created new server session '3011db09bf757e5adf991cec07f2ebe9' for topic 'Topic_4'
+[16:42:40] [INFO] Created new server session 'ab045188a2add8d3bdef5f0ba40a6075' for topic 'Topic_3'
+[16:42:40] [INFO] Created new server session 'f586a05cff2ed87e51a7a3ca8e36e852' for topic 'Topic_5'
+[16:42:40] [INFO] Created new server session '7276c4ba2da925505737893e6bdbefc8' for topic 'Topic_6'
+[16:42:40] [INFO] Created new server session 'cc2749f99274774545bace7519a7b945' for topic 'Topic_7'
+[16:42:40] [INFO] Created new server session 'a4a0a93872ba7733d2a5592fcc60fd57' for topic 'Topic_1'
+[16:42:40] [INFO] Created new server session '4316cdbc7572921bdcec83cbaeac26f5' for topic 'Topic_0'
+[16:42:40] [INFO] Created new server session '80227d97d7e874f17e8db569ec204a72' for topic 'Topic_2'
+[16:42:40] [INFO] Created new server session '920da5f8fa5a6bb9c0693e90debd0284' for topic 'Topic_2'
+[16:42:40] [INFO] Created new server session '2b5563bef28b0b20000f5a704055188e' for topic 'Topic_3'
+[16:42:40] [INFO] Created new server session 'ad560dbd5fc24fd7213fc9c8bc8d3758' for topic 'Topic_5'
+[16:42:40] [INFO] Created new server session '2595c331ef1b98d83528a3577972cd79' for topic 'Topic_6'
+[16:42:40] [INFO] Created new server session '9e6a0af7f116595c9f5f27e89f5f8e52' for topic 'Topic_7'
+[16:42:40] [INFO] Created new server session 'f454d70dbf846fd05c547a5d8faaa3e4' for topic 'Topic_1'
+[16:42:40] [INFO] Created new server session 'ef4b3f9d3a755243ba76da6dd23b264f' for topic 'Topic_0'
+[16:42:40] [INFO] Created new server session '4eb292dd3824ab9666fd6cae47850a30' for topic 'Topic_4'
+[16:42:40] [INFO] Created new server session '74b77e3ed159114557d05e95b680da58' for topic 'Topic_2'
+[16:42:40] [INFO] Created new server session '3bfd860ec829b8fc859f99d601b5e2f9' for topic 'Topic_3'
+[16:42:40] [INFO] Created new server session 'db8208b2ae5eb0245d4b8fbf1098bd8e' for topic 'Topic_5'
+[16:42:40] [INFO] Created new server session '738c06273733582c8e1b792f189e85bc' for topic 'Topic_6'
+[16:42:40] [INFO] Created new server session '64e1c78e1843615173f504be99257cb8' for topic 'Topic_7'
+[16:42:40] [INFO] Created new server session 'b0b7b46d7c059f13ef47cf18d44d36ee' for topic 'Topic_1'
+[16:42:40] [INFO] Created new server session 'cea0fc11a552f40756d0d475b38d8068' for topic 'Topic_0'
+[16:42:40] [INFO] Created new server session '70604bf58e7b819f635f194a1f95acb0' for topic 'Topic_4'
+[16:42:40] [INFO] Created new server session '9550e156d21f7667a2f4e41490adbdc1' for topic 'Topic_2'
+[16:42:40] [INFO] Created new server session 'e7eeaa28aba71846ead5c5b60f2c0ce1' for topic 'Topic_3'
+[16:42:40] [INFO] Created new server session '553672ef89122e162beca7b680b05dd5' for topic 'Topic_5'
+[16:42:40] [INFO] Created new server session 'e0e1cc1232bcf36c16bda3799d829749' for topic 'Topic_6'
+[16:42:40] [INFO] Created new server session '6a4a141583fcb3cd032a15734c28c5a6' for topic 'Topic_7'
+[16:42:40] [INFO] Created new server session 'a4ec553a88d5ca924f3f6e01c60cb01e' for topic 'Topic_1'
+[16:42:40] [INFO] Created new server session '4a101f8a8ef92988c3a89c05778b2179' for topic 'Topic_0'
+[16:42:40] [INFO] Created new server session 'b2224587ac71814bbc1c903116c48d19' for topic 'Topic_4'
+[16:42:40] [INFO] Created new server session '43a75a2c59215235d52784d13f8ee889' for topic 'Topic_2'
+[16:42:40] [INFO] Created new server session '190b2337cc2604115e276050aa79cede' for topic 'Topic_3'
+[16:42:40] [INFO] Created new server session '0efe259fae4b6c04554e099e82f05666' for topic 'Topic_5'
+[16:42:40] [INFO] Created new server session '647711a6f12bf20909b6afce35eb024a' for topic 'Topic_6'
+[16:42:41] [INFO] Created new server session 'cadce6b958cd5679f3f18d9b921ceee3' for topic 'Topic_7'
+[16:42:41] [INFO] Created new server session 'd07ddffb263c74a6cddcb56d4b22457c' for topic 'Topic_1'
+[16:42:41] [INFO] Created new server session 'e37a303be3153ae47bb903126e351dc5' for topic 'Topic_0'
+[16:42:41] [INFO] Created new server session 'd6895bc855a077b18c95f093e91be3d7' for topic 'Topic_4'
+[16:42:41] [INFO] Created new server session '8df2c24136f7e24e7b511f784b99bb56' for topic 'Topic_2'
+[16:42:41] [INFO] Created new server session '996034f4f984c074b177aa7cdfdf7000' for topic 'Topic_3'
+[16:42:41] [INFO] Created new server session '948cb7a9904eb187d152c193b78bf116' for topic 'Topic_5'
+[16:42:41] [INFO] Created new server session '1c750b9721a8e17bc32e9f209b2bd39f' for topic 'Topic_6'
+[16:42:41] [INFO] Created new server session 'aba172e3640be76278c5e85b83457563' for topic 'Topic_6'
+[16:42:41] [INFO] Created new server session '41a0b79029d8b120cdac050189a0ae8e' for topic 'Topic_1'
+[16:42:41] [INFO] Created new server session '5a4a40f6c26037fd334f66676021f4c0' for topic 'Topic_0'
+[16:42:41] [INFO] Created new server session 'da22ca8bfe838a2972cdce8c10a38fff' for topic 'Topic_4'
+[16:42:41] [INFO] Created new server session '0dbc87d2bd4d28b8103df5330788d282' for topic 'Topic_2'
+[16:42:41] [INFO] Created new server session '27699c92d8810112e283ced38c7b0b7f' for topic 'Topic_3'
+[16:42:41] [INFO] Created new server session '5eef90e3a27766053b4ddb82cc9eacb9' for topic 'Topic_5'
+[16:42:41] [INFO] Created new server session 'fd6cf4b62ff354ee829b788f939106a2' for topic 'Topic_7'
+[16:42:41] [INFO] Created new server session 'c14ea29cfb722b8d73c0366841978718' for topic 'Topic_6'
+[16:42:41] [INFO] Created new server session 'b52aaa322e960017ad41edca81cea4f0' for topic 'Topic_6'
+[16:42:41] [INFO] Created new server session 'e22e92e3b967d73490b5d1fa255b02b3' for topic 'Topic_0'
+[16:42:41] [INFO] Created new server session '59e986c4bd3aad33b081ca0f01ed822f' for topic 'Topic_4'
+[16:42:41] [INFO] Created new server session '2e2895fa11488e36bd560cc9a6edef75' for topic 'Topic_2'
+[16:42:41] [INFO] Created new server session '79bc74f3541362119c9f4e4a33b48d8a' for topic 'Topic_3'
+[16:42:41] [INFO] Created new server session '07bf5379529d54c6682999f12bacc5f8' for topic 'Topic_5'
+[16:42:41] [INFO] Created new server session 'b596fe5a7db51bc443e426eab66e3dbe' for topic 'Topic_7'
+[16:42:41] [INFO] Created new server session 'e516be4ef3e6e88ef3d0fdb3dff8fe07' for topic 'Topic_1'
+[16:42:41] [INFO] Created new server session 'adb5c1df7a0777256739cd6e6c86500b' for topic 'Topic_6'
+[16:42:41] [INFO] Created new server session '076cb0375a3cf9c32c5b7716a82eb0f7' for topic 'Topic_0'
+[16:42:41] [INFO] Created new server session 'c122a7dbaaf9054d6cf39277400c58a5' for topic 'Topic_4'
+[16:42:41] [INFO] Created new server session '8ff4f4c3954440ef1435bb07f922f9f2' for topic 'Topic_4'
+[16:42:41] [INFO] Created new server session '0b8305aae7db79cafd81833789700583' for topic 'Topic_4'
+[16:42:41] [INFO] Created new server session '6f64d0478144b5823460cacaeafd1a18' for topic 'Topic_4'
+[16:42:41] [INFO] Created new server session 'd4ee0b194ba624ca7fdac9e4cec4d183' for topic 'Topic_4'
+[16:42:41] [INFO] Created new server session '03bfc3853e4a171978569487a6465e07' for topic 'Topic_4'
+[16:42:41] [INFO] Created new server session 'ca78d9111ecb616f6e5d4404fabbe1f1' for topic 'Topic_6'
+[16:42:41] [INFO] Created new server session 'e453f9883d8b08b6b9a229fc9d0ce04b' for topic 'Topic_0'
+[16:42:41] [INFO] Created new server session 'e808efb6bbce9eb1b7a88265ba14e9c5' for topic 'Topic_2'
+[16:42:41] [INFO] Created new server session '305c3d6442e8a8fe47c561dce051d523' for topic 'Topic_3'
+[16:42:41] [INFO] Created new server session '693f7f5f492bd162ab9e84521da30d10' for topic 'Topic_5'
+[16:42:41] [INFO] Created new server session 'bac8d23891b13db5a907fc95441fbb8c' for topic 'Topic_7'
+[16:42:41] [INFO] Created new server session '4cab955c5e9054ba70ea525998571e54' for topic 'Topic_7'
+[16:42:41] [INFO] Created new server session '148f738d312be9c8fbb1c1c76484b77c' for topic 'Topic_7'
+[16:42:41] [INFO] Created new server session '4ba142be9b53299b5cc1fd0163028fb9' for topic 'Topic_7'
+[16:42:41] [INFO] Created new server session '7b72ed4582291b0cca3d506e4e311db7' for topic 'Topic_0'
+[16:42:41] [INFO] Created new server session '48e54b6ba20f42b510f1d94a5932e293' for topic 'Topic_2'
+[16:42:41] [INFO] Created new server session 'a8e4a5c1fc89cc50f9730a2781545a10' for topic 'Topic_3'
+[16:42:41] [INFO] Created new server session '27af86c56d5c4bc4b95cbb5f7acae5d0' for topic 'Topic_5'
+[16:42:41] [INFO] Created new server session '8624f75caca0c15d05a8e31102241446' for topic 'Topic_1'
+[16:42:41] [INFO] Created new server session '380215d37c2c2f784b5fc0cfbe661858' for topic 'Topic_4'
+[16:42:41] [INFO] Created new server session 'feb4a02608136a9c894ef45526569e60' for topic 'Topic_6'
+[16:42:41] [INFO] Created new server session '36ca18375fff1c2888aae94704e56037' for topic 'Topic_7'
+[16:42:41] [INFO] Created new server session '3042bb02aac30258dadddc0455c0ce55' for topic 'Topic_0'
+[16:42:41] [INFO] Created new server session '0b247ddafbb8d089682b2f04c4e9899a' for topic 'Topic_2'
+[16:42:42] [INFO] Created new server session '133bc78e7843a9aa42ca0f24ae1cab03' for topic 'Topic_3'
+[16:42:42] [INFO] Created new server session '671445a1e713574250b64756b2786747' for topic 'Topic_5'
+[16:42:42] [INFO] Created new server session '44693571f7998e9d19e6114768a8ccba' for topic 'Topic_1'
+[16:42:42] [INFO] Created new server session 'f611135a7b7e017a9e429979c09ce562' for topic 'Topic_4'
+[16:42:42] [INFO] Created new server session 'c8764b7df86b934dca4a346264865108' for topic 'Topic_6'
+[16:42:42] [INFO] Created new server session '5464ad6ded715dff011777451df5835b' for topic 'Topic_7'
+[16:42:42] [INFO] Created new server session 'd7cf110b049be96453b96875fc7c07e1' for topic 'Topic_0'
+[16:42:42] [INFO] Created new server session '7377a35585333c180621b23f8139ce87' for topic 'Topic_2'
+[16:42:42] [INFO] Created new server session '2eeefd04828be89cc942ca6b47ae72b7' for topic 'Topic_3'
+[16:42:42] [INFO] Created new server session '8946dc613899bff97621c42b7322d7a2' for topic 'Topic_5'
+[16:42:42] [INFO] Created new server session '26a30bea69ba453482999c8c5ec84877' for topic 'Topic_1'
+[16:42:42] [INFO] Created new server session 'eeaa7ccdcb89229b1d2fe3707d89910b' for topic 'Topic_4'
+[16:42:42] [INFO] Created new server session 'a681adb17ce0d1c54135a307aedb85f9' for topic 'Topic_6'
+[16:42:42] [INFO] Created new server session 'd038da71e56406f44f05ea8825012860' for topic 'Topic_7'
+[16:42:42] [INFO] Created new server session 'fbdabc7dd137d2d7f8a9b5759d0c60f7' for topic 'Topic_0'
+[16:42:42] [INFO] Created new server session '6fe38a3d96e4c5ec7c4afce01125d975' for topic 'Topic_2'
+[16:42:42] [INFO] Created new server session '832fb15c86b42c857651e42ac4386a2e' for topic 'Topic_3'
+[16:42:42] [INFO] Created new server session 'a98df8df1e7c68d0bfbce9606d02bb33' for topic 'Topic_5'
+[16:42:42] [INFO] Created new server session 'c5f41e6566fd47521817f44b9672c5a5' for topic 'Topic_1'
+[16:42:42] [INFO] Created new server session '50edda4cacdacd9b61b48c67a0ecae46' for topic 'Topic_4'
+[16:42:42] [INFO] Created new server session 'fa948b9216fd0216f76914495f3888d0' for topic 'Topic_6'
+[16:42:42] [INFO] Created new server session '222e553bb878f6874e861c130a91a171' for topic 'Topic_7'
+[16:42:42] [INFO] Created new server session '43b6568b6bbf976da3c706527a4b91bf' for topic 'Topic_0'
+[16:42:42] [INFO] Created new server session 'bd5e3d1d4cc303a5e5a67ad0373020c8' for topic 'Topic_2'
+[16:42:42] [INFO] Created new server session '12ed50a13bb11b8df5aec0f135f794e0' for topic 'Topic_3'
+[16:42:42] [INFO] Created new server session '8dabd8ce2b4a10c016267d9fa2efefd9' for topic 'Topic_5'
+[16:42:42] [INFO] Created new server session '517c477726d2bbb216703cad3fd29f2a' for topic 'Topic_1'
+[16:42:42] [INFO] Created new server session 'd27de0a3c21a280bf49e48b57513d629' for topic 'Topic_6'
+[16:42:42] [INFO] Created new server session '6fb0ead98c22d6e56b9220e67fe81e57' for topic 'Topic_2'
+[16:42:42] [INFO] Created new server session '5687e512c637c047edc285b340547a05' for topic 'Topic_5'
+[16:42:42] [INFO] Created new server session 'db85879668f5bd5af39b74638509815d' for topic 'Topic_1'
+[16:42:42] [INFO] Created new server session '1f26a280c2b273685d7c40411ce6c80a' for topic 'Topic_6'
+[16:42:42] [INFO] Created new server session '0c3b4aa8df66b6f22f1b2eccde758d99' for topic 'Topic_2'
+[16:42:42] [INFO] Created new server session 'cf889d61e0a7d8534f539f6d5e29afb5' for topic 'Topic_5'
+[16:42:42] [INFO] Created new server session '9af4ea8cae6d22e277a34e19baa18fe1' for topic 'Topic_1'
+[16:42:42] [INFO] Created new server session '381470b8e6636728156a9dbc5d87663c' for topic 'Topic_1'
+[16:42:42] [INFO] Created new server session '359be6c4eb23a56f9094b77e47a28a1f' for topic 'Topic_1'
+[16:42:42] [INFO] Initialized epoll instance (fd=5) monitoring listen_fd=3
+[16:42:42] [INFO] Created EnhancedSessionState '55555555555555555555555555555555' with 5 64 KiB work units across 3 files
+[16:42:42] [INFO] Created EnhancedSessionState '77777777777777777777777777777777' with 4 64 KiB work units across 1 files
+[16:42:42] [INFO] Requeued 1 in-flight chunks from dropped sub-stream 1
+[16:42:42] [INFO] Created EnhancedSessionState '88888888888888888888888888888888' with 8 64 KiB work units across 1 files
+[16:42:42] [INFO] Applied client bitmask: confirmed 3 units committed on disk
