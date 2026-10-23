@@ -581,3 +581,1372 @@ es
 [09:27:07] [INFO] Performance: Duration = 9.99s | Goodput = 0.25 MB/s | Wire Throughput = 0.25 MB/s | Overhead = 0.81%
 [09:27:07] [INFO] Exited concurrent accept loop
 [09:27:07] [INFO] Server shutdown complete
+[14:25:44] [INFO] Starting Server (Part=1, CaseMode=0, Port=9000, pf=0.00, Threaded=1)
+[14:25:51] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[14:25:54] [INFO] Indexed topic 'cavallo': 2623 files, 37420509 total bytes
+[14:25:56] [INFO] Indexed topic 'elefante': 1446 files, 58509473 total bytes
+[14:25:59] [INFO] Indexed topic 'farfalla': 2112 files, 61877367 total bytes
+[14:26:03] [INFO] Indexed topic 'gallina': 3098 files, 51842424 total bytes
+[14:26:05] [INFO] Indexed topic 'gatto': 1668 files, 151144282 total bytes
+[14:26:07] [INFO] Indexed topic 'mucca': 1866 files, 25833171 total bytes
+[14:26:10] [INFO] Indexed topic 'pecora': 1820 files, 62629703 total bytes
+[14:26:17] [INFO] Indexed topic 'ragno': 4821 files, 78999493 total bytes
+[14:26:19] [INFO] Indexed topic 'scoiattolo': 1862 files, 25409193 total bytes
+[14:26:19] [INFO] Successfully loaded 10 topics from ../Dataset/raw-img
+[14:26:19] [INFO] Listening socket created on port 9000 (fd=3)
+[14:26:19] [INFO] Entering multi-threaded concurrent accept loop
+[14:32:10] [INFO] Connecting to 127.0.0.1:9000...
+[14:32:10] [INFO] Accepted client from 127.0.0.1:40345 (fd=4)
+...
+[14:32:10] [INFO] Client requested topic: 'cane'
+[14:32:10] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+B)
+[14:32:10] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[14:32:13] [ERROR] Failed to send OP_FILE_DATA on file 'OIP-4pyv82oHmBIKOsYrIMHcNwHaFj.jpeg' at offset 0 (fd=4)
+[14:32:38] [INFO] Connecting to 10.137.141.119:9000...
+[14:32:38] [INFO] Connected to server. Requesting topic 'cane'...
+
+[14:32:38] [INFO] Client requested topic: 'cane'
+[14:32:38] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+[14:32:38] [INFO] Received OP_GET_OK: 4863 files, 60686716 total bytes (57.88 MB)
+[14:32:38] [INFO] Receiving file [1/4863]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[14:32:42] [ERROR] Failed to send OP_FILE_BEGIN for file 'OIP-AEAcGy2DNHIx_uB_gi5MxgHaF7.jpeg' (fd=5)
+[14:32:49] [INFO] Exited concurrent accept loop
+[14:32:50] [INFO] Server shutdown complete
+[14:32:54] [INFO] Starting Server (Part=1, CaseMode=0, Port=9000, pf=0.00, Threaded=1)
+[14:33:03] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[14:33:06] [INFO] Indexed topic 'cavallo': 2623 files, 37420509 total bytes
+[14:33:08] [INFO] Indexed topic 'elefante': 1446 files, 58509473 total bytes
+[14:33:11] [INFO] Indexed topic 'farfalla': 2112 files, 61877367 total bytes
+[14:33:16] [INFO] Indexed topic 'gallina': 3098 files, 51842424 total bytes
+[14:33:18] [INFO] Indexed topic 'gatto': 1668 files, 151144282 total bytes
+[14:33:20] [INFO] Indexed topic 'mucca': 1866 files, 25833171 total bytes
+[14:33:23] [INFO] Indexed topic 'pecora': 1820 files, 62629703 total bytes
+[14:33:29] [INFO] Indexed topic 'ragno': 4821 files, 78999493 total bytes
+[14:33:34] [INFO] Indexed topic 'scoiattolo': 1862 files, 25409193 total bytes
+[14:33:34] [INFO] Successfully loaded 10 topics from ../Dataset/raw-img
+[14:33:34] [INFO] Listening socket created on port 9000 (fd=3)
+[14:33:34] [INFO] Entering multi-threaded concurrent accept loop
+[14:34:02] [INFO] Exited concurrent accept loop
+[14:34:02] [INFO] Server shutdown complete
+[14:39:32] [INFO] Starting Server (Part=1, CaseMode=0, Port=9000, pf=0.00, Threaded=1)
+[14:39:38] [INFO] Indexed topic 'cane': 4863 files, 60686716 total bytes
+[14:39:40] [INFO] Indexed topic 'cavallo': 2623 files, 37420509 total bytes
+[14:39:42] [INFO] Indexed topic 'elefante': 1446 files, 58509473 total bytes
+[14:39:44] [INFO] Indexed topic 'farfalla': 2112 files, 61877367 total bytes
+[14:39:47] [INFO] Indexed topic 'gallina': 3098 files, 51842424 total bytes
+[14:39:49] [INFO] Indexed topic 'gatto': 1668 files, 151144282 total bytes
+[14:39:50] [INFO] Indexed topic 'mucca': 1866 files, 25833171 total bytes
+[14:39:52] [INFO] Indexed topic 'pecora': 1820 files, 62629703 total bytes
+[14:39:56] [INFO] Indexed topic 'ragno': 4821 files, 78999493 total bytes
+[14:39:57] [INFO] Indexed topic 'scoiattolo': 1862 files, 25409193 total bytes
+[14:39:57] [INFO] Successfully loaded 10 topics from ../Dataset/raw-img
+[14:39:57] [INFO] Listening socket created on port 9000 (fd=3)
+[14:39:57] [INFO] Entering multi-threaded concurrent accept loop
+[14:40:18] [INFO] Accepted client from 10.137.141.162:50932 (fd=4)
+[14:40:18] [INFO] Client requested topic: 'cane'
+[14:40:18] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+[14:40:25] [INFO] Accepted client from 10.137.141.54:51682 (fd=5)
+[14:40:25] [INFO] Client requested topic: 'cane'
+[14:40:25] [INFO] Sent OP_GET_OK for topic 'cane' (4863 files, 60686716 bytes)
+[14:40:50] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+[14:40:50] [INFO] Completed streaming topic 'cane' (4863 files, 60686716 bytes)
+[14:41:02] [INFO] Exited concurrent accept loop
+[14:41:02] [INFO] Server shutdown complete
+[15:03:39] [INFO] Indexed topic 'Cavallo': 1 files, 11 total bytes
+[15:03:39] [INFO] Indexed topic 'Cane': 3 files, 18 total bytes
+[15:03:39] [INFO] Successfully loaded 2 topics from /tmp/it305_test_topics
+[15:03:39] [INFO] Listening socket created on port 18080 (fd=3)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 0 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 65536 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 131072 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 196608 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 262144 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 327680 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 393216 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 458752 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 524288 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 589824 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 655360 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 720896 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 786432 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 851968 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 917504 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 983040 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1048576 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1114112 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1179648 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1245184 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1310720 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1376256 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1441792 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1507328 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1572864 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1638400 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1703936 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1769472 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1835008 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1900544 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1966080 bytes (pf=1.000, r=1.0000)
+[15:03:39] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2031616 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2097152 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2162688 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2228224 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2293760 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2359296 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2424832 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2490368 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2555904 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2621440 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2686976 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2752512 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2818048 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2883584 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2949120 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3014656 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3080192 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3145728 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3211264 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3276800 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3342336 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3407872 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3473408 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3538944 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3604480 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3670016 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3735552 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3801088 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3866624 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3932160 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3997696 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4063232 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4128768 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4194304 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4259840 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4325376 bytes (pf=1.000, r=1.0000)
+[15:03:40] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4390912 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4456448 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4521984 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4587520 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4653056 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4718592 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4784128 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4849664 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4915200 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4980736 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5046272 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5111808 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5177344 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5242880 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5308416 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5373952 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5439488 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5505024 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5570560 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5636096 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5701632 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5767168 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5832704 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5898240 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5963776 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6029312 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6094848 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6160384 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6225920 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6291456 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6356992 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6422528 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6488064 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6553600 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6619136 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6684672 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6750208 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6815744 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6881280 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6946816 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7012352 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7077888 bytes (pf=1.000, r=1.0000)
+[15:03:41] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7143424 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7208960 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7274496 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7340032 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7405568 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7471104 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7536640 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7602176 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7667712 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7733248 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7798784 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7864320 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7929856 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7995392 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8060928 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8126464 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8192000 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8257536 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8323072 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8388608 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8454144 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8519680 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8585216 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8650752 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8716288 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8781824 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8847360 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8912896 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 8978432 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9043968 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9109504 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9175040 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9240576 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9306112 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9371648 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9437184 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9502720 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9568256 bytes (pf=1.000, r=1.0000)
+[15:03:42] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9633792 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9699328 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9764864 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9830400 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9895936 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9961472 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10027008 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10092544 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10158080 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10223616 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10289152 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10354688 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10420224 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10485760 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10551296 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10616832 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10682368 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10747904 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10813440 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10878976 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10944512 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11010048 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11075584 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11141120 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11206656 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11272192 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11337728 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11403264 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11468800 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11534336 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11599872 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11665408 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11730944 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11796480 bytes (pf=1.000, r=1.0000)
+[15:03:43] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11862016 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11927552 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11993088 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12058624 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12124160 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12189696 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12255232 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12320768 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12386304 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12451840 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12517376 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12582912 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12648448 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12713984 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12779520 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12845056 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12910592 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 12976128 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 13041664 bytes (pf=1.000, r=1.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 851968 bytes (pf=0.100, r=0.0901)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1179648 bytes (pf=0.100, r=0.0006)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1572864 bytes (pf=0.100, r=0.0846)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1638400 bytes (pf=0.100, r=0.0005)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1703936 bytes (pf=0.100, r=0.0268)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 1835008 bytes (pf=0.100, r=0.0801)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2752512 bytes (pf=0.100, r=0.0845)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 2818048 bytes (pf=0.100, r=0.0150)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3080192 bytes (pf=0.100, r=0.0000)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3670016 bytes (pf=0.100, r=0.0270)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 3997696 bytes (pf=0.100, r=0.0180)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 4194304 bytes (pf=0.100, r=0.0188)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 5111808 bytes (pf=0.100, r=0.0300)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6422528 bytes (pf=0.100, r=0.0212)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6619136 bytes (pf=0.100, r=0.0353)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6815744 bytes (pf=0.100, r=0.0628)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 6946816 bytes (pf=0.100, r=0.0488)
+[15:03:44] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7340032 bytes (pf=0.100, r=0.0518)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 7995392 bytes (pf=0.100, r=0.0403)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9371648 bytes (pf=0.100, r=0.0772)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 9830400 bytes (pf=0.100, r=0.0677)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 10158080 bytes (pf=0.100, r=0.0738)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 11075584 bytes (pf=0.100, r=0.0687)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 13565952 bytes (pf=0.100, r=0.0049)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 13828096 bytes (pf=0.100, r=0.0463)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 15400960 bytes (pf=0.100, r=0.0783)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 17891328 bytes (pf=0.100, r=0.0259)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 19464192 bytes (pf=0.100, r=0.0304)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 20381696 bytes (pf=0.100, r=0.0981)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 20774912 bytes (pf=0.100, r=0.0086)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 21102592 bytes (pf=0.100, r=0.0291)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 22151168 bytes (pf=0.100, r=0.0391)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 22347776 bytes (pf=0.100, r=0.0842)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 22544384 bytes (pf=0.100, r=0.0320)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 22937600 bytes (pf=0.100, r=0.0434)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 23003136 bytes (pf=0.100, r=0.0777)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 23068672 bytes (pf=0.100, r=0.0914)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 23527424 bytes (pf=0.100, r=0.0929)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 24444928 bytes (pf=0.100, r=0.0460)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 24576000 bytes (pf=0.100, r=0.0266)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 24641536 bytes (pf=0.100, r=0.0794)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 24707072 bytes (pf=0.100, r=0.0644)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 24903680 bytes (pf=0.100, r=0.0686)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 25493504 bytes (pf=0.100, r=0.0874)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 25821184 bytes (pf=0.100, r=0.0273)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 27131904 bytes (pf=0.100, r=0.0515)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 27394048 bytes (pf=0.100, r=0.0818)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 28573696 bytes (pf=0.100, r=0.0511)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 28966912 bytes (pf=0.100, r=0.0558)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 29360128 bytes (pf=0.100, r=0.0522)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 30408704 bytes (pf=0.100, r=0.0618)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 30801920 bytes (pf=0.100, r=0.0807)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 31129600 bytes (pf=0.100, r=0.0082)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 31784960 bytes (pf=0.100, r=0.0093)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 32047104 bytes (pf=0.100, r=0.0779)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 32309248 bytes (pf=0.100, r=0.0047)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 32440320 bytes (pf=0.100, r=0.0299)
+[15:03:45] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 33619968 bytes (pf=0.100, r=0.0527)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 33685504 bytes (pf=0.100, r=0.0057)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 33751040 bytes (pf=0.100, r=0.0142)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 35127296 bytes (pf=0.100, r=0.0439)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 36175872 bytes (pf=0.100, r=0.0770)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 36372480 bytes (pf=0.100, r=0.0744)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 37224448 bytes (pf=0.100, r=0.0675)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 37355520 bytes (pf=0.100, r=0.0583)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 37552128 bytes (pf=0.100, r=0.0765)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 37617664 bytes (pf=0.100, r=0.0309)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 38010880 bytes (pf=0.100, r=0.0900)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 39321600 bytes (pf=0.100, r=0.0682)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 39714816 bytes (pf=0.100, r=0.0160)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 40566784 bytes (pf=0.100, r=0.0176)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 41287680 bytes (pf=0.100, r=0.0097)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 44171264 bytes (pf=0.100, r=0.0980)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 45154304 bytes (pf=0.100, r=0.0094)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 45219840 bytes (pf=0.100, r=0.0767)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 45416448 bytes (pf=0.100, r=0.0442)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 45547520 bytes (pf=0.100, r=0.0067)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 46202880 bytes (pf=0.100, r=0.0679)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 46399488 bytes (pf=0.100, r=0.0178)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 46858240 bytes (pf=0.100, r=0.0136)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 47448064 bytes (pf=0.100, r=0.0431)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 47644672 bytes (pf=0.100, r=0.0617)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 48562176 bytes (pf=0.100, r=0.0447)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 48758784 bytes (pf=0.100, r=0.0587)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 49545216 bytes (pf=0.100, r=0.0933)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 49610752 bytes (pf=0.100, r=0.0568)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 50200576 bytes (pf=0.100, r=0.0478)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 50397184 bytes (pf=0.100, r=0.0484)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 50528256 bytes (pf=0.100, r=0.0552)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 51707904 bytes (pf=0.100, r=0.0672)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 53084160 bytes (pf=0.100, r=0.0774)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 53149696 bytes (pf=0.100, r=0.0263)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 53673984 bytes (pf=0.100, r=0.0767)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 54001664 bytes (pf=0.100, r=0.0139)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 55443456 bytes (pf=0.100, r=0.0633)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 55508992 bytes (pf=0.100, r=0.0755)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 56360960 bytes (pf=0.100, r=0.0309)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 57737216 bytes (pf=0.100, r=0.0395)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 57868288 bytes (pf=0.100, r=0.0997)
+[15:03:46] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 58195968 bytes (pf=0.100, r=0.0891)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 58327040 bytes (pf=0.100, r=0.0938)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 59179008 bytes (pf=0.100, r=0.0342)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 59768832 bytes (pf=0.100, r=0.0102)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 59965440 bytes (pf=0.100, r=0.0258)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 60293120 bytes (pf=0.100, r=0.0283)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 60358656 bytes (pf=0.100, r=0.0273)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 60424192 bytes (pf=0.100, r=0.0886)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 60686336 bytes (pf=0.100, r=0.0636)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 61734912 bytes (pf=0.100, r=0.0425)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 62193664 bytes (pf=0.100, r=0.0267)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 63504384 bytes (pf=0.100, r=0.0817)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 63832064 bytes (pf=0.100, r=0.0451)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 64356352 bytes (pf=0.100, r=0.0637)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 64552960 bytes (pf=0.100, r=0.0131)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 64946176 bytes (pf=0.100, r=0.0989)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 65667072 bytes (pf=0.100, r=0.0328)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 65732608 bytes (pf=0.100, r=0.0543)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 65798144 bytes (pf=0.100, r=0.0147)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 66519040 bytes (pf=0.100, r=0.0605)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 67960832 bytes (pf=0.100, r=0.0059)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 68747264 bytes (pf=0.100, r=0.0364)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 69140480 bytes (pf=0.100, r=0.0222)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 69402624 bytes (pf=0.100, r=0.0613)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 69599232 bytes (pf=0.100, r=0.0472)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 69926912 bytes (pf=0.100, r=0.0522)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 70254592 bytes (pf=0.100, r=0.0820)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 70647808 bytes (pf=0.100, r=0.0991)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 70844416 bytes (pf=0.100, r=0.0519)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 70909952 bytes (pf=0.100, r=0.0916)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 71106560 bytes (pf=0.100, r=0.0302)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 71303168 bytes (pf=0.100, r=0.0931)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 72155136 bytes (pf=0.100, r=0.0543)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 72220672 bytes (pf=0.100, r=0.0281)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 72679424 bytes (pf=0.100, r=0.0937)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 73465856 bytes (pf=0.100, r=0.0812)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 74121216 bytes (pf=0.100, r=0.0967)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 74711040 bytes (pf=0.100, r=0.0383)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 75628544 bytes (pf=0.100, r=0.0659)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 75759616 bytes (pf=0.100, r=0.0141)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 76218368 bytes (pf=0.100, r=0.0400)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 76677120 bytes (pf=0.100, r=0.0538)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 76939264 bytes (pf=0.100, r=0.0913)
+[15:03:47] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 77332480 bytes (pf=0.100, r=0.0683)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 77660160 bytes (pf=0.100, r=0.0514)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 78446592 bytes (pf=0.100, r=0.0563)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 78970880 bytes (pf=0.100, r=0.0846)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 79036416 bytes (pf=0.100, r=0.0017)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 79757312 bytes (pf=0.100, r=0.0016)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 80347136 bytes (pf=0.100, r=0.0626)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 80609280 bytes (pf=0.100, r=0.0703)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 81330176 bytes (pf=0.100, r=0.0789)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 81920000 bytes (pf=0.100, r=0.0866)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 82247680 bytes (pf=0.100, r=0.0970)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 83886080 bytes (pf=0.100, r=0.0906)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 85786624 bytes (pf=0.100, r=0.0798)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 86048768 bytes (pf=0.100, r=0.0358)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 86835200 bytes (pf=0.100, r=0.0343)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 89194496 bytes (pf=0.100, r=0.0810)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 89587712 bytes (pf=0.100, r=0.0582)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 90308608 bytes (pf=0.100, r=0.0639)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 91619328 bytes (pf=0.100, r=0.0252)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 92667904 bytes (pf=0.100, r=0.0631)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 93061120 bytes (pf=0.100, r=0.0201)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 93716480 bytes (pf=0.100, r=0.0350)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 95485952 bytes (pf=0.100, r=0.0665)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 95682560 bytes (pf=0.100, r=0.0797)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 96141312 bytes (pf=0.100, r=0.0794)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 96665600 bytes (pf=0.100, r=0.0344)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 96731136 bytes (pf=0.100, r=0.0756)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 96927744 bytes (pf=0.100, r=0.0839)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 97124352 bytes (pf=0.100, r=0.0829)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 97714176 bytes (pf=0.100, r=0.0890)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 98172928 bytes (pf=0.100, r=0.0366)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 99024896 bytes (pf=0.100, r=0.0414)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 100728832 bytes (pf=0.100, r=0.0476)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 101122048 bytes (pf=0.100, r=0.0917)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 102039552 bytes (pf=0.100, r=0.0913)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 103022592 bytes (pf=0.100, r=0.0164)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 103677952 bytes (pf=0.100, r=0.0821)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 104005632 bytes (pf=0.100, r=0.0049)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 104398848 bytes (pf=0.100, r=0.0951)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 105054208 bytes (pf=0.100, r=0.0001)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 105512960 bytes (pf=0.100, r=0.0094)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 105709568 bytes (pf=0.100, r=0.0749)
+[15:03:48] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 105906176 bytes (pf=0.100, r=0.0854)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 106692608 bytes (pf=0.100, r=0.0199)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 106889216 bytes (pf=0.100, r=0.0271)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 107085824 bytes (pf=0.100, r=0.0304)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 107479040 bytes (pf=0.100, r=0.0972)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 107675648 bytes (pf=0.100, r=0.0880)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 108265472 bytes (pf=0.100, r=0.0944)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 108855296 bytes (pf=0.100, r=0.0577)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 108920832 bytes (pf=0.100, r=0.0207)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 109117440 bytes (pf=0.100, r=0.0700)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 109314048 bytes (pf=0.100, r=0.0702)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 109641728 bytes (pf=0.100, r=0.0490)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 109969408 bytes (pf=0.100, r=0.0292)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 110297088 bytes (pf=0.100, r=0.0195)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 112197632 bytes (pf=0.100, r=0.0889)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 112721920 bytes (pf=0.100, r=0.0225)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 113573888 bytes (pf=0.100, r=0.0365)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 115212288 bytes (pf=0.100, r=0.0146)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 115408896 bytes (pf=0.100, r=0.0453)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 115867648 bytes (pf=0.100, r=0.0371)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 115933184 bytes (pf=0.100, r=0.0804)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 116391936 bytes (pf=0.100, r=0.0620)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 116981760 bytes (pf=0.100, r=0.0860)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 117112832 bytes (pf=0.100, r=0.0584)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 117637120 bytes (pf=0.100, r=0.0187)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 119603200 bytes (pf=0.100, r=0.0257)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 119734272 bytes (pf=0.100, r=0.0815)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 120455168 bytes (pf=0.100, r=0.0322)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 121044992 bytes (pf=0.100, r=0.0807)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 121896960 bytes (pf=0.100, r=0.0549)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 122486784 bytes (pf=0.100, r=0.0428)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 122814464 bytes (pf=0.100, r=0.0036)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 123142144 bytes (pf=0.100, r=0.0329)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 124256256 bytes (pf=0.100, r=0.0698)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 125042688 bytes (pf=0.100, r=0.0624)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 125173760 bytes (pf=0.100, r=0.0235)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 125304832 bytes (pf=0.100, r=0.0435)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 125632512 bytes (pf=0.100, r=0.0876)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 125763584 bytes (pf=0.100, r=0.0082)
+[15:03:49] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 126550016 bytes (pf=0.100, r=0.0362)
+[15:03:50] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 129368064 bytes (pf=0.100, r=0.0463)
+[15:03:50] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 129630208 bytes (pf=0.100, r=0.0157)
+[15:03:50] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 129957888 bytes (pf=0.100, r=0.0037)
+[15:03:50] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 130023424 bytes (pf=0.100, r=0.0284)
+[15:03:50] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 130154496 bytes (pf=0.100, r=0.0259)
+[15:03:50] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 130220032 bytes (pf=0.100, r=0.0923)
+[15:03:50] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 130351104 bytes (pf=0.100, r=0.0375)
+[15:03:50] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 130416640 bytes (pf=0.100, r=0.0100)
+[15:03:50] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 130547712 bytes (pf=0.100, r=0.0114)
+[15:03:50] [FAULT] Dropped connection on topic 'test_topic' file_index 0 at 130809856 bytes (pf=0.100, r=0.0185)
+[15:03:50] [ERROR] Invalid IPv4 address format: '999.999.999.999'
+[15:03:50] [ERROR] Invalid server port: '0' (must be 1-65535)
+[15:03:50] [INFO] Indexed topic 'animals': 3 files, 358430 total bytes
+[15:03:50] [INFO] Successfully loaded 1 topics from /tmp/it305_test_data
+[15:03:50] [INFO] Listening socket created on port 19123 (fd=3)
+[15:03:50] [INFO] Connecting to 127.0.0.1:19123...
+[15:03:50] [INFO] Connected to server. Requesting topic 'animals'...
+[15:03:50] [INFO] Client requested topic: 'animals'
+[15:03:50] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[15:03:50] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[15:03:50] [INFO] Completed streaming topic 'animals' (3 files, 358430 bytes)
+[15:03:50] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[15:03:50] [INFO] Received OP_TRANSFER_END from server
+[15:03:50] [INFO] Transfer SUCCESS: 3 files (358430 bytes) written to '/tmp/it305_client_downloads/animals' in 0 retries
+[15:03:50] [INFO] Performance: Duration = 0.22s | Goodput = 1.65 MB/s | Wire Throughput = 1.65 MB/s | Overhead = 0.12%
+[15:03:50] [INFO] Client fd=4 disconnected before request
+[15:03:50] [INFO] Indexed topic 'animals': 3 files, 358430 total bytes
+[15:03:50] [INFO] Successfully loaded 1 topics from /tmp/it305_test_data
+[15:03:50] [INFO] Listening socket created on port 19124 (fd=3)
+[15:03:50] [INFO] Connecting to 127.0.0.1:19124...
+[15:03:50] [INFO] Connected to server. Requesting topic 'animals'...
+[15:03:50] [INFO] Client requested topic: 'animals'
+[15:03:50] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[15:03:50] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[15:03:51] [FAULT] Dropped connection on topic 'animals' file_index 0 at 65536 bytes (pf=0.200, r=0.0876)
+[15:03:51] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[15:03:51] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 0
+[15:03:51] [INFO] Retry attempt 1/50 after backoff 100 ms...
+[15:03:51] [INFO] Connected to server. Requesting topic 'animals'...
+[15:03:51] [INFO] Client requested topic: 'animals'
+[15:03:51] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[15:03:51] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[15:03:51] [FAULT] Dropped connection on topic 'animals' file_index 1 at 131072 bytes (pf=0.200, r=0.0005)
+[15:03:51] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[15:03:51] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 1
+[15:03:51] [INFO] Retry attempt 2/50 after backoff 200 ms...
+[15:03:51] [INFO] Connected to server. Requesting topic 'animals'...
+[15:03:51] [INFO] Client requested topic: 'animals'
+[15:03:51] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[15:03:51] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[15:03:51] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[15:03:51] [FAULT] Dropped connection on topic 'animals' file_index 0 at 65536 bytes (pf=0.200, r=0.1682)
+[15:03:51] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 2
+[15:03:51] [INFO] Retry attempt 3/50 after backoff 400 ms...
+[15:03:52] [INFO] Connected to server. Requesting topic 'animals'...
+[15:03:52] [INFO] Client requested topic: 'animals'
+[15:03:52] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[15:03:52] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[15:03:52] [FAULT] Dropped connection on topic 'animals' file_index 0 at 196608 bytes (pf=0.200, r=0.0556)
+[15:03:52] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[15:03:52] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 3
+[15:03:52] [INFO] Retry attempt 4/50 after backoff 800 ms...
+[15:03:53] [INFO] Connected to server. Requesting topic 'animals'...
+[15:03:53] [INFO] Client requested topic: 'animals'
+[15:03:53] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[15:03:53] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[15:03:53] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[15:03:53] [FAULT] Dropped connection on topic 'animals' file_index 0 at 65536 bytes (pf=0.200, r=0.0208)
+[15:03:53] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 4
+[15:03:53] [INFO] Retry attempt 5/50 after backoff 1000 ms...
+[15:03:54] [INFO] Connected to server. Requesting topic 'animals'...
+[15:03:54] [INFO] Client requested topic: 'animals'
+[15:03:54] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[15:03:54] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[15:03:54] [FAULT] Dropped connection on topic 'animals' file_index 0 at 131072 bytes (pf=0.200, r=0.0921)
+[15:03:54] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[15:03:54] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 5
+[15:03:55] [INFO] Retry attempt 6/50 after backoff 1000 ms...
+[15:03:56] [INFO] Connected to server. Requesting topic 'animals'...
+[15:03:56] [INFO] Client requested topic: 'animals'
+[15:03:56] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[15:03:56] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[15:03:56] [FAULT] Dropped connection on topic 'animals' file_index 2 at 30 bytes (pf=0.200, r=0.1742)
+[15:03:56] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[15:03:56] [INFO] Server dropped connection (rc=0) mid-transfer at attempt 6
+[15:03:56] [INFO] Retry attempt 7/50 after backoff 1000 ms...
+[15:03:57] [INFO] Connected to server. Requesting topic 'animals'...
+[15:03:57] [INFO] Client requested topic: 'animals'
+[15:03:57] [INFO] Sent OP_GET_OK for topic 'animals' (3 files, 358430 bytes)
+[15:03:57] [INFO] Received OP_GET_OK: 3 files, 358430 total bytes (0.34 MB)
+[15:03:57] [INFO] Completed streaming topic 'animals' (3 files, 358430 bytes)
+[15:03:57] [INFO] Receiving file [1/3]: 'large.bin' (204800 bytes)
+[15:03:57] [INFO] Progress: 3/3 files received (100.0%) - 0.34 MB written
+[15:03:57] [INFO] Received OP_TRANSFER_END from server
+[15:03:57] [INFO] Transfer SUCCESS: 3 files (358430 bytes) written to '/tmp/it305_client_downloads/animals' in 7 retries
+[15:03:57] [INFO] Performance: Duration = 6.73s | Goodput = 0.05 MB/s | Wire Throughput = 0.23 MB/s | Overhead = 340.47%
+[15:03:57] [INFO] Client fd=4 disconnected before request
+[15:03:57] [INFO] Created new server session 'bd9cc90efbbc09b885bae235b0de9a8e' for topic 'Cane'
+[15:03:57] [INFO] Created new server session '1d8fe4e9fda0fbc499577fa1a8aa9e17' for topic 'Cane'
+[15:03:57] [INFO] Created new server session '1d4384e2bddc2270c5fd655558e72003' for topic 'Cavallo'
+[15:03:57] [INFO] Created new server session 'c8de091eaf769c7aa012272df218402b' for topic 'Cavallo'
+[15:03:57] [INFO] Swept expired session '1d4384e2bddc2270c5fd655558e72003' (idle > 600s)
+[15:03:57] [INFO] Created new server session 'a156bdf740ce291bd99a886d03508aaa' for topic 'Cane'
+[15:03:57] [INFO] Validation Check 1 FAIL: Session 'eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee' not found
+[15:03:57] [INFO] Validation Check 2 FAIL: Session 'a156bdf740ce291bd99a886d03508aaa' idle TTL expired
+[15:03:57] [INFO] Created new server session '96b683135f1f3ade2e5502b6e2eaee51' for topic 'Cane'
+[15:03:57] [INFO] Validation Check 3 FAIL: Topic mismatch: checkpoint requested 'Elefante' but session bound to 'Cane'
+[15:03:58] [INFO] Validation Check 4 FAIL: file_index 5 exceeds topic file count 3
+[15:03:58] [INFO] Validation Check 4 FAIL: Terminal index file_index == file_count invalid: offset != 0 or filename != EOF or all_files_sent false
+[15:03:58] [INFO] Validation Check 4 FAIL: Terminal index file_index == file_count invalid: offset != 0 or filename != EOF or all_files_sent false
+[15:03:58] [INFO] Validation Check 4 FAIL: Terminal index file_index == file_count invalid: offset != 0 or filename != EOF or all_files_sent false
+[15:03:58] [INFO] Validation Check 4 PASS: Terminal EOF session '96b683135f1f3ade2e5502b6e2eaee51' verified
+[15:03:58] [INFO] Validation Check 5 FAIL: Filename mismatch at index 1: expected 'eb1002.jpg' but got 'wrong_name.jpg'
+[15:03:58] [INFO] Validation Check 6 FAIL: byte_offset 200001 exceeds file size 200000
+[15:03:58] [INFO] Validation Check 7 FAIL: claimed 360000 > highwater 350000
+[15:03:58] [INFO] Validation PASSED: session '96b683135f1f3ade2e5502b6e2eaee51' resuming at file_index 1 offset 50000 (rem_files=2, rem_bytes=450000)
+[15:03:58] [INFO] Created new server session 'cd355439f548d5d7d843643c4a2bb3ae' for topic 'Topic_0'
+[15:03:58] [INFO] Created new server session '4e5e5bf2e0bfc7939c54a60c2e4001ab' for topic 'Topic_1'
+[15:03:58] [INFO] Created new server session 'aca968acad0ca2d44377548c0dee01ef' for topic 'Topic_2'
+[15:03:58] [INFO] Created new server session '6f5cbaf650ed619c608008835ac5d850' for topic 'Topic_3'
+[15:03:58] [INFO] Created new server session '0aa3094e1316fe3200510dcaf07d70ed' for topic 'Topic_4'
+[15:03:58] [INFO] Created new server session '5ff67a513b2ba168a6b8a0a0e4f57ba6' for topic 'Topic_5'
+[15:03:58] [INFO] Created new server session '301216c40b530b8587146104e8fdba42' for topic 'Topic_6'
+[15:03:58] [INFO] Created new server session 'cf82df79587c21e2feda1e4b20a7b213' for topic 'Topic_7'
+[15:03:58] [INFO] Created new server session 'd25e966bfe2b359bb7ac07c7ca4f667a' for topic 'Topic_0'
+[15:03:58] [INFO] Created new server session '48874b432ff219e9b0af90e89641b33b' for topic 'Topic_1'
+[15:03:58] [INFO] Created new server session 'e9cca83576e54f10444e10be4031a237' for topic 'Topic_1'
+[15:03:58] [INFO] Created new server session 'bb210961301d5268178d6297b19edaea' for topic 'Topic_3'
+[15:03:58] [INFO] Created new server session '5db3d5cf9f2329784bc6be25e362cadd' for topic 'Topic_4'
+[15:03:58] [INFO] Created new server session '916de66ebddc62aaaab65cd03c90ee12' for topic 'Topic_5'
+[15:03:58] [INFO] Created new server session 'feef637f6419706d9ea2414c8e4eea03' for topic 'Topic_6'
+[15:03:58] [INFO] Created new server session '8f870d8a8e0cec931cf9142ffb105114' for topic 'Topic_7'
+[15:03:58] [INFO] Created new server session '721f9817dc2260349966a0e588dab4a2' for topic 'Topic_0'
+[15:03:58] [INFO] Created new server session '746f7d27548cdbe4e824db5bf465b789' for topic 'Topic_2'
+[15:03:58] [INFO] Created new server session 'c0dbfb7d71125dfbf80330efcfc5503c' for topic 'Topic_1'
+[15:03:58] [INFO] Created new server session 'eb091bbd39f36da5973758278519acd0' for topic 'Topic_3'
+[15:03:58] [INFO] Created new server session '50af4e85fdf99d5675554a5683dd78dd' for topic 'Topic_4'
+[15:03:58] [INFO] Created new server session 'c9da0db0a74f525ca3e54c06c32488b1' for topic 'Topic_5'
+[15:03:58] [INFO] Created new server session '759de7ccb907837e8f7a268a5d114eba' for topic 'Topic_6'
+[15:03:58] [INFO] Created new server session 'c6d0ca1c739a62e4a94bd4e02bde8430' for topic 'Topic_7'
+[15:03:58] [INFO] Created new server session '149ba4d9e81395dfae0a1033379f08cd' for topic 'Topic_0'
+[15:03:58] [INFO] Created new server session '636181c2bd325b0b7f05e308fd3c08e8' for topic 'Topic_0'
+[15:03:58] [INFO] Created new server session '83be9ca37a2b276aefb7a17eb5bc7c82' for topic 'Topic_1'
+[15:03:58] [INFO] Created new server session '4e8c587f9039b6774f88febe31a1fcfe' for topic 'Topic_3'
+[15:03:58] [INFO] Created new server session '81790702d93ea5d1edcc1848c6c54af0' for topic 'Topic_4'
+[15:03:58] [INFO] Created new server session '4c9ac86f3e8fe0e6167c1690539ebbc6' for topic 'Topic_5'
+[15:03:59] [INFO] Created new server session '063d99730fe56e2ce9b78c20c6d38532' for topic 'Topic_6'
+[15:03:59] [INFO] Created new server session '5260f4b8a5fe6d2e1ecb79b775c1674a' for topic 'Topic_7'
+[15:03:59] [INFO] Created new server session '6343702fc0d914b2e0681dce61388518' for topic 'Topic_2'
+[15:03:59] [INFO] Created new server session 'f8ee67d6d0cf1266ed5951be2eff49f8' for topic 'Topic_0'
+[15:03:59] [INFO] Created new server session '56cb7cf7465f1d356afe78126d9cb845' for topic 'Topic_1'
+[15:03:59] [INFO] Created new server session '4b1e13cec17fb97007060bdb11fddf6e' for topic 'Topic_3'
+[15:03:59] [INFO] Created new server session '44ee9ea40ae4eed143a914e274ea8500' for topic 'Topic_4'
+[15:03:59] [INFO] Created new server session '34ef378c0496b923e49c075b142e549c' for topic 'Topic_5'
+[15:03:59] [INFO] Created new server session 'd4cf1e8b66666ce37aa85e91edacae85' for topic 'Topic_6'
+[15:03:59] [INFO] Created new server session '8ca35c5984ee4e107459ecdf8b129237' for topic 'Topic_7'
+[15:03:59] [INFO] Created new server session '3027f393fa02186572281dff51521399' for topic 'Topic_2'
+[15:03:59] [INFO] Created new server session '3a412ca45ef7ff427690fe4dcbc0be77' for topic 'Topic_0'
+[15:03:59] [INFO] Created new server session 'e139204c9d839366dcad11ab12be9fba' for topic 'Topic_1'
+[15:03:59] [INFO] Created new server session 'efaf861f343c2619852cdb00d54e3da3' for topic 'Topic_3'
+[15:03:59] [INFO] Created new server session '2b41abc61fed047e1ab3a69b0e216f7b' for topic 'Topic_4'
+[15:03:59] [INFO] Created new server session '9dcfe874b4ffaa6caeeda14d2b26e865' for topic 'Topic_5'
+[15:03:59] [INFO] Created new server session '320f0719d9cdfaf42c7a1ae98497d6cb' for topic 'Topic_6'
+[15:03:59] [INFO] Created new server session '93da127584f88c5afdeab8bd9330346b' for topic 'Topic_7'
+[15:03:59] [INFO] Created new server session '3e34ae2a9a6c5c33c5adf49435cf7737' for topic 'Topic_2'
+[15:03:59] [INFO] Created new server session '87e9136ae83c8e3f2e6278d5028ac2bc' for topic 'Topic_0'
+[15:03:59] [INFO] Created new server session '562b445b1995a1646e66c6a3a606ce59' for topic 'Topic_1'
+[15:03:59] [INFO] Created new server session '03d8152b02026ea7a152a91e360ca18e' for topic 'Topic_1'
+[15:03:59] [INFO] Created new server session 'ecace6938e3b751f6a5849a5a401e01e' for topic 'Topic_4'
+[15:03:59] [INFO] Created new server session '6889913be9e40f3c562f5e37d0aa7309' for topic 'Topic_5'
+[15:03:59] [INFO] Created new server session '05b3fb4ffa48313300f4364186ee1a32' for topic 'Topic_6'
+[15:03:59] [INFO] Created new server session '765790b58a4c7f37c1299c975d733a6a' for topic 'Topic_7'
+[15:03:59] [INFO] Created new server session 'a33cd4812a499acb82e12000f0fd67ea' for topic 'Topic_2'
+[15:03:59] [INFO] Created new server session '5b4ace4155c625d8f5349690a42728f8' for topic 'Topic_0'
+[15:03:59] [INFO] Created new server session 'e09ef40564cd8c0f14492703d9e62a95' for topic 'Topic_3'
+[15:03:59] [INFO] Created new server session 'c9769108664125d112f84f3011c82d1b' for topic 'Topic_1'
+[15:03:59] [INFO] Created new server session 'c3c21361e4385a05dd00ae5a3fd9778c' for topic 'Topic_4'
+[15:03:59] [INFO] Created new server session '2a55320268c2a30df521931ed9edf25a' for topic 'Topic_5'
+[15:03:59] [INFO] Created new server session 'a2ce37d9811cf7a8cf4e3a29b4252802' for topic 'Topic_5'
+[15:03:59] [INFO] Created new server session 'fd103d0bdfb69c5ebe32f8a2ed078037' for topic 'Topic_7'
+[15:03:59] [INFO] Created new server session '32e6e6ca2d5257b03d6585c6aa157d17' for topic 'Topic_2'
+[15:03:59] [INFO] Created new server session '8a6fa366721692e40ff108124d45522a' for topic 'Topic_0'
+[15:03:59] [INFO] Created new server session 'f3d1ba6e0415021dacc14ce00ebd9bb1' for topic 'Topic_3'
+[15:03:59] [INFO] Created new server session 'af87028d9702494cd24838ac57c98815' for topic 'Topic_1'
+[15:03:59] [INFO] Created new server session '37dd7b30e4205e94f01c5967cb3de1a7' for topic 'Topic_1'
+[15:03:59] [INFO] Created new server session 'cec3e06bdd671e91758e857e30bbc812' for topic 'Topic_1'
+[15:03:59] [INFO] Created new server session '3b0b3cf65fbf9bb740c56351ced5e03c' for topic 'Topic_1'
+[15:04:00] [INFO] Created new server session 'a872b0850a0ad1c8c0404185dfdd17c2' for topic 'Topic_7'
+[15:04:00] [INFO] Created new server session '5989f8a5701db6f9f542aa8cbefc8b42' for topic 'Topic_2'
+[15:04:00] [INFO] Created new server session 'c4c20f1d44ee7a9a9a85107a6b7d5ae6' for topic 'Topic_2'
+[15:04:00] [INFO] Created new server session 'd3855bd20bc9898124ec8f4ff55f4465' for topic 'Topic_2'
+[15:04:00] [INFO] Created new server session '5c96b4d1f6ac3c9bb9bb185caee72a75' for topic 'Topic_4'
+[15:04:00] [INFO] Created new server session '08b6fd527dcbf9b8fb602d6ff500ac63' for topic 'Topic_6'
+[15:04:00] [INFO] Created new server session '6717081673bedc40af1d26729736a295' for topic 'Topic_5'
+[15:04:00] [INFO] Created new server session '5854508d85afabcb1e88c397b3e81b0a' for topic 'Topic_5'
+[15:04:00] [INFO] Created new server session '85514a854f47afac0f1a8c591d23d0d8' for topic 'Topic_7'
+[15:04:00] [INFO] Created new server session 'b3eea19174f44fa49957147a9f78995b' for topic 'Topic_0'
+[15:04:00] [INFO] Created new server session 'a147e3882b23f8ecaabcfe630e2d669d' for topic 'Topic_3'
+[15:04:00] [INFO] Created new server session 'b90b0c7a8d49f7acfc7e713a607715a3' for topic 'Topic_3'
+[15:04:00] [INFO] Created new server session '288178fbd5764311eb69f5c83aea7b15' for topic 'Topic_4'
+[15:04:00] [INFO] Created new server session 'cef79307669720d7d4b3386d6198b50d' for topic 'Topic_6'
+[15:04:00] [INFO] Created new server session 'c2bcd234787d029b614b3876a5bd8952' for topic 'Topic_1'
+[15:04:00] [INFO] Created new server session 'e80bc518b46c32b7eebce238cb0ac774' for topic 'Topic_1'
+[15:04:00] [INFO] Created new server session '8867f9bef9c37382be9df8942b88ccda' for topic 'Topic_7'
+[15:04:00] [INFO] Created new server session '2e946958b7556aa554bab72660184906' for topic 'Topic_7'
+[15:04:00] [INFO] Created new server session 'e2234c0089f5b70958a68ed7c5905329' for topic 'Topic_2'
+[15:04:00] [INFO] Created new server session '28362d9855312e6a18a47c10cab7080d' for topic 'Topic_3'
+[15:04:00] [INFO] Created new server session '405deb64546e408152e38b01894a8d52' for topic 'Topic_4'
+[15:04:00] [INFO] Created new server session '8b8547148f6f747aaea2d61fa84b67b2' for topic 'Topic_6'
+[15:04:00] [INFO] Created new server session '0766fa9be0c261f3c13de58ef01a45e0' for topic 'Topic_5'
+[15:04:00] [INFO] Created new server session 'ea324059533fa8643a63b6136d1a4021' for topic 'Topic_1'
+[15:04:00] [INFO] Created new server session '1d21877235196d6cb8850ace48514b00' for topic 'Topic_0'
+[15:04:00] [INFO] Created new server session '627d878dc2150d023aff54f0e276cf53' for topic 'Topic_0'
+[15:04:00] [INFO] Created new server session '41899af0658c92ecd26e7ecb1fa490f6' for topic 'Topic_2'
+[15:04:00] [INFO] Created new server session '1c75abe72b2209a2b864526057a30c02' for topic 'Topic_3'
+[15:04:00] [INFO] Created new server session '0365f6c0eb899adfb4cb7487b2740846' for topic 'Topic_4'
+[15:04:00] [INFO] Created new server session 'bb639e97c57ceded20dceb95d8fd14e6' for topic 'Topic_6'
+[15:04:00] [INFO] Created new server session '8704ad5e5b30aab8245f0d6eb2284002' for topic 'Topic_5'
+[15:04:00] [INFO] Created new server session '0843735551d689311e5747e80c8f73bb' for topic 'Topic_1'
+[15:04:00] [INFO] Created new server session '377a151007db5b58f3b2835e9718317f' for topic 'Topic_7'
+[15:04:00] [INFO] Created new server session 'fc8ef1a0a9e4ffb55194195ec3810cec' for topic 'Topic_0'
+[15:04:00] [INFO] Created new server session '7871424a96c809a37468306c6d376fd6' for topic 'Topic_2'
+[15:04:00] [INFO] Created new server session '8b13ea5498976b351d5c8ab1ededb98b' for topic 'Topic_3'
+[15:04:01] [INFO] Created new server session 'd5ed1f065602d84173b21ba43309ed10' for topic 'Topic_4'
+[15:04:01] [INFO] Created new server session 'e856d4975d6a2aea2f91375ea43f7c77' for topic 'Topic_6'
+[15:04:01] [INFO] Created new server session '9a4bd9a27034ae7ee57d5f4a146b4df6' for topic 'Topic_5'
+[15:04:01] [INFO] Created new server session '3f7c8c153b1e76e701dbbe06c79533e4' for topic 'Topic_1'
+[15:04:01] [INFO] Created new server session '4aa9ae17a30af2426e5208b1720c594c' for topic 'Topic_7'
+[15:04:01] [INFO] Created new server session '45f56df3aee24e85b3100c6d808804c5' for topic 'Topic_0'
+[15:04:01] [INFO] Created new server session 'd2d1701bbf00c53cfd578876a00fbcf9' for topic 'Topic_2'
+[15:04:01] [INFO] Created new server session '3e76ae65151a7c795ca05d5014a4ed5d' for topic 'Topic_3'
+[15:04:01] [INFO] Created new server session 'f9e8a4d6fb22d1c7a27a75b70d36c54a' for topic 'Topic_4'
+[15:04:01] [INFO] Created new server session 'ce80c6911eef3f9559b2abbd02cf4abd' for topic 'Topic_6'
+[15:04:01] [INFO] Created new server session '0e3664d9c7a40846584e7387c66793da' for topic 'Topic_5'
+[15:04:01] [INFO] Created new server session '1e72743a06877d23241c49bbe3b8c706' for topic 'Topic_1'
+[15:04:01] [INFO] Created new server session 'ab63072c03044806564a7f6d59893883' for topic 'Topic_7'
+[15:04:01] [INFO] Created new server session '527fe583c921b78b4c2f7acd7e83e44e' for topic 'Topic_0'
+[15:04:01] [INFO] Created new server session '4d66f94f20bc426a4111cd500b74fce6' for topic 'Topic_2'
+[15:04:01] [INFO] Created new server session 'a81cffc2745b3913952a86742516b98c' for topic 'Topic_3'
+[15:04:01] [INFO] Created new server session '27d1718c2c39b65b0619724f0adde57d' for topic 'Topic_4'
+[15:04:01] [INFO] Created new server session '4e209e075de263569b2100b5c3849145' for topic 'Topic_6'
+[15:04:01] [INFO] Created new server session '2d6df75bfcacf021b8dc22e37b1c971d' for topic 'Topic_5'
+[15:04:01] [INFO] Created new server session '968472bebf9dd5d38ea399b3c2c3b64b' for topic 'Topic_7'
+[15:04:01] [INFO] Created new server session '19c56343fb453163094d96c9611bd7f5' for topic 'Topic_0'
+[15:04:01] [INFO] Created new server session '57da10a271a5caa1549ce5247e2bbbb1' for topic 'Topic_2'
+[15:04:01] [INFO] Created new server session '23338b319b06b35c1b90fbcd3047cf22' for topic 'Topic_3'
+[15:04:01] [INFO] Created new server session '5b8692c5378ba4421c2cc6fdf166f08c' for topic 'Topic_4'
+[15:04:01] [INFO] Created new server session '0555b1285b864acee7bf886d38c37361' for topic 'Topic_6'
+[15:04:01] [INFO] Created new server session '5309ebfae7609cbf9a57fb02e8150c65' for topic 'Topic_5'
+[15:04:01] [INFO] Created new server session '1304903e221d36d6ca0db71e4df92b33' for topic 'Topic_7'
+[15:04:01] [INFO] Created new server session '25c79e20cd9e5fde5c292071abe195e5' for topic 'Topic_0'
+[15:04:01] [INFO] Created new server session '9f61305531e068c7a2f4a0abbfa3db76' for topic 'Topic_2'
+[15:04:01] [INFO] Created new server session '78682d9bada6644b56d87a97bad17bb6' for topic 'Topic_3'
+[15:04:01] [INFO] Created new server session '79afccd4219ad467e59cfa0f38851581' for topic 'Topic_3'
+[15:04:01] [INFO] Created new server session 'b018ef4d750a433149d56af8751c2d35' for topic 'Topic_6'
+[15:04:02] [INFO] Created new server session '110c18c9cd48e7877042e48288f59448' for topic 'Topic_5'
+[15:04:02] [INFO] Created new server session '14abc00890292443bc4e895d044870dd' for topic 'Topic_7'
+[15:04:02] [INFO] Created new server session 'eb1eb3611fe588ca87d762c55be51ed9' for topic 'Topic_0'
+[15:04:02] [INFO] Created new server session '4a4eb826e7428852b436da29aab4869b' for topic 'Topic_2'
+[15:04:02] [INFO] Created new server session '5b49754c440ea31e8a71a84ff6d651ee' for topic 'Topic_4'
+[15:04:02] [INFO] Created new server session 'ab820d3a2dddab081b120de5e02e14fd' for topic 'Topic_3'
+[15:04:02] [INFO] Created new server session '2ef4ea3915ab6aca65c52812640a6b46' for topic 'Topic_6'
+[15:04:02] [INFO] Created new server session 'ebe73cbfee6c1f21014dddeda0095425' for topic 'Topic_5'
+[15:04:02] [INFO] Created new server session '1be540fb552f43f5804d7688d893ea8d' for topic 'Topic_7'
+[15:04:02] [INFO] Created new server session '0ef84a6f6a010aa023fec5b9d58e70c9' for topic 'Topic_0'
+[15:04:02] [INFO] Created new server session 'c4c96a3d214cfc0291b3f948e1fe616a' for topic 'Topic_2'
+[15:04:02] [INFO] Created new server session '3b4f60d4548edc6b9fe9d140841a441e' for topic 'Topic_4'
+[15:04:02] [INFO] Created new server session '1a4c898eb34d5905e5c7d89302341b0f' for topic 'Topic_3'
+[15:04:02] [INFO] Created new server session 'bad9f929c3d5ebfcd07d988edec9b122' for topic 'Topic_6'
+[15:04:02] [INFO] Created new server session 'b11d70de5c94a8752ad1a9dbe07834c2' for topic 'Topic_5'
+[15:04:02] [INFO] Created new server session '99e72568c3d3474c66f327da509d7864' for topic 'Topic_7'
+[15:04:02] [INFO] Created new server session '3f2ffe5060f8c07123fdf65475f86296' for topic 'Topic_2'
+[15:04:02] [INFO] Created new server session 'f40c0226de6853933ef20146db7f2e0c' for topic 'Topic_4'
+[15:04:02] [INFO] Created new server session '179c070aace14db45dfe4c422bbc4127' for topic 'Topic_6'
+[15:04:02] [INFO] Created new server session 'f3d219362548071eb94dfab6691632b9' for topic 'Topic_4'
+[15:04:02] [INFO] Created new server session '48a20ce8277cffa11fcbd8c7506929cb' for topic 'Topic_6'
+[15:04:02] [INFO] Initialized epoll instance (fd=5) monitoring listen_fd=3
+[15:04:02] [INFO] Created EnhancedSessionState '55555555555555555555555555555555' with 5 64 KiB work units across 3 files
+[15:04:02] [INFO] Created EnhancedSessionState '77777777777777777777777777777777' with 4 64 KiB work units across 1 files
+[15:04:02] [INFO] Requeued 1 in-flight chunks from dropped sub-stream 1
+[15:04:02] [INFO] Created EnhancedSessionState '88888888888888888888888888888888' with 8 64 KiB work units across 1 files
+[15:04:03] [INFO] Applied client bitmask: confirmed 3 units committed on disk
+[15:07:19] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[15:07:20] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[15:07:20] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_737
+[15:07:20] [INFO] Listening socket created on port 8080 (fd=3)
+[15:07:20] [INFO] Entering multi-threaded concurrent accept loop
+[15:07:20] [INFO] Connecting to 127.0.0.1:8080...
+[15:07:20] [INFO] Connected to server. Requesting topic 'cane'...
+[15:07:20] [INFO] Client requested topic: 'cane'
+[15:07:20] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:07:20] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:07:22] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[15:07:22] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[15:07:22] [INFO] Performance: Duration = 1.72s | Goodput = 1.45 MB/s | Wire Throughput = 1.46 MB/s | Overhead = 0.81%
+[15:07:22] [INFO] Exited concurrent accept loop
+[15:07:22] [INFO] Server shutdown complete
+[15:07:29] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[15:07:31] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[15:07:31] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_737
+[15:07:31] [INFO] Listening socket created on port 8080 (fd=3)
+[15:07:31] [INFO] Entering multi-threaded concurrent accept loop
+[15:07:31] [INFO] Connecting to 127.0.0.1:8080...
+[15:07:31] [INFO] Connecting to 127.0.0.1:8080...
+[15:07:31] [INFO] Accepted client from 127.0.0.1:40745 (fd=4)
+...
+[15:07:31] [INFO] Connected to server. Requesting topic 'cane'...
+[15:07:31] [INFO] Accepted client from 127.0.0.1:40759 (fd=5)
+[15:07:31] [INFO] Client requested topic: 'cane'
+[15:07:31] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[15:07:31] [INFO] Client requested topic: 'cane'
+[15:07:31] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:07:31] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:07:31] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:07:31] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:07:33] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[15:07:33] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[15:07:33] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[15:07:33] [INFO] Performance: Duration = 1.56s | Goodput = 1.60 MB/s | Wire Throughput = 1.62 MB/s | Overhead = 0.81%
+[15:07:33] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[15:07:33] [INFO] Performance: Duration = 1.61s | Goodput = 1.55 MB/s | Wire Throughput = 1.57 MB/s | Overhead = 0.81%
+[15:07:33] [INFO] Exited concurrent accept loop
+[15:07:33] [INFO] Server shutdown complete
+[15:07:43] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[15:07:44] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[15:07:44] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_737
+[15:07:44] [INFO] Listening socket created on port 8080 (fd=3)
+[15:07:44] [INFO] Entering multi-threaded concurrent accept loop
+[15:07:44] [INFO] Connecting to 127.0.0.1:8080...
+[15:07:44] [INFO] Connecting to 127.0.0.1:8080...
+[15:07:44] [INFO] Connected to server. Requesting topic 'cane'...
+[15:07:44] [INFO] Connected to server. Requesting topic 'cane'...
+[15:07:44] [INFO] Accepted client from 127.0.0.1:38499 (fd=4)
+...
+[15:07:44] [INFO] Accepted client from 127.0.0.1:38513 (fd=5)
+[15:07:44] [INFO] Client requested topic: 'cane'
+[15:07:44] [INFO] Accepted client from 127.0.0.1:38525 (fd=6)
+[15:07:44] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:07:44] [INFO] Client requested topic: 'cane'
+[15:07:44] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:07:44] [INFO] Accepted client from 127.0.0.1:38533 (fd=8)
+[15:07:44] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:07:44] [INFO] Client requested topic: 'cane'
+[15:07:45] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:07:45] [INFO] Client requested topic: 'cane'
+[15:07:45] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:07:45] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:07:45] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:07:45] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:07:45] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:07:45] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:07:47] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:07:47] [INFO] Received OP_TRANSFER_END from server
+[15:07:47] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[15:07:47] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[15:07:47] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+hroughput = 0.90 MB/s | Overhead = 0.81%
+[15:07:47] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[15:07:47] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[15:07:47] [INFO] Performance: Duration = 2.84s | Goodput = 0.88 MB/s | Wire Throughput = 0.89 MB/s | Overhead = 0.81%
+[15:07:47] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c4/cane' in 0 retries
+[15:07:47] [INFO] Performance: Duration = 2.87s | Goodput = 0.87 MB/s | Wire Throughput = 0.88 MB/s | Overhead = 0.81%
+[15:07:47] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c3/cane' in 0 retries
+[15:07:47] [INFO] Performance: Duration = 2.90s | Goodput = 0.86 MB/s | Wire Throughput = 0.87 MB/s | Overhead = 0.81%
+[15:07:47] [INFO] Exited concurrent accept loop
+[15:07:47] [INFO] Server shutdown complete
+[15:08:04] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[15:08:05] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[15:08:05] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_737
+[15:08:05] [INFO] Listening socket created on port 8080 (fd=3)
+[15:08:05] [INFO] Entering multi-threaded concurrent accept loop
+[15:08:05] [INFO] Connecting to 127.0.0.1:8080...
+[15:08:05] [INFO] Connecting to 127.0.0.1:8080...
+[15:08:05] [INFO] Connecting to 127.0.0.1:8080...
+[15:08:05] [INFO] Connecting to 127.0.0.1:8080...
+[15:08:05] [INFO] Connecting to 127.0.0.1:8080...
+[15:08:05] [INFO] Accepted client from 127.0.0.1:38607 (fd=4)
+...
+[15:08:05] [INFO] Connected to server. Requesting topic 'cane'...
+[15:08:05] [INFO] Connected to server. Requesting topic 'cane'...
+[15:08:05] [INFO] Connected to server. Requesting topic 'cane'...
+[15:08:05] [INFO] Accepted client from 127.0.0.1:38605 (fd=5)
+[15:08:05] [INFO] Client requested topic: 'cane'
+[15:08:05] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:05] [INFO] Client requested topic: 'cane'
+[15:08:05] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:05] [INFO] Accepted client from 127.0.0.1:38627 (fd=8)
+[15:08:05] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:05] [INFO] Client requested topic: 'cane'
+[15:08:05] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:05] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:05] [INFO] Client requested topic: 'cane'
+[15:08:05] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:05] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:05] [INFO] Client requested topic: 'cane'
+[15:08:05] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:05] [INFO] Accepted client from 127.0.0.1:38639 (fd=14)
+[15:08:05] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:05] [INFO] Client requested topic: 'cane'
+[15:08:06] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:08:06] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:06] [INFO] Accepted client from 127.0.0.1:38649 (fd=16)
+[15:08:06] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:06] [INFO] Client requested topic: 'cane'
+[15:08:06] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:06] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:08:06] [INFO] Client requested topic: 'cane'
+[15:08:06] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:06] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:08:06] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:06] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:08:06] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:07] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:10] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:10] [INFO] Received OP_TRANSFER_END from server
+[15:08:10] [INFO] Received OP_TRANSFER_END from server
+[15:08:10] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c3/cane' in 0 retries
+[15:08:10] [INFO] Performance: Duration = 3.62s | Goodput = 0.69 MB/s | Wire Throughput = 0.70 MB/s | Overhead = 0.81%
+[15:08:10] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[15:08:10] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:10] [INFO] Performance: Duration = 3.74s | Goodput = 0.67 MB/s | Wire Throughput = 0.67 MB/s | Overhead = 0.81%
+[15:08:10] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c4/cane' in 0 retries
+[15:08:10] [INFO] Performance: Duration = 3.99s | Goodput = 0.63 MB/s | Wire Throughput = 0.63 MB/s | Overhead = 0.81%
+[15:08:10] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:10] [INFO] Received OP_TRANSFER_END from server
+[15:08:11] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[15:08:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:11] [INFO] Performance: Duration = 4.24s | Goodput = 0.59 MB/s | Wire Throughput = 0.59 MB/s | Overhead = 0.81%
+[15:08:11] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c5/cane' in 0 retries
+[15:08:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:11] [INFO] Performance: Duration = 4.39s | Goodput = 0.57 MB/s | Wire Throughput = 0.57 MB/s | Overhead = 0.81%
+[15:08:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:11] [INFO] Received OP_TRANSFER_END from server
+[15:08:11] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+/client_bench_output/c6/cane' in 0 retries
+[15:08:11] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c8/cane' in 0 retries
+[15:08:11] [INFO] Performance: Duration = 4.63s | Goodput = 0.54 MB/s | Wire Throughput = 0.54 MB/s | Overhead = 0.81%
+[15:08:11] [INFO] Exited concurrent accept loop
+[15:08:11] [INFO] Server shutdown complete
+[15:08:49] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[15:08:51] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[15:08:51] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_737
+[15:08:51] [INFO] Listening socket created on port 8080 (fd=3)
+[15:08:51] [INFO] Entering multi-threaded concurrent accept loop
+[15:08:51] [INFO] Connecting to 127.0.0.1:8080...
+[15:08:51] [INFO] Connecting to 127.0.0.1:8080...
+[15:08:51] [INFO] Connecting to 127.0.0.1:8080...
+[15:08:51] [INFO] Connecting to 127.0.0.1:8080...
+[15:08:51] [INFO] Connecting to 127.0.0.1:8080...
+[15:08:51] [INFO] Connecting to 127.0.0.1:8080...
+[15:08:51] [INFO] Connecting to 127.0.0.1:8080...
+[15:08:51] [INFO] Connecting to 127.0.0.1:8080...
+[15:08:51] [INFO] Connected to server. Requesting topic 'cane'...
+[15:08:51] [INFO] Connected to server. Requesting topic 'cane'...
+[15:08:51] [INFO] Connected to server. Requesting topic 'cane'...
+[15:08:51] [INFO] Connected to server. Requesting topic 'cane'...
+[15:08:51] [INFO] Connected to server. Requesting topic 'cane'...
+[15:08:51] [INFO] Connected to server. Requesting topic 'cane'...
+[15:08:51] [INFO] Connected to server. Requesting topic 'cane'...
+[15:08:51] [INFO] Connected to server. Requesting topic 'cane'...
+[15:08:51] [INFO] Accepted client from 127.0.0.1:41433 (fd=5)
+[15:08:51] [INFO] Client requested topic: 'cane'
+[15:08:51] [INFO] Accepted client from 127.0.0.1:41453 (fd=7)
+ bytes (2.38 MB)
+[15:08:51] [INFO] Client requested topic: 'cane'
+[15:08:51] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[15:08:51] [INFO] Accepted client from 127.0.0.1:41449 (fd=8)
+[15:08:51] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:51] [INFO] Client requested topic: 'cane'
+[15:08:51] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:08:51] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:51] [INFO] Accepted client from 127.0.0.1:41465 (fd=10)
+[15:08:51] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:51] [INFO] Client requested topic: 'cane'
+[15:08:51] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:08:51] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:51] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:51] [INFO] Client requested topic: 'cane'
+[15:08:52] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[15:08:52] [INFO] Accepted client from 127.0.0.1:41481 (fd=9)
+PcUfOWQ.jpeg' (9451 bytes)
+[15:08:52] [INFO] Client requested topic: 'cane'
+[15:08:52] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:52] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:52] [INFO] Client requested topic: 'cane'
+[15:08:52] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:08:52] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:52] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:52] [INFO] Accepted client from 127.0.0.1:41509 (fd=11)
+[15:08:52] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:08:52] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:52] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:08:52] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:52] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:52] [INFO] Client requested topic: 'cane'
+[15:08:52] [INFO] Client requested topic: 'cane'
+2497353 total bytes (2.38 MB)
+[15:08:52] [INFO] Accepted client from 127.0.0.1:41537 (fd=15)
+[15:08:52] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:53] [INFO] Client requested topic: 'cane'
+[15:08:53] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:53] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+9451 bytes)
+[15:08:53] [INFO] Accepted client from 127.0.0.1:41551 (fd=25)
+[15:08:53] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:53] [INFO] Client requested topic: 'cane'
+[15:08:53] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:53] [INFO] Accepted client from 127.0.0.1:41565 (fd=26)
+[15:08:53] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:53] [INFO] Client requested topic: 'cane'
+[15:08:53] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:53] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:08:53] [INFO] Accepted client from 127.0.0.1:41577 (fd=13)
+[15:08:53] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:54] [INFO] Client requested topic: 'cane'
+[15:08:54] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:08:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:54] [INFO] Accepted client from 127.0.0.1:41559 (fd=22)
+[15:08:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:54] [INFO] Client requested topic: 'cane'
+[15:08:54] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:08:54] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:08:54] [INFO] Client requested topic: 'cane'
+[15:08:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:54] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[15:08:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:54] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:08:55] [INFO] Received OP_TRANSFER_END from server
+[15:08:55] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:55] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:56] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[15:08:56] [INFO] Performance: Duration = 4.34s | Goodput = 0.58 MB/s | Wire Throughput = 0.58 MB/s | Overhead = 0.81%
+[15:08:56] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c4/cane' in 0 retries
+[15:08:56] [INFO] Performance: Duration = 4.41s | Goodput = 0.57 MB/s | Wire Throughput = 0.57 MB/s | Overhead = 0.81%
+[15:08:56] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:56] [INFO] Received OP_TRANSFER_END from server
+[15:08:56] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c6/cane' in 0 retries
+[15:08:56] [INFO] Received OP_TRANSFER_END from server
+ut = 0.54 MB/s | Wire Throughput = 0.55 MB/s | Overhead = 0.81%
+[15:08:56] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:56] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c5/cane' in 0 retries
+[15:08:56] [INFO] Performance: Duration = 4.73s | Goodput = 0.53 MB/s | Wire Throughput = 0.53 MB/s | Overhead = 0.81%
+[15:08:56] [INFO] Received OP_TRANSFER_END from server
+[15:08:56] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:56] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c3/cane' in 0 retries
+[15:08:56] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[15:08:56] [INFO] Performance: Duration = 4.94s | Goodput = 0.51 MB/s | Wire Throughput = 0.51 MB/s | Overhead = 0.81%
+[15:08:56] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[15:08:56] [INFO] Performance: Duration = 5.08s | Goodput = 0.49 MB/s | Wire Throughput = 0.50 MB/s | Overhead = 0.81%
+[15:08:56] [INFO] Received OP_TRANSFER_END from server
+[15:08:56] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:57] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c8/cane' in 0 retries
+[15:08:57] [INFO] Performance: Duration = 5.38s | Goodput = 0.46 MB/s | Wire Throughput = 0.47 MB/s | Overhead = 0.81%
+[15:08:57] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c7/cane' in 0 retries
+[15:08:57] [INFO] Performance: Duration = 5.53s | Goodput = 0.45 MB/s | Wire Throughput = 0.46 MB/s | Overhead = 0.81%
+[15:08:58] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:58] [INFO] Received OP_TRANSFER_END from server
+[15:08:58] [INFO] Received OP_TRANSFER_END from server
+[15:08:58] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:58] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c14/cane' in 0 retries
+[15:08:58] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c13/cane' in 0 retries
+[15:08:58] [INFO] Performance: Duration = 6.44s | Goodput = 0.39 MB/s | Wire Throughput = 0.39 MB/s | Overhead = 0.81%
+[15:08:58] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:58] [INFO] Received OP_TRANSFER_END from server
+[15:08:58] [INFO] Performance: Duration = 6.48s | Goodput = 0.39 MB/s | Wire Throughput = 0.39 MB/s | Overhead = 0.81%
+[15:08:58] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c12/cane' in 0 retries
+[15:08:58] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:58] [INFO] Performance: Duration = 6.74s | Goodput = 0.37 MB/s | Wire Throughput = 0.37 MB/s | Overhead = 0.81%
+[15:08:58] [INFO] Received OP_TRANSFER_END from server
+[15:08:58] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c11/cane' in 0 retries
+[15:08:58] [INFO] Received OP_TRANSFER_END from server
+[15:08:58] [INFO] Performance: Duration = 6.91s | Goodput = 0.36 MB/s | Wire Throughput = 0.36 MB/s | Overhead = 0.81%
+[15:08:58] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c15/cane' in 0 retries
+[15:08:58] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[15:08:58] [INFO] Performance: Duration = 7.02s | Goodput = 0.36 MB/s | Wire Throughput = 0.36 MB/s | Overhead = 0.81%
+[15:08:58] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:08:58] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c10/cane' in 0 retries
+[15:08:58] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+hroughput = 0.35 MB/s | Overhead = 0.81%
+[15:08:58] [INFO] Received OP_TRANSFER_END from server
+[15:08:58] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c9/cane' in 0 retries
+[15:08:58] [INFO] Performance: Duration = 7.23s | Goodput = 0.35 MB/s | Wire Throughput = 0.35 MB/s | Overhead = 0.81%
+[15:08:58] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c16/cane' in 0 retries
+[15:08:58] [INFO] Performance: Duration = 7.24s | Goodput = 0.35 MB/s | Wire Throughput = 0.35 MB/s | Overhead = 0.81%
+[15:08:58] [INFO] Exited concurrent accept loop
+[15:08:59] [INFO] Server shutdown complete
+[15:10:05] [INFO] Starting Server (Part=1, CaseMode=0, Port=8080, pf=0.00, Threaded=1)
+[15:10:06] [INFO] Indexed topic 'cane': 200 files, 2497353 total bytes
+[15:10:06] [INFO] Successfully loaded 1 topics from /tmp/cn_bench_dataset_737
+[15:10:06] [INFO] Listening socket created on port 8080 (fd=3)
+[15:10:06] [INFO] Entering multi-threaded concurrent accept loop
+[15:10:07] [INFO] Connecting to 127.0.0.1:8080...
+[15:10:07] [INFO] Connecting to 127.0.0.1:8080...
+[15:10:07] [INFO] Connecting to 127.0.0.1:8080...
+[15:10:07] [INFO] Connecting to 127.0.0.1:8080...
+[15:10:07] [INFO] Connecting to 127.0.0.1:8080...
+[15:10:07] [INFO] Connecting to 127.0.0.1:8080...
+[15:10:07] [INFO] Connecting to 127.0.0.1:8080...
+[15:10:07] [INFO] Accepted client from 127.0.0.1:3[15:10:07] [[15:10:07] [INFO] Connected to server. Requesting topi[15:10:07] [[15:10:07] [INFO] Connecting to 127.0.0.1:8080...
+topic 'cane'...
+[15:10:07] [INFO] Connecting to 127.0.0.1:8080...
+[15:10:07] [INFO[15:10:07] [INFO] Connecting to 127.0.0.1:8080...
+[15:10:07] [INFO] Connecting to 127.0.0.1:8080...
+[15:10:07] [INFO] Connected to server. Requesting topic 'cane'...
+[15:10:07] [INFO] Connected to server. Requesting topic 'cane'...
+[15:10:07] [INFO] Connected to server. Requesting topic 'cane'...
+[15:10:07] [INFO] Connected to server. Requesting topic 'cane'...
+[15:10:07] [INFO] Connected to server. Requesting topic 'cane'...
+[15:10:07] [INFO] Connected to server. Requesting topic 'cane'...
+[15:10:07] [INFO] Connected to server. Requesting topic 'cane'...
+[15:10:07] [INFO] Connected to server. Requesting topic 'cane'...
+[15:10:07] [INFO] Client requested topic: 'cane'
+[15:10:07] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:07] [INFO] Client requested topic: 'cane'
+[15:10:07] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[15:10:07] [INFO] Accepted client from 127.0.0.1:38383 (fd=8)
+[15:10:07] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:07] [INFO] Client requested topic: 'cane'
+[15:10:07] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[15:10:07] [INFO] Accepted client from 127.0.0.1:38385 (fd=10)
+[15:10:07] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:07] [INFO] Client requested topic: 'cane'
+[15:10:07] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:07] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:07] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:07] [INFO] Client requested topic: 'cane'
+[15:10:07] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[15:10:07] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:07] [INFO] Accepted client from 127.0.0.1:38407 (fd=14)
+[15:10:07] [INFO] Client requested topic: 'cane'
+[15:10:07] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:07] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:07] [INFO] Accepted client from 127.0.0.1:38415 (fd=16)
+[15:10:07] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:07] [INFO] Client requested topic: 'cane'
+[15:10:07] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:07] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:07] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:07] [INFO] Client requested topic: 'cane'
+[15:10:08] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:08] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:08] [INFO] Accepted client from 127.0.0.1:38441 (fd=17)
+[15:10:08] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:08] [INFO] Client requested topic: 'cane'
+[15:10:08] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:08] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:08] [INFO] Accepted client from 127.0.0.1:38429 (fd=20)
+[15:10:08] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:08] [INFO] Client requested topic: 'cane'
+[15:10:08] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:08] [INFO] Accepted client from 127.0.0.1:38455 (fd=21)
+[15:10:08] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:08] [INFO] Client requested topic: 'cane'
+[15:10:08] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:08] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:08] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:08] [INFO] Client requested topic: 'cane'
+[15:10:08] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[15:10:09] [INFO] Accepted client from 127.0.0.1:38469 (fd=28)
+[15:10:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:09] [INFO] Client requested topic: 'cane'
+[15:10:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:09] [INFO] Client requested topic: 'cane'
+[15:10:09] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:09] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:09] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:09] [INFO] Client requested topic: 'cane'
+[15:10:10] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:11] [INFO] Accepted client from 127.0.0.1:38477 (fd=29)
+[15:10:11] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:11] [INFO] Client requested topic: 'cane'
+[15:10:11] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:11] [INFO] Accepted client from 127.0.0.1:38499 (fd=36)
+[15:10:11] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:11] [INFO] Client requested topic: 'cane'
+[15:10:11] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:11] [INFO] Accepted client from 127.0.0.1:38501 (fd=24)
+[15:10:11] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:11] [INFO] Accepted client from 127.0.0.1:38511 (fd=11)
+[15:10:11] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:11] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:11] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:11] [INFO] Client requested topic: 'cane'
+[15:10:11] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:11] [INFO] Accepted client from 127.0.0.1:38517 (fd=22)
+[15:10:11] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:11] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:11] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:11] [INFO] Client requested topic: 'cane'
+2497353 total bytes (2.38 MB)
+[15:10:12] [INFO] Accepted client from 127.0.0.1:38543 (fd=13)
+[15:10:12] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:12] [INFO] Received OP_TRANSFER_END from server
+[15:10:12] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:12] [INFO] Received OP_TRANSFER_END from server
+[15:10:12] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:12] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:12] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c1/cane' in 0 retries
+[15:10:12] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:12] [INFO] Performance: Duration = 3.66s | Goodput = 0.68 MB/s | Wire Throughput = 0.69 MB/s | Overhead = 0.81%
+[15:10:12] [INFO] Client requested topic: 'cane'
+[15:10:12] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c4/cane' in 0 retries
+[15:10:12] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:12] [INFO] Performance: Duration = 3.77s | Goodput = 0.66 MB/s | Wire Throughput = 0.67 MB/s | Overhead = 0.81%
+[15:10:12] [INFO] Received OP_TRANSFER_END from server
+files, 2497353 bytes)
+[15:10:12] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:12] [INFO] Accepted client from 127.0.0.1:38555 (fd=33)
+[15:10:12] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c2/cane' in 0 retries
+[15:10:12] [INFO] Client requested topic: 'cane'
+erver
+[15:10:12] [INFO] Performance: Duration = 4.07s | Goodput = 0.61 MB/s | Wire Throughput = 0.62 MB/s | Overhead = 0.81%
+[15:10:12] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:12] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+ch_output/c6/cane' in 0 retries
+[15:10:12] [INFO] Performance: Duration = 4.23s | Goodput = 0.59 MB/s | Wire Throughput = 0.59 MB/s | Overhead = 0.81%
+[15:10:12] [INFO] Received OP_TRANSFER_END from server
+[15:10:12] [INFO] Client requested topic: 'cane'
+[15:10:13] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+
+[15:10:13] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c3/cane' in 0 retries
+[15:10:13] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:13] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+hroughput = 0.56 MB/s | Overhead = 0.81%
+[15:10:13] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:13] [INFO] Received OP_TRANSFER_END from server
+(fd=40)
+[15:10:13] [INFO] Client requested topic: 'cane'
+[15:10:13] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+client_bench_output/c5/cane' in 0 retries
+[15:10:13] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:13] [INFO] Performance: Duration = 4.76s | Goodput = 0.52 MB/s | Wire Throughput = 0.53 MB/s | Overhead = 0.81%
+[15:10:13] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:13] [INFO] Received OP_TRANSFER_END from server
+[15:10:13] [INFO] Client requested topic: 'cane'
+[15:10:13] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:13] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c8/cane' in 0 retries
+[15:10:13] [INFO] Accepted client from 127.0.0.1:38593 (fd=31)
+[15:10:13] [INFO] Received OP_TRANSFER_END from server
+[15:10:13] [INFO] Performance: Duration = 5.00s | Goodput = 0.50 MB/s | Wire Throughput = 0.50 MB/s | Overhead = 0.81%
+[15:10:13] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:10:13] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:13] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c10/cane' in 0 retries
+[15:10:13] [INFO] Received OP_TRANSFER_END from server
+files, 2497353 bytes)
+[15:10:13] [INFO] Performance: Duration = 5.17s | Goodput = 0.48 MB/s | Wire Throughput = 0.49 MB/s | Overhead = 0.81%
+[15:10:13] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:13] [INFO] Client requested topic: 'cane'
+[15:10:13] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:13] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[15:10:13] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c15/cane' in 0 retries
+[15:10:14] [INFO] Accepted client from 127.0.0.1:38607 (fd=9)
+PcUfOWQ.jpeg' (9451 bytes)
+[15:10:14] [INFO] Received OP_TRANSFER_END from server
+[15:10:14] [INFO] Performance: Duration = 5.34s | Goodput = 0.47 MB/s | Wire Throughput = 0.47 MB/s | Overhead = 0.81%
+[15:10:14] [INFO] Client requested topic: 'cane'
+[15:10:14] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp[15:10:14] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:14] [INFO] Performance: Duration = 5.57s | Goodput = 0.45 MB/s | Wire Throughput = 0.45 MB/s | Overhead = 0.81%
+[15:10:14] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:10:14] [INFO] Client requested topic: 'cane'
+[15:10:14] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c12/cane' in 0 retries
+[15:10:14] [INFO] Received OP_TRANSFER_END from server
+[15:10:14] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+Throughput = 0.43 MB/s | Overhead = 0.81%
+[15:10:14] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+451 bytes)
+[15:10:14] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c14/cane' in 0 retries
+[15:10:14] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:14] [INFO] Performance: Duration = 5.92s | Goodput = 0.42 MB/s | Wire Throughput = 0.43 MB/s | Overhead = 0.81%
+[15:10:14] [INFO] Received OP_TRANSFER_END from server
+[15:10:14] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:10:14] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:14] [INFO] Accepted client from 127.0.0.1:38627 (fd=10)
+[15:10:14] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c9/cane' in 0 retries
+[15:10:14] [INFO] Client requested topic: 'cane'
+[15:10:14] [INFO] Performance: Duration = 6.15s | Goodput = 0.41 MB/s | Wire Throughput = 0.41 MB/s | Overhead = 0.81%
+[15:10:14] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+)
+[15:10:14] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:14] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+/client_bench_output/c13/cane' in 0 retries
+[15:10:14] [INFO] Received OP_GET_OK: 200 files, 2497353 total bytes (2.38 MB)
+[15:10:14] [INFO] Received OP_TRANSFER_END from server
+[15:10:15] [INFO] Performance: Duration = 6.32s | Goodput = 0.40 MB/s | Wire Throughput = 0.40 MB/s | Overhead = 0.81%
+[15:10:15] [INFO] Sent OP_GET_OK for topic 'cane' (200 files, 2497353 bytes)
+[15:10:15] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c16/cane' in 0 retries
+[15:10:15] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:10:15] [INFO] Receiving file [1/200]: 'OIF-e2bexWrojgtQnAPPcUfOWQ.jpeg' (9451 bytes)
+[15:10:15] [INFO] Performance: Duration = 6.49s | Goodput = 0.38 MB/s | Wire Throughput = 0.39 MB/s | Overhead = 0.81%
+[15:10:15] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:10:15] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c11/cane' in 0 retries
+[15:10:15] [INFO] Performance: Duration = 6.71s | Goodput = 0.37 MB/s | Wire Throughput = 0.38 MB/s | Overhead = 0.81%
+[15:10:15] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[15:10:15] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c17/cane' in 0 retries
+[15:10:15] [INFO] Performance: Duration = 6.87s | Goodput = 0.36 MB/s | Wire Throughput = 0.37 MB/s | Overhead = 0.81%
+[15:10:15] [INFO] Received OP_TRANSFER_END from server
+[15:10:15] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:10:15] [INFO] Received OP_TRANSFER_END from server
+[15:10:15] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:10:15] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c18/cane' in 0 retries
+[15:10:15] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c20/cane' in 0 retries
+[15:10:15] [INFO] Performance: Duration = 7.11s | Goodput = 0.35 MB/s | Wire Throughput = 0.35 MB/s | Overhead = 0.81%
+[15:10:15] [INFO] Performance: Duration = 7.14s | Goodput = 0.35 MB/s | Wire Throughput = 0.35 MB/s | Overhead = 0.81%
+[15:10:15] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:10:15] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:10:16] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c21/cane' in 0 retries
+[15:10:16] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c24/cane' in 0 retries
+[15:10:16] [INFO] Performance: Duration = 7.35s | Goodput = 0.34 MB/s | Wire Throughput = 0.34 MB/s | Overhead = 0.81%
+[15:10:16] [INFO] Performance: Duration = 7.38s | Goodput = 0.34 MB/s | Wire Throughput = 0.34 MB/s | Overhead = 0.81%
+[15:10:16] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:10:16] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c19/cane' in 0 retries
+[15:10:16] [INFO] Performance: Duration = 7.60s | Goodput = 0.33 MB/s | Wire Throughput = 0.33 MB/s | Overhead = 0.81%
+[15:10:16] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[15:10:16] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c22/cane' in 0 retries
+[15:10:16] [INFO] Performance: Duration = 7.75s | Goodput = 0.32 MB/s | Wire Throughput = 0.32 MB/s | Overhead = 0.81%
+[15:10:16] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[15:10:16] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c23/cane' in 0 retries
+[15:10:16] [INFO] Performance: Duration = 7.92s | Goodput = 0.32 MB/s | Wire Throughput = 0.32 MB/s | Overhead = 0.81%
+[15:10:16] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c26/cane' in 0 retries
+[15:10:16] [INFO] Performance: Duration = 8.04s | Goodput = 0.31 MB/s | Wire Throughput = 0.31 MB/s | Overhead = 0.81%
+[15:10:16] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[15:10:16] [INFO] Received OP_TRANSFER_END from server
+[15:10:16] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:10:16] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c29/cane' in 0 retries
+[15:10:16] [INFO] Performance: Duration = 8.25s | Goodput = 0.30 MB/s | Wire Throughput = 0.31 MB/s | Overhead = 0.81%
+[15:10:16] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c25/cane' in 0 retries
+[15:10:17] [INFO] Performance: Duration = 8.29s | Goodput = 0.30 MB/s | Wire Throughput = 0.30 MB/s | Overhead = 0.81%
+[15:10:17] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c28/cane' in 0 retries
+[15:10:17] [INFO] Performance: Duration = 8.36s | Goodput = 0.30 MB/s | Wire Throughput = 0.30 MB/s | Overhead = 0.81%
+[15:10:17] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[15:10:17] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:10:17] [INFO] Received OP_TRANSFER_END from server
+[15:10:17] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c30/cane' in 0 retries
+[15:10:17] [INFO] Performance: Duration = 8.58s | Goodput = 0.29 MB/s | Wire Throughput = 0.29 MB/s | Overhead = 0.81%
+[15:10:17] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c32/cane' in 0 retries
+[15:10:17] [INFO] Performance: Duration = 8.61s | Goodput = 0.29 MB/s | Wire Throughput = 0.29 MB/s | Overhead = 0.81%
+[15:10:17] [INFO] Completed streaming topic 'cane' (200 files, 2497353 bytes)
+[15:10:17] [INFO] Received OP_TRANSFER_END from server
+[15:10:17] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c27/cane' in 0 retries
+[15:10:17] [INFO] Performance: Duration = 8.78s | Goodput = 0.28 MB/s | Wire Throughput = 0.29 MB/s | Overhead = 0.81%
+[15:10:17] [INFO] Received OP_TRANSFER_END from server
+ files, 2497353 bytes)
+[15:10:17] [INFO] Transfer SUCCESS: 200 files (2497353 bytes) written to '/tmp/client_bench_output/c31/cane' in 0 retries
+[15:10:17] [INFO] Performance: Duration = 8.86s | Goodput = 0.28 MB/s | Wire Throughput = 0.28 MB/s | Overhead = 0.81%
+[15:10:17] [INFO] Exited concurrent accept loop
+[15:10:17] [INFO] Server shutdown complete
