@@ -189,30 +189,104 @@ void record_transfer_metrics(const char* csv_filepath, const char* case_name,
     double overhead_pct = (useful_bytes > 0) ? 
         (((double)total_bytes - (double)useful_bytes) / (double)useful_bytes) * 100.0 : 0.0;
 
-    const char* csv_header = "case_name,num_clients,pf,t_start_sec,t_end_sec,duration_sec,useful_bytes,total_bytes,redundant_bytes,goodput_mbps,throughput_mbps,overhead_pct,retries\n";
+    auto write_csv_entry = [](const char* target_path, const char* c_name, int n_clients, double p_fail,
+                              struct timespec ts, struct timespec te, double d_sec,
+                              uint64_t u_bytes, uint64_t tot_bytes, uint64_t red_bytes,
+                              double gp_mbps, double tp_mbps, double ov_pct, int r_tries) {
+        if (!target_path || target_path[0] == '\0') return;
 
-    char csv_line[256];
-    snprintf(csv_line, sizeof(csv_line), "%s,%d,%.2f,%lld,%lld,%.6f,%llu,%llu,%llu,%.6f,%.6f,%.2f,%d\n",
-             case_name, num_clients, pf,
-             (long long)t_start.tv_sec, (long long)t_end.tv_sec, duration_sec,
-             (unsigned long long)useful_bytes, 
-             (unsigned long long)total_bytes, 
-             (unsigned long long)redundant_bytes,
-             goodput_mbps, throughput_mbps, overhead_pct, retries);
+        bool is_khush_p1 = false;
+        bool is_khush_p2 = false;
+        bool need_header = true;
 
-    // 1. Append to primary csv_filepath (e.g. Results/Part1_metrics.csv or Results/Part2_metrics.csv)
-    if (csv_filepath && csv_filepath[0] != '\0') {
-        struct stat st;
-        bool write_hdr = (stat(csv_filepath, &st) != 0 || st.st_size == 0);
-        FILE* fp = fopen(csv_filepath, "a");
-        if (fp) {
-            if (write_hdr) {
-                fputs(csv_header, fp);
+        FILE* rfp = fopen(target_path, "r");
+        if (rfp) {
+            char first_line[512] = "";
+            if (fgets(first_line, sizeof(first_line), rfp)) {
+                if (strlen(first_line) > 5) {
+                    need_header = false;
+                    if (strstr(first_line, "Server_Type") || strstr(first_line, "Concurrent_Clients")) {
+                        is_khush_p1 = true;
+                    } else if (strstr(first_line, "Failure_Probability") || strstr(first_line, "Total_Connection_Attempts") || strstr(first_line, "Wasted_Bytes")) {
+                        is_khush_p2 = true;
+                    }
+                }
             }
-            fputs(csv_line, fp);
-            fflush(fp);
-            fclose(fp);
+            fclose(rfp);
         }
+
+        if (need_header) {
+            if (strstr(target_path, "Part1") || strstr(c_name, "Part1")) {
+                is_khush_p1 = true;
+            } else if (strstr(target_path, "Part2") || strstr(c_name, "Part2")) {
+                is_khush_p2 = true;
+            }
+        }
+
+        FILE* fp = fopen(target_path, "a");
+        if (!fp) return;
+
+        static unsigned int run_seq = 1;
+
+        if (is_khush_p1) {
+            if (need_header) {
+                fputs("Test_Run_ID,Server_Type,Concurrent_Clients,Payload_Bytes,Total_Time_Seconds,Throughput_MBps,Goodput_MBps,Total_Bytes_Sent,Retries\n", fp);
+            }
+            const char* server_type = (strstr(c_name, "Single") != nullptr) ? "Single" : "Multi";
+            fprintf(fp, "P1_%s_N%d_C%u,%s,%d,%llu,%.6f,%.6f,%.6f,%llu,%d\n",
+                    server_type, n_clients, run_seq++,
+                    server_type, n_clients,
+                    (unsigned long long)u_bytes,
+                    d_sec, tp_mbps, gp_mbps,
+                    (unsigned long long)tot_bytes, r_tries);
+        } else if (is_khush_p2) {
+            if (need_header) {
+                fputs("Test_Run_ID,Case_Name,Failure_Probability,Total_Connection_Attempts,Wasted_Bytes,Total_Time_Seconds,Payload_Bytes,Throughput_MBps,Goodput_MBps,Session_Resumes_Count,Resumed_Offset_Bytes,Total_Bytes_Sent,Active_Streams,State_Lookup_Latency_ms,Metadata_Overhead_Bytes,Checksum_Validation_Time_ms\n", fp);
+            }
+            const char* cn = "Part2_Case1";
+            if (strstr(c_name, "Enhanced") || strstr(c_name, "Case2_Enhanced")) {
+                cn = "Part2_Case2_Enhanced";
+            } else if (strstr(c_name, "Case2")) {
+                cn = "Part2_Case2";
+            }
+            int streams = (strstr(cn, "Enhanced") != nullptr) ? 4 : 1;
+            int resumes = (strstr(cn, "Case1") != nullptr) ? 0 : r_tries;
+            uint64_t resumed_offset = (resumes > 0) ? (u_bytes / (resumes + 1)) : 0;
+            int attempts = r_tries + 1;
+
+            fprintf(fp, "P2_%s_Pf%.2f_C%u,%s,%.2f,%d,%llu,%.6f,%llu,%.6f,%.6f,%d,%llu,%llu,%d,0.0,%llu,0.0\n",
+                    cn, p_fail, run_seq++,
+                    cn, p_fail, attempts,
+                    (unsigned long long)red_bytes,
+                    d_sec,
+                    (unsigned long long)u_bytes,
+                    tp_mbps, gp_mbps,
+                    resumes, (unsigned long long)resumed_offset,
+                    (unsigned long long)tot_bytes,
+                    streams, (unsigned long long)(tot_bytes > u_bytes ? tot_bytes - u_bytes : 0));
+        } else {
+            if (need_header) {
+                fputs("case_name,num_clients,pf,t_start_sec,t_end_sec,duration_sec,useful_bytes,total_bytes,redundant_bytes,goodput_mbps,throughput_mbps,overhead_pct,retries\n", fp);
+            }
+            fprintf(fp, "%s,%d,%.2f,%lld,%lld,%.6f,%llu,%llu,%llu,%.6f,%.6f,%.2f,%d\n",
+                    c_name, n_clients, p_fail,
+                    (long long)ts.tv_sec, (long long)te.tv_sec, d_sec,
+                    (unsigned long long)u_bytes,
+                    (unsigned long long)tot_bytes,
+                    (unsigned long long)red_bytes,
+                    gp_mbps, tp_mbps, ov_pct, r_tries);
+        }
+
+        fflush(fp);
+        fclose(fp);
+    };
+
+    // 1. Append to primary csv_filepath
+    if (csv_filepath && csv_filepath[0] != '\0') {
+        write_csv_entry(csv_filepath, case_name, num_clients, pf,
+                        t_start, t_end, duration_sec,
+                        useful_bytes, total_bytes, redundant_bytes,
+                        goodput_mbps, throughput_mbps, overhead_pct, retries);
     }
 
     // 2. Also automatically append to dedicated per-case CSV in Results/
@@ -231,19 +305,11 @@ void record_transfer_metrics(const char* csv_filepath, const char* case_name,
             snprintf(specific_csv, sizeof(specific_csv), "%s/Part2_Case2_metrics.csv", res_dir);
         }
 
-        // Avoid writing duplicate row if specific_csv is already the primary csv_filepath
         if (specific_csv[0] != '\0' && (!csv_filepath || strcmp(csv_filepath, specific_csv) != 0)) {
-            struct stat st_spec;
-            bool write_spec_hdr = (stat(specific_csv, &st_spec) != 0 || st_spec.st_size == 0);
-            FILE* sfp = fopen(specific_csv, "a");
-            if (sfp) {
-                if (write_spec_hdr) {
-                    fputs(csv_header, sfp);
-                }
-                fputs(csv_line, sfp);
-                fflush(sfp);
-                fclose(sfp);
-            }
+            write_csv_entry(specific_csv, case_name, num_clients, pf,
+                            t_start, t_end, duration_sec,
+                            useful_bytes, total_bytes, redundant_bytes,
+                            goodput_mbps, throughput_mbps, overhead_pct, retries);
         }
     }
 

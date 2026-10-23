@@ -91,15 +91,20 @@ static void render_enhanced_progress_bar(SharedBitmaskState* state,
     static const char spinner_chars[] = "|/-\\";
     static int spinner_idx = 0;
     static struct timespec last_update{0, 0};
+    // If running in benchmark mode with concurrent clients, avoid stdout TTY mutex contention
+    const char* env_nc = getenv("NUM_CLIENTS");
+    if (env_nc && atoi(env_nc) > 1 && !force_complete) {
+        return;
+    }
 
     struct timespec now;
     clock_gettime(CLOCK_MONOTONIC, &now);
 
-    // Throttle updates to ~25 FPS (40ms) unless force_complete
+    // Throttle updates to ~10 FPS (100ms) unless force_complete
     if (!force_complete && last_update.tv_sec != 0) {
         long elapsed_ms = (now.tv_sec - last_update.tv_sec) * 1000 +
                           (now.tv_nsec - last_update.tv_nsec) / 1000000;
-        if (elapsed_ms < 40) {
+        if (elapsed_ms < 100) {
             return;
         }
     }
@@ -110,7 +115,7 @@ static void render_enhanced_progress_bar(SharedBitmaskState* state,
     uint64_t useful_bytes = state ? state->useful_bytes : 0;
     uint64_t redundant_bytes = state ? state->redundant_bytes : 0;
 
-    bool is_terminal = (isatty(STDOUT_FILENO) != 0);
+    static bool is_terminal = (isatty(STDOUT_FILENO) != 0);
     if (!is_terminal) {
         if (force_complete || (total_units > 0 && committed_units > 0 && (committed_units % 100 == 0 || committed_units == total_units))) {
             double pct = total_bytes > 0 ? (static_cast<double>(useful_bytes) * 100.0) / static_cast<double>(total_bytes)
@@ -122,11 +127,17 @@ static void render_enhanced_progress_bar(SharedBitmaskState* state,
         return;
     }
 
-    int cols = 80;
-    struct winsize ws;
-    if (ioctl(STDOUT_FILENO, TIOCGWINSZ, &ws) == 0 && ws.ws_col > 20) {
-        cols = ws.ws_col;
+    // Cache terminal width to avoid frequent ioctl syscalls
+    static int cached_cols = 80;
+    static time_t last_cols_query = 0;
+    if (now.tv_sec - last_cols_query >= 2) {
+        struct winsize ws;
+        if (ioctl(STDOUT_FILENO, TIOCGWINSZ, &ws) == 0 && ws.ws_col > 20) {
+            cached_cols = ws.ws_col;
+        }
+        last_cols_query = now.tv_sec;
     }
+    int cols = cached_cols;
 
     double pct = 0.0;
     if (total_bytes > 0) {
@@ -245,9 +256,12 @@ bool mark_chunk_committed(SharedBitmaskState* state, uint32_t unit_id, uint32_t 
             state->redundant_bytes += chunk_len;
         }
     }
-    render_enhanced_progress_bar(state, g_active_streams.load(), g_configured_streams,
-                                 g_expected_total_bytes, g_transfer_start);
+    uint32_t committed = state->committed_units;
     pthread_mutex_unlock(&state->bmap_mutex);
+    if (committed % 16 == 0) {
+        render_enhanced_progress_bar(state, g_active_streams.load(), g_configured_streams,
+                                     g_expected_total_bytes, g_transfer_start);
+    }
     return is_new;
 }
 

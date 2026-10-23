@@ -215,20 +215,26 @@ static void render_case2_progress_bar(int trial_num, int max_trials, bool has_ck
     static int spinner_idx = 0;
     static struct timespec last_update{0, 0};
 
+    // If running in benchmark mode with concurrent clients, avoid stdout TTY mutex contention
+    const char* env_nc = getenv("NUM_CLIENTS");
+    if (env_nc && atoi(env_nc) > 1 && !force_complete) {
+        return;
+    }
+
     struct timespec now;
     clock_gettime(CLOCK_MONOTONIC, &now);
 
-    // Throttle updates to ~25 FPS (40ms) unless force_complete
+    // Throttle updates to ~10 FPS (100ms) unless force_complete
     if (!force_complete && last_update.tv_sec != 0) {
         long elapsed_ms = (now.tv_sec - last_update.tv_sec) * 1000 +
                           (now.tv_nsec - last_update.tv_nsec) / 1000000;
-        if (elapsed_ms < 40) {
+        if (elapsed_ms < 100) {
             return;
         }
     }
     last_update = now;
 
-    bool is_terminal = (isatty(STDOUT_FILENO) != 0);
+    static bool is_terminal = (isatty(STDOUT_FILENO) != 0);
     if (!is_terminal) {
         if (force_complete || (total_files > 0 && current_files > 0 && (current_files % 100 == 0 || current_files == total_files))) {
             double pct = total_bytes > 0 ? (static_cast<double>(current_bytes) * 100.0) / static_cast<double>(total_bytes)
@@ -241,11 +247,17 @@ static void render_case2_progress_bar(int trial_num, int max_trials, bool has_ck
         return;
     }
 
-    int cols = 80;
-    struct winsize ws;
-    if (ioctl(STDOUT_FILENO, TIOCGWINSZ, &ws) == 0 && ws.ws_col > 20) {
-        cols = ws.ws_col;
+    // Cache terminal width to avoid frequent ioctl syscalls
+    static int cached_cols = 80;
+    static time_t last_cols_query = 0;
+    if (now.tv_sec - last_cols_query >= 2) {
+        struct winsize ws;
+        if (ioctl(STDOUT_FILENO, TIOCGWINSZ, &ws) == 0 && ws.ws_col > 20) {
+            cached_cols = ws.ws_col;
+        }
+        last_cols_query = now.tv_sec;
     }
+    int cols = cached_cols;
 
     double pct = 0.0;
     if (total_bytes > 0) {
@@ -642,10 +654,14 @@ int run_client_case2_loop(const char* server_ip, uint16_t port,
                             bytes_since_last_ckpt = 0;
                         }
 
-                        render_case2_progress_bar(attempt + 1, max_retries, has_ckpt,
-                                                  files_received_count, total_files_in_topic,
-                                                  cumulative_useful_bytes, expected_total_bytes,
-                                                  redundant_bytes, t_trial_start, trial_wire_bytes);
+                        static uint64_t last_rendered_bytes = 0;
+                        if (cumulative_useful_bytes - last_rendered_bytes >= 524288) {
+                            render_case2_progress_bar(attempt + 1, max_retries, has_ckpt,
+                                                      files_received_count, total_files_in_topic,
+                                                      cumulative_useful_bytes, expected_total_bytes,
+                                                      redundant_bytes, t_trial_start, trial_wire_bytes);
+                            last_rendered_bytes = cumulative_useful_bytes;
+                        }
                     }
                 }
             } else if (hdr.type == OP_FILE_END) {
