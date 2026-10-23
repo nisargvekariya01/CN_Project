@@ -21,8 +21,22 @@ def generate_plots():
     p1_csv = os.path.join(SCRIPT_DIR, "Part1_metrics.csv")
     p2_csv = os.path.join(SCRIPT_DIR, "Part2_metrics.csv")
 
+    need_prep = False
     if not os.path.exists(p1_csv) or not os.path.exists(p2_csv):
-        # If files need standardizing first, import and run preparation
+        need_prep = True
+    else:
+        try:
+            if os.path.getsize(p1_csv) < 150 or os.path.getsize(p2_csv) < 150:
+                need_prep = True
+            else:
+                test_p2 = pd.read_csv(p2_csv)
+                if len(test_p2) < 5 or 'Case_Name' not in test_p2.columns:
+                    need_prep = True
+        except Exception:
+            need_prep = True
+
+    if need_prep:
+        # If files need standardizing or populating first, import and run preparation
         try:
             import build_enhanced_metrics_and_plots
             build_enhanced_metrics_and_plots.main()
