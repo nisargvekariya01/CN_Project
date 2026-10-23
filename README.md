@@ -11,14 +11,14 @@
 
 ## 👥 Group Members & Contribution Matrix
 
-| Student ID | Student Name | Group | Wave | Subsystem & Architectural Responsibility |
-|:---|:---|:---:|:---:|:---|
-| **202401496** | Vaghela Khush | G-106 | Wave 1 | Server POSIX CLI parsing, directory mapper, signal handlers, accept loops & client terminal caching |
-| **202401412** | Yuvraj Chauhan | G-103 | Wave 1 | Binary wire framing layer, 8-byte preambles, big-endian network serialization & length-prefixed codecs |
-| **202401491** | Vekariya Bhavya | G-106 | Wave 2 | Probabilistic chunk-boundary fault injection engine & Case 1 stateless retry recovery loop |
-| **202401476** | Shlok Gohel | G-103 | Wave 2 | Case 2 stateful session table, 3-step `fsync` atomic disk checkpointing & forward-only resume engine |
-| **202401444** | Digvijy Parmar | G-103 | Wave 3 | Benchmarking harness, multi-schema metrics logging, throughput/overhead data analytics & LaTeX report |
-| **202401492** | Vekariya Nisarg | G-106 | Wave 3 | Case 2 Enhanced: Event-driven `epoll` server, 4-way parallel TCP streaming, bitmask chunk work queue & animated progress bars |
+| Member Designation | Subsystem Role | Core Coding Responsibilities | System, Testing & Documentation Tasks | Viva Complexity Level |
+|:---|:---|:---|:---|:---:|
+| **Member 1** | Directory Mapping & Client Stress Testing | `directory_mapper.{h,cpp}`: POSIX directory scanning (`opendir`, `readdir`), file metadata hashing, deterministic sorting | Multi-client stress testing ($N=1 \dots 32$), payload integrity verification, test dataset setup | **Easy (Beginner-Friendly)** |
+| **Member 2** | Fault Simulation & Technical Documentation | `fault.{h,cpp}` & `Part2_Case1/client.cpp`: Random drop generator ($r < P_f$), basic retry loop (max 50 trials) | Comprehensive documentation, LaTeX final report formatting, tabular evaluation, presentation defense | **Easy (Beginner-Friendly)** |
+| **Member 3** | Binary Wire Protocol & Framing Codecs | `protocol.{h,cpp}`: 8-byte preamble header, big-endian network serialization (`htons`, `htonl`, `htobe64`), opcode codecs | Protocol unit tests (`test_protocol.cpp`), wire framing conformance validation | **Moderate** |
+| **Member 4** | Part 1 Concurrency & Server Worker Pools | `Part1/concurrency.{h,cpp}` & `server.cpp`: Thread-per-client POSIX thread pool, `accept()` loops, socket buffer tuning | Concurrency benchmarking, kernel socket options (`TCP_NODELAY`, 256 KiB buffers) | **Moderate** |
+| **Member 5** | Case 2 Stateful Session & Checkpoint Engine | `Part2_Case2/session.{h,cpp}` & `checkpoint.{h,cpp}`: 128-bit UUID generation, 3-step `fsync` atomic commit, `lseek()` resume | Durability testing (`test_session_ckpt.cpp`), crash-consistency validation | **Advanced** |
+| **Member 6** | Case 2 Enhanced Epoll & Parallel Streaming | `enhanced_epoll_server.{h,cpp}`, `enhanced_parallel_client.{h,cpp}`, `plot_results.py`: Non-blocking epoll, 4 TCP streams, 64 KiB chunk queues, bitmasks | Automated benchmark scripting (`run_benchmarks.sh`), performance analytics, plot generation | **Advanced** |
 
 ---
 
@@ -478,6 +478,21 @@ make asan        # Executes under Clang/GCC AddressSanitizer & UndefinedBehavior
 | `test_session_ckpt` | **15 / 15 (100%)** | 128-bit UUID generation, 3-step `fsync` durability, session expiration |
 | `test_enhanced` | **76 / 76 (100%)** | Epoll socket non-blocking setup, 64 KiB chunk work queue, bitmask stealing |
 | **Total** | **338 Assertions** | **Zero Memory Leaks · Zero Data Races · 100% Pass Rate** |
+
+---
+
+## 👥 Collaborative Engineering & Work Distribution Matrix
+
+To balance high-performance systems programming with rigorous software quality assurance, the project responsibilities are distributed across **6 specialized roles** without code silos. Tasks are structured so that foundational modules remain clear and accessible for viva defense, while concurrency optimizations and fault-tolerance mechanics are cleanly decoupled:
+
+| Project Role | Primary Code Component | Primary Code Description (Viva-Ready) | Key System Responsibilities & Non-Coding Tasks |
+|:---|:---|:---|:---|
+| **Member 1** | `directory_mapper.cpp` | **POSIX Topic Indexer:** Uses `opendir()`, `readdir()`, and `stat()` to recursively discover dataset files and sort filenames alphabetically. *(Simple, sequential C/C++, zero sockets)* | **Multiple Client Stress Testing:** Orchestrating simultaneous multi-client runs ($N = 1, 2, 4, 8, 16, 32$), recording download latencies, and verifying byte-level file integrity via SHA-256 checksum audits. |
+| **Member 2** | `fault.cpp` & `client.cpp` (Case 1) | **Fault Injection & Retry Engine:** Evaluates pseudo-random probability $r < P_f$ to inject drops and implements the outer `for (attempt = 0; attempt < 50; attempt++)` retry loop. *(Intuitive, sequential math & loop logic)* | **Technical Documentation & Reporting:** Authoring the comprehensive $\text{\LaTeX}$ final report, structuring system flowcharts and network diagrams, maintaining README setup guides, and preparing the viva presentation deck. |
+| **Member 3** | `protocol.cpp` & `protocol.h` | **Binary Framing & Serialization:** Handles 8-byte preamble packing, big-endian network byte ordering (`htonl`, `ntohl`), and frame validation. | **Protocol Quality Assurance:** Developing the `test_protocol` test suite (108 assertions), verifying wire framing boundaries, and validating error frame generation under malformed payloads. |
+| **Member 4** | `concurrency.cpp` & `server.cpp` | **Multi-Threaded Concurrency:** Manages `pthread_create` worker threads, mutex locks, client connection queues, and socket buffer tuning (`SO_SNDBUF`, `SO_RCVBUF`, `TCP_NODELAY`). | **Server Concurrency Testing:** Profiling server CPU/thread utilization under high concurrent client load, benchmarking thread overhead, and performing AddressSanitizer (`make asan`) race audits. |
+| **Member 5** | `session.cpp` & `checkpoint.cpp` | **Stateful Session Checkpointing:** Generates 128-bit session UUIDs, manages in-memory session lookups, and enforces 3-step atomic disk durability (`.tmp` write $\to$ `fsync()` $\to$ `rename()`). | **Crash Simulation & Recovery Testing:** Validating atomic crash recovery under ungraceful client termination, simulating mid-transfer SIGINT/kill signals, and testing forward-only offset resuming. |
+| **Member 6** | `Part2_Case2_Enhanced/` & Benchmarks | **High-Throughput Parallel Epoll:** Implements Linux edge-triggered `epoll` reactor, 4-way parallel TCP streams, 64 KiB chunk work queue, and dynamic bitmask stealing. | **Automated Benchmark Harness & Plotting:** Orchestrating `run_benchmarks.sh`, building multi-schema runtime CSV metrics, and generating publication-grade comparative performance charts using Matplotlib. |
 
 ---
 

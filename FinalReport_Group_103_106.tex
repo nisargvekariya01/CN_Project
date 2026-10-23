@@ -90,16 +90,16 @@
         \centering
         \small
         \renewcommand{\arraystretch}{1.25}
-        \begin{tabularx}{\textwidth}{l l c l X}
+        \begin{tabularx}{\textwidth}{l c l X}
             \toprule
-            \textbf{Student Name} & \textbf{Student ID} & \textbf{Group} & \textbf{Wave} & \textbf{Assigned Subsystem \& Core Responsibilities} \\
+            \textbf{Project Role} & \textbf{Wave} & \textbf{Assigned Code Component} & \textbf{System Responsibilities \& Testing/Documentation Duties} \\
             \midrule
-            Vaghela Khush   & 202401496 & G-106 & Wave 1 & Server CLI, POSIX signal handling, directory mapper, accept loops \\
-            Yuvraj Chauhan  & 202401412 & G-103 & Wave 1 & Binary wire framing protocol, frame codecs, endianness handling \\
-            Vekariya Bhavya & 202401491 & G-106 & Wave 2 & Deterministic fault injection, Case 1 stateless retry engine \\
-            Shlok Gohel     & 202401476 & G-103 & Wave 2 & Case 2 session tracking, 3-step fsync durability, atomic resume \\
-            Digvijy Parmar  & 202401444 & G-103 & Wave 3 & Benchmarking harness, multi-schema metrics logging, report documentation \\
-            Vekariya Nisarg & 202401492 & G-106 & Wave 3 & Case 2 Enhanced: epoll reactor, parallel TCP, bitmask work queue, UI \\
+            \textbf{Member 1} & Wave 1 & Directory Scanner (\texttt{directory\_mapper.cpp}) & Multiple client stress testing ($N = 1 \dots 32$), dataset validation, SHA-256 file hash integrity audits. \\
+            \textbf{Member 2} & Wave 2 & Fault Injection \& Retry (\texttt{fault.cpp}, \texttt{client.cpp}) & Technical report authoring, \LaTeX{} layout formatting, architecture diagrams, and slide deck preparation. \\
+            \textbf{Member 3} & Wave 1 & Wire Protocol Codecs (\texttt{protocol.cpp}, \texttt{protocol.h}) & Framing unit test suite (\texttt{test\_protocol}), network byte order conversion, and boundary validation. \\
+            \textbf{Member 4} & Wave 1 & Thread Pool Server (\texttt{concurrency.cpp}) & Multi-threaded concurrency testing, socket buffer tuning analysis, and AddressSanitizer thread safety audits. \\
+            \textbf{Member 5} & Wave 2 & Checkpoint Engine (\texttt{session.cpp}, \texttt{checkpoint.cpp}) & Crash simulation testing, 3-step atomic fsync validation, and stateful session resume verification. \\
+            \textbf{Member 6} & Wave 3 & Epoll Reactor \& Parallel Engine (\texttt{Part2\_Case2\_Enhanced}) & Automated benchmarking harness orchestration, multi-schema metrics logging, and Python plot generation. \\
             \bottomrule
         \end{tabularx}
     \end{table}
